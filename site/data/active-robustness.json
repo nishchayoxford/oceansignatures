@@ -1,0 +1,39 @@
+{
+  "criterion_m": 0.125,
+  "criterion_meaning": "Illustrative nominal c/(2B) scale; not a detection threshold or measured two-target resolution.",
+  "fs_hz": 48000,
+  "interpretation": "Always-return-an-estimate experiment conditional on target presence, not field accuracy.",
+  "search_m": [
+    0,
+    750
+  ],
+  "seed_interval_inclusive": [
+    2026,
+    2049
+  ],
+  "summaries": [
+    {
+      "max_absolute_error_m": 582.515625,
+      "rmse_all_trials_m": 298.71625734931996,
+      "snr_db": -30,
+      "trials": 24,
+      "within_0_125m": 0
+    },
+    {
+      "max_absolute_error_m": 276.68749999999994,
+      "rmse_all_trials_m": 56.47860663837679,
+      "snr_db": -18,
+      "trials": 24,
+      "within_0_125m": 23
+    },
+    {
+      "max_absolute_error_m": 0.0,
+      "rmse_all_trials_m": 0.0,
+      "snr_db": -6,
+      "trials": 24,
+      "within_0_125m": 24
+    }
+  ],
+  "trial_policy": "Every seed retained; same seeds across SNRs share scaled Gaussian draws.",
+  "truth_m": 150
+}

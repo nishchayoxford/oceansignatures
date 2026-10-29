@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.welch.html",
+      "title": "",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": 2,
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.correlate.html",
+      "title": "",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": 3,
+      "url": "https://www.pamguard.org/olhelp/sound_processing/AcquisitionHelp/docs/AcquisitionSimulator.html",
+      "title": "",
+      "accessed": "2026-10-29"
+    },
+    {
+      "id": 4,
+      "url": "https://dosits.org/science/advanced-topics/sonar-equation",
+      "title": "",
+      "accessed": "2026-10-29"
+    }
+  ]
+}

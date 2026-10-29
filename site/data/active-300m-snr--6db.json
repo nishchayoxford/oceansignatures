@@ -1,0 +1,74 @@
+{
+  "case_id": "active-300m-snr--6db",
+  "export_version": "0.1.0",
+  "fs_hz": 48000,
+  "model_metadata": {
+    "echo_mean_square_pa2": 1.2345679012345684e-10,
+    "echo_support_samples": [
+      19200,
+      21600
+    ],
+    "expected_delay_s": 0.4,
+    "fractional_delay_method": "evaluate continuous finite LFM at (sample_index - delay_s*fs)/fs",
+    "input_snr_db": -6.0,
+    "input_snr_definition": "10*log10(mean(clean_echo_pa[echo_support]**2)/noise_variance_pa2)",
+    "lag_definition": "template start lag k/fs; valid correlation; no filter-length offset",
+    "matched_filter_units": "dimensionless; noise-only standard deviation = 1 at each lag",
+    "model": "stationary monostatic scalar point target; homogeneous 3-D free space",
+    "noise_model": "iid zero-mean real Gaussian; full sampled Nyquist band; not realization-normalized",
+    "noise_std_pa": 2.2169581277432e-05,
+    "omitted_physics": [
+      "surface and seabed multipath",
+      "refraction",
+      "absorption",
+      "Doppler",
+      "frequency-dependent or extended-target scattering",
+      "reverberation"
+    ],
+    "peak_abs_score": 24.12297395079559,
+    "peak_index": 19200,
+    "ping_duration_s": 0.05,
+    "ping_f_end_hz": 9000.0,
+    "ping_f_start_hz": 3000.0,
+    "ping_rms_pa": 1.0,
+    "ping_samples": 2400,
+    "ping_taper": "continuous Hann",
+    "range_bin_m": 0.015625,
+    "range_definition": "horizontal separation; target and transceiver at equal depth",
+    "range_error_m": 0.0,
+    "range_estimator": "global maximum absolute signed correlation; integer lag; no detection threshold",
+    "realized_input_snr_db": -5.777626012942852,
+    "realized_noise_mean_square_pa2": 4.669577443261662e-10,
+    "receiver_model": "ideal pressure sampler; no receiver filter, clipping or transmit leakage",
+    "record_samples": 50400,
+    "reference_distance_m": 1.0,
+    "search_lag_s": [
+      0.0,
+      1.0
+    ],
+    "seed": 2026,
+    "sound_speed_m_s": 1500.0,
+    "target_scalar_gain": 1.0,
+    "two_way_pressure_gain": 1.1111111111111113e-05
+  },
+  "provenance": "Executed synthetic model; no measured or field-validation data.",
+  "schema_version": 1,
+  "spectral_method": {
+    "detrend": "constant",
+    "incomplete_segments": "discarded; no padding",
+    "note": "Different from the audio pipeline no-detrend convention.",
+    "noverlap": 1024,
+    "nperseg": 2048,
+    "receiver_window_samples": [
+      19200,
+      21600
+    ],
+    "scaling": "one-sided density Pa^2/Hz",
+    "source_window_samples": [
+      0,
+      2400
+    ],
+    "window": "periodic Hann"
+  },
+  "timestamp_policy": "No wall-clock timestamps; ZIP members fixed to 1980-01-01."
+}

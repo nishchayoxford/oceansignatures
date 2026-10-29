@@ -1,0 +1,81 @@
+{
+  "format": "PDF; vector text/axes/curves and contour; spectrogram fields and colorbars rasterized at 160 dpi",
+  "pages": [
+    {
+      "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99584) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+      "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99584) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+      "page_number": 1,
+      "src": "plots/passive-whistle-100m-surface-true-waveform.png",
+      "title": "1 \u00b7 Follow pressure from source to receiver"
+    },
+    {
+      "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+      "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+      "page_number": 2,
+      "src": "plots/passive-whistle-100m-surface-true-psd.png",
+      "title": "2 \u00b7 Separate propagation, receiver and noise"
+    },
+    {
+      "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+      "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+      "page_number": 3,
+      "src": "plots/passive-whistle-100m-surface-true-spectrogram.png",
+      "title": "3 \u00b7 Read the time\u2013frequency signature"
+    },
+    {
+      "alt": "1 \u00b7 Locate the echo inside a noisy acquisition. Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.2 s and pressure gain is 4.44444e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+      "caption": "Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.2 s and pressure gain is 4.44444e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+      "page_number": 4,
+      "src": "plots/active-150m-snr--18db-history.png",
+      "title": "1 \u00b7 Locate the echo inside a noisy acquisition"
+    },
+    {
+      "alt": "2 \u00b7 Search globally; inspect the peak locally. Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+      "caption": "Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+      "page_number": 5,
+      "src": "plots/active-150m-snr--18db-matched-filter.png",
+      "title": "2 \u00b7 Search globally; inspect the peak locally"
+    },
+    {
+      "alt": "Interference is a range\u2013frequency structure. First isolate interference from spherical spreading: this continuous analytic contour divides the coherent direct-plus-pressure-release image transfer by the direct-path transfer. Source/receiver depths are 8/12 m, c = 1500 m/s, surface coefficient \u22121. Blue bands are cancellation, red bands reinforcement; white is 0 dB relative to direct, not zero pressure. The logarithmic range axis spans 25\u2013500 m. This is an independently evaluated continuous two-ray reference, not the discrete propagator, receiver FIR, or a ray-traced ocean model. Values below \u221245 dB saturate.",
+      "caption": "First isolate interference from spherical spreading: this continuous analytic contour divides the coherent direct-plus-pressure-release image transfer by the direct-path transfer. Source/receiver depths are 8/12 m, c = 1500 m/s, surface coefficient \u22121. Blue bands are cancellation, red bands reinforcement; white is 0 dB relative to direct, not zero pressure. The logarithmic range axis spans 25\u2013500 m. This is an independently evaluated continuous two-ray reference, not the discrete propagator, receiver FIR, or a ray-traced ocean model. Values below \u221245 dB saturate.",
+      "page_number": 6,
+      "section": "Channel geometry",
+      "src": "plots/gallery-interference.png",
+      "title": "Interference is a range\u2013frequency structure"
+    },
+    {
+      "alt": "Direct path, reflection and receiver response. Read the upper panel as complex pressure addition: reflected and direct magnitudes are nearly coincident at 100 m, but the reflected path carries a sign reversal and a different delay. Their coherent sum has deep notches; adding magnitude curves would miss them. Gains reference the nominal 1 m source pressure. The lower panel is computed from the actual generic receiver coefficients, not a measured instrument: 257-tap Kaiser FIR, 10 kHz cutoff and 128/48000 s group delay. The continuous channel does not include fractional-delay interpolation error; the receiver is a separate operation.",
+      "caption": "Read the upper panel as complex pressure addition: reflected and direct magnitudes are nearly coincident at 100 m, but the reflected path carries a sign reversal and a different delay. Their coherent sum has deep notches; adding magnitude curves would miss them. Gains reference the nominal 1 m source pressure. The lower panel is computed from the actual generic receiver coefficients, not a measured instrument: 257-tap Kaiser FIR, 10 kHz cutoff and 128/48000 s group delay. The continuous channel does not include fractional-delay interpolation error; the receiver is a separate operation.",
+      "page_number": 7,
+      "section": "Channel \u2192 receiver",
+      "src": "plots/gallery-transfer.png",
+      "title": "Direct path, reflection and receiver response"
+    },
+    {
+      "alt": "Range changes level and interference together. Move from an analytic channel to all 18 saved passive experiments. Markers are computed cases, lines only connect the three ranges; they are not a dense sampled performance curve. All sources have 1 Pa unpadded-record RMS, but different spectra and peak pressures. The receiver and input-referred noise SD remain fixed; RMS and SNR use each complete arrival/tail window. Solid curves include the ideal surface, dashed curves use only the direct path. Interference therefore changes broadband energy in a source-dependent way. Seeds are shared, not independent trials; there is no inference of detectability or field range.",
+      "caption": "Move from an analytic channel to all 18 saved passive experiments. Markers are computed cases, lines only connect the three ranges; they are not a dense sampled performance curve. All sources have 1 Pa unpadded-record RMS, but different spectra and peak pressures. The receiver and input-referred noise SD remain fixed; RMS and SNR use each complete arrival/tail window. Solid curves include the ideal surface, dashed curves use only the direct path. Interference therefore changes broadband energy in a source-dependent way. Seeds are shared, not independent trials; there is no inference of detectability or field range.",
+      "page_number": 8,
+      "section": "Actual passive cases",
+      "src": "plots/gallery-passive-range.png",
+      "title": "Range changes level and interference together"
+    },
+    {
+      "alt": "Why fixed-SNR cases are not fixed-noise range performance. These six actual cases do not share a fixed ambient noise level: expected noise variance is recalculated from echo-support mean square and the selected input SNR. Both echo and noise pressure fall with the chosen two-way 1/R\u00b2 gain at fixed SNR. The lower panel reports the actual global-search range error, including the 150 m, \u221218 dB neighbouring-lobe error. Shared seed 2026 is a controlled illustration, not a trial average. Zero errors at these grid-aligned ranges do not establish perfect ranging. The next plate repeats the experiment and exposes estimates far away from truth.",
+      "caption": "These six actual cases do not share a fixed ambient noise level: expected noise variance is recalculated from echo-support mean square and the selected input SNR. Both echo and noise pressure fall with the chosen two-way 1/R\u00b2 gain at fixed SNR. The lower panel reports the actual global-search range error, including the 150 m, \u221218 dB neighbouring-lobe error. Shared seed 2026 is a controlled illustration, not a trial average. Zero errors at these grid-aligned ranges do not establish perfect ranging. The next plate repeats the experiment and exposes estimates far away from truth.",
+      "page_number": 9,
+      "section": "Actual active cases",
+      "src": "plots/gallery-active-range.png",
+      "title": "Why fixed-SNR cases are not fixed-noise range performance"
+    },
+    {
+      "alt": "Do not hide low-SNR failures behind a median. At true range 150 m, run every seed 2026\u20132049 at each SNR, always searching 0\u2013750 m. Both panels show every estimate: linear and symmetric-log axes, with no success-only clipping. -30 dB: 0/24 within \u00b10.125 m, all-trial RMSE 298.716 m; -18 dB: 23/24 within \u00b10.125 m, all-trial RMSE 56.479 m; -6 dB: 24/24 within \u00b10.125 m, all-trial RMSE 0.000 m. The shaded \u00b10.125 m band is an illustrative c/(2B) scale, not a validated detection threshold. Matched noise seeds across SNRs share underlying draws. A target is present in every trial; there is no target-absent experiment or false-alarm calibration. These finite seeded synthetic results are not field accuracy, population performance, or detection probability. The catastrophic \u221218 dB outlier is included in RMSE.",
+      "caption": "At true range 150 m, run every seed 2026\u20132049 at each SNR, always searching 0\u2013750 m. Both panels show every estimate: linear and symmetric-log axes, with no success-only clipping. -30 dB: 0/24 within \u00b10.125 m, all-trial RMSE 298.716 m; -18 dB: 23/24 within \u00b10.125 m, all-trial RMSE 56.479 m; -6 dB: 24/24 within \u00b10.125 m, all-trial RMSE 0.000 m. The shaded \u00b10.125 m band is an illustrative c/(2B) scale, not a validated detection threshold. Matched noise seeds across SNRs share underlying draws. A target is present in every trial; there is no target-absent experiment or false-alarm calibration. These finite seeded synthetic results are not field accuracy, population performance, or detection probability. The catastrophic \u221218 dB outlier is included in RMSE.",
+      "page_number": 10,
+      "section": "Estimator limitations",
+      "src": "plots/gallery-active-robustness.png",
+      "title": "Do not hide low-SNR failures behind a median"
+    }
+  ],
+  "timestamp_policy": "PDF CreationDate and ModDate omitted"
+}

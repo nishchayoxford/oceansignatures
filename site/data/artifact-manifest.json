@@ -1,0 +1,1049 @@
+{
+  "files": [
+    {
+      "bytes": 103656,
+      "path": "data/active-150m-snr--18db.csv",
+      "sha256": "a7b7dc4ff12a957db5ebdada27096cb6e7506c9d8876095d15ebbe6c799e782d"
+    },
+    {
+      "bytes": 2663,
+      "path": "data/active-150m-snr--18db.json",
+      "sha256": "e36b1d75be97763967af1fd90cce9bfdf9158b8840ff4c30ed1177d8001df00d"
+    },
+    {
+      "bytes": 1467796,
+      "path": "data/active-150m-snr--18db.npz",
+      "sha256": "78e45d922d567f688698a5e2baf416eca99485742dcc206f5a50ba0444b0e30f"
+    },
+    {
+      "bytes": 103629,
+      "path": "data/active-150m-snr--6db.csv",
+      "sha256": "212be7931a5ae9e66d406f4a8479ef29138fd293150f1407ab1378aab546ca86"
+    },
+    {
+      "bytes": 2653,
+      "path": "data/active-150m-snr--6db.json",
+      "sha256": "1f467de5f43630db9575060ed7d248290c9ce146adc71d0b83ddf707a88092d9"
+    },
+    {
+      "bytes": 1474816,
+      "path": "data/active-150m-snr--6db.npz",
+      "sha256": "2b2e66bb5c1f9c7fd8b9f476662565054eae7a165d2d25baacbe103925c23712"
+    },
+    {
+      "bytes": 103649,
+      "path": "data/active-300m-snr--18db.csv",
+      "sha256": "d0a986d15e34188a52982ce75b00ab0a7482407d729fcdff23af04d58c8dd9e7"
+    },
+    {
+      "bytes": 2660,
+      "path": "data/active-300m-snr--18db.json",
+      "sha256": "810d6af38be65168662c274982acc029baf31203e9d3f5e4c1d9866e63bacd18"
+    },
+    {
+      "bytes": 1474596,
+      "path": "data/active-300m-snr--18db.npz",
+      "sha256": "1d1e332989c61292ad79accda6546c63406945b835b35857915f2041f9a9b010"
+    },
+    {
+      "bytes": 103673,
+      "path": "data/active-300m-snr--6db.csv",
+      "sha256": "0ab8521fbdc4373ea9ec3ba1afabfd26f1a5c6df40bf02d6284ba4c8458f3af4"
+    },
+    {
+      "bytes": 2656,
+      "path": "data/active-300m-snr--6db.json",
+      "sha256": "dcfaec5d96c5fc78569c21e81cf69e3da0a48dfdf7d6746f5e3136d56f94e0a4"
+    },
+    {
+      "bytes": 1472478,
+      "path": "data/active-300m-snr--6db.npz",
+      "sha256": "227c4367e707661fda0a012640a05d5760be11509fdf2b7aedf0cdc1f3093959"
+    },
+    {
+      "bytes": 103686,
+      "path": "data/active-75m-snr--18db.csv",
+      "sha256": "52ddf27ecc853d3649ebd5c1bf51967efaf9c88ea15c493b4e0cabee5e2750fa"
+    },
+    {
+      "bytes": 2654,
+      "path": "data/active-75m-snr--18db.json",
+      "sha256": "26336d9abec6f2a4b5a05a3fbe9f7630f47130e5b639dbbf78443ff666a1d35e"
+    },
+    {
+      "bytes": 1465895,
+      "path": "data/active-75m-snr--18db.npz",
+      "sha256": "7b407206d3a55f50bf3b1d3d4a601aa023227700d47b32f6e9459d94d73d0177"
+    },
+    {
+      "bytes": 103642,
+      "path": "data/active-75m-snr--6db.csv",
+      "sha256": "fad008cbd330bc125d6e4463f131e3ba22c1f722e64361aa29bad18069448213"
+    },
+    {
+      "bytes": 2652,
+      "path": "data/active-75m-snr--6db.json",
+      "sha256": "7dc041d2c0ca75abaec9d61f84b2bbae6802d0cefbce4f84e7bc3e07576ca0d4"
+    },
+    {
+      "bytes": 1467784,
+      "path": "data/active-75m-snr--6db.npz",
+      "sha256": "5dc0155d698f3d76d21c7ab3ad48df4b71b45fb4ee3bf64050957b5738d15e5c"
+    },
+    {
+      "bytes": 351,
+      "path": "data/active-comparison.csv",
+      "sha256": "99eccf9092d199cce1d4b4fa316b4d7b0f84096c51c9c734f293e57c4cd90c07"
+    },
+    {
+      "bytes": 6349,
+      "path": "data/active-robustness.csv",
+      "sha256": "f065bac0b82dfc3dde5ec8d3162d729d198b85cf33bed33ad2e01e1a70a5aef5"
+    },
+    {
+      "bytes": 993,
+      "path": "data/active-robustness.json",
+      "sha256": "932084e48efdf9debe8e13eaa448f3368da610b74f6658fefbbfe563c3848ff3"
+    },
+    {
+      "bytes": 2898,
+      "path": "data/active-robustness.npz",
+      "sha256": "3bfa99f24405f40dac00af0f7dbfc8f16d20f342a6f246fc2a43062a1dda5684"
+    },
+    {
+      "bytes": 151223,
+      "path": "data/catalog.json",
+      "sha256": "97e6996c6e48ddbbb9aad40295161e6c43189530e9dc84f12a8af59074e41aad"
+    },
+    {
+      "bytes": 69623191,
+      "path": "data/full-waveforms.zip",
+      "sha256": "cff2628966bd5bc55060e2cc9372b42cc835d500389b476ae050da05cb903e9a"
+    },
+    {
+      "bytes": 4900455,
+      "path": "data/interference.npz",
+      "sha256": "15e533abd7af3344af3c41d0f734c5c85461736e023cf614e8e6ce69925b63db"
+    },
+    {
+      "bytes": 199090,
+      "path": "data/passive-clicks-100m-surface-false-received-same-gain.wav",
+      "sha256": "48c1263de37e541441e710c84448f1a71659dcf43124c67a011a1c05d0ab2f24"
+    },
+    {
+      "bytes": 199090,
+      "path": "data/passive-clicks-100m-surface-false-source-same-gain.wav",
+      "sha256": "8c8a347419d1a70c4fe1757005d2fc9b268ff111c962195924eb72e4bf3130c7"
+    },
+    {
+      "bytes": 1600436,
+      "path": "data/passive-clicks-100m-surface-false-spectrogram.npz",
+      "sha256": "2f81a75727f41c864880818f1e08b787e9bf16c537cb0030f979e33b4714f7d7"
+    },
+    {
+      "bytes": 127128,
+      "path": "data/passive-clicks-100m-surface-false.csv",
+      "sha256": "9cdbe704254fed124e6ed221ecdfc9cd03f4f872df9ac797fbdcd3bd267afcd9"
+    },
+    {
+      "bytes": 11881,
+      "path": "data/passive-clicks-100m-surface-false.json",
+      "sha256": "71a2f58d25a4b82e7468b754c5faf3365defb499b24ae8227b2a110bc56c9bfe"
+    },
+    {
+      "bytes": 1914443,
+      "path": "data/passive-clicks-100m-surface-false.npz",
+      "sha256": "b10bfe3cfd001bf9f6a21b1304f6e6e7fd5027b048de317b3bc578785be66fcd"
+    },
+    {
+      "bytes": 199212,
+      "path": "data/passive-clicks-100m-surface-true-received-same-gain.wav",
+      "sha256": "2d1f0623b48d4d1aaf0bb76c26ce429cba989cc9b696ce0fa7ac295660ac023d"
+    },
+    {
+      "bytes": 199212,
+      "path": "data/passive-clicks-100m-surface-true-source-same-gain.wav",
+      "sha256": "a1b4d36970e2695a561c6774a9ccf3eb1679b19daf8a38557eb93b949307168d"
+    },
+    {
+      "bytes": 1601352,
+      "path": "data/passive-clicks-100m-surface-true-spectrogram.npz",
+      "sha256": "23180ba2f84fd432a8ec6e3c689fabbed64ec2ab9cd91bfd60ae1038202725b0"
+    },
+    {
+      "bytes": 127133,
+      "path": "data/passive-clicks-100m-surface-true.csv",
+      "sha256": "29c7115602b320f90466f36d5b20e3468f7ec34d9352cfe61c258a59be98e3e7"
+    },
+    {
+      "bytes": 12041,
+      "path": "data/passive-clicks-100m-surface-true.json",
+      "sha256": "fa8a2cd16cd4207ace9122c6098daab3d0c94ad364f4be720d26e4b204fcc578"
+    },
+    {
+      "bytes": 1928128,
+      "path": "data/passive-clicks-100m-surface-true.npz",
+      "sha256": "b9147c70fe7f42112088b3c699735ca06f08e69da04f871282330929e5d3b5d7"
+    },
+    {
+      "bytes": 194306,
+      "path": "data/passive-clicks-25m-surface-false-received-same-gain.wav",
+      "sha256": "022293a5697041f38f52f2bdf282211e9ca57b19bd4dc100ffc340edb6d7a625"
+    },
+    {
+      "bytes": 194306,
+      "path": "data/passive-clicks-25m-surface-false-source-same-gain.wav",
+      "sha256": "2dcacae3e438ce5196c54cc3e01a058f1eb208a598951d7b243f4b32e1dc7471"
+    },
+    {
+      "bytes": 1601874,
+      "path": "data/passive-clicks-25m-surface-false-spectrogram.npz",
+      "sha256": "1d074c49aee51ac61a76191d7d1f5e53431619dc8c51ad767f36c0ac737f39b7"
+    },
+    {
+      "bytes": 127149,
+      "path": "data/passive-clicks-25m-surface-false.csv",
+      "sha256": "f7d5d0010e56facbd8a6e1828fa8574ea89ea6766072e9984c2ddcd161478cf4"
+    },
+    {
+      "bytes": 11877,
+      "path": "data/passive-clicks-25m-surface-false.json",
+      "sha256": "d6490a74963a5e365e3c958ead4c609cb3f24a7c979485056a3dc2eaf9988054"
+    },
+    {
+      "bytes": 1871593,
+      "path": "data/passive-clicks-25m-surface-false.npz",
+      "sha256": "e8bfb7b4a61d690b4581f3311949f7ec6906e93e4f6a43a6cca46703f607e90f"
+    },
+    {
+      "bytes": 194734,
+      "path": "data/passive-clicks-25m-surface-true-received-same-gain.wav",
+      "sha256": "304b447df6e5ffa58efc6ae4a546ac3d110706eca92d24b1c67dab0d8e737136"
+    },
+    {
+      "bytes": 194734,
+      "path": "data/passive-clicks-25m-surface-true-source-same-gain.wav",
+      "sha256": "817a391c3dcacea703ed9a276532ec044afe87cec39bcc5bd89f32d97db16a16"
+    },
+    {
+      "bytes": 1605738,
+      "path": "data/passive-clicks-25m-surface-true-spectrogram.npz",
+      "sha256": "81c0e4a79b25378221f05bf96fb6d0643a5bcf7f0c0037c126d80b80d9394297"
+    },
+    {
+      "bytes": 127126,
+      "path": "data/passive-clicks-25m-surface-true.csv",
+      "sha256": "520f62d49dec430ff49bd063efc0cc80bd2d58511a2ab9ffa2bb0eef75966752"
+    },
+    {
+      "bytes": 12046,
+      "path": "data/passive-clicks-25m-surface-true.json",
+      "sha256": "b7876caec5f448469feb5c17aad8f6bf7ffd973d8aad733316988a0677d52f8e"
+    },
+    {
+      "bytes": 1917602,
+      "path": "data/passive-clicks-25m-surface-true.npz",
+      "sha256": "d452bda573b1bba4e06b60a1fd747a12cc4cedf8c0b725c6d19995c13128670c"
+    },
+    {
+      "bytes": 218286,
+      "path": "data/passive-clicks-400m-surface-false-received-same-gain.wav",
+      "sha256": "77ddc863f982a7de0f82991cefc830a9b8fb32708766cc83a81bac40c4415cab"
+    },
+    {
+      "bytes": 218286,
+      "path": "data/passive-clicks-400m-surface-false-source-same-gain.wav",
+      "sha256": "2a6c7f2429ac43b65ca50fa8ab93434826c54934d65c309d91b982e24d7fcf58"
+    },
+    {
+      "bytes": 1599419,
+      "path": "data/passive-clicks-400m-surface-false-spectrogram.npz",
+      "sha256": "50236ca3b9e6a73e1885ece6de21a7c9ea1e5e70e0d9cfe1326b82b7cf5faec9"
+    },
+    {
+      "bytes": 127175,
+      "path": "data/passive-clicks-400m-surface-false.csv",
+      "sha256": "7ff7b97a5cefb0bc03e8e8cd33613fe0e3ef52d90a30f072727cd4dd7119d854"
+    },
+    {
+      "bytes": 11897,
+      "path": "data/passive-clicks-400m-surface-false.json",
+      "sha256": "9365c7cda3be7a6cb1e365de44615c504dd254b5662c5f819dfb75f02998840e"
+    },
+    {
+      "bytes": 2088340,
+      "path": "data/passive-clicks-400m-surface-false.npz",
+      "sha256": "94e4e6a1a36319b2a0192b02ec37de0498a6e9609f59ec3f5d22860dcb5f2a32"
+    },
+    {
+      "bytes": 218316,
+      "path": "data/passive-clicks-400m-surface-true-received-same-gain.wav",
+      "sha256": "1ce20de7a5e603bc56203d491052a3a108dca6cc45bac908aed6199757241b56"
+    },
+    {
+      "bytes": 218316,
+      "path": "data/passive-clicks-400m-surface-true-source-same-gain.wav",
+      "sha256": "89415fe74aee7330bd3d34aa77df213f537f03e1b90d415e8abe91887e28c333"
+    },
+    {
+      "bytes": 1599515,
+      "path": "data/passive-clicks-400m-surface-true-spectrogram.npz",
+      "sha256": "c43a4e1a1b3d5303492c2d2ab7f94ad4d51bbba4c4d43fc55ae22d60d32eebe1"
+    },
+    {
+      "bytes": 127128,
+      "path": "data/passive-clicks-400m-surface-true.csv",
+      "sha256": "427483be0392399319cb358999545024d6fed639cae91964d2c51a6b680fb5a2"
+    },
+    {
+      "bytes": 12054,
+      "path": "data/passive-clicks-400m-surface-true.json",
+      "sha256": "585291fcd2a1059718832a8513fe961d7c19dd7d88e64df1a64829a3c13ba96c"
+    },
+    {
+      "bytes": 2091734,
+      "path": "data/passive-clicks-400m-surface-true.npz",
+      "sha256": "61d787080b9548b48f8be11a8513df0d56b0258f293502b2a85a121e3343337d"
+    },
+    {
+      "bytes": 899,
+      "path": "data/passive-comparison.csv",
+      "sha256": "e88c692400cea286388657e6e63be9e4875849b996e1ccd3bae0dac1b97a4036"
+    },
+    {
+      "bytes": 199090,
+      "path": "data/passive-vessel-100m-surface-false-received-same-gain.wav",
+      "sha256": "c427fd385dec31a6fab06b5bafabf16e4455928d9c10780470788007e952c3f5"
+    },
+    {
+      "bytes": 199090,
+      "path": "data/passive-vessel-100m-surface-false-source-same-gain.wav",
+      "sha256": "e74693102cf308c78f1b6f7b717296bc3aa8b6ed95d2520e63aff16250b4b184"
+    },
+    {
+      "bytes": 2926641,
+      "path": "data/passive-vessel-100m-surface-false-spectrogram.npz",
+      "sha256": "758bd5c9f9d64bdfbc3dbb659cd80196b5cc8cc0f5e596b33f92d3d74cbab95d"
+    },
+    {
+      "bytes": 127126,
+      "path": "data/passive-vessel-100m-surface-false.csv",
+      "sha256": "d835a36017626bd5fdd6e59258566b7f57a43eeb1476ab6ad5f84418a4375881"
+    },
+    {
+      "bytes": 11881,
+      "path": "data/passive-vessel-100m-surface-false.json",
+      "sha256": "6d27823721fcc3bd2cb53e0365a871e4096d3594532243c228d2fdffa807ff4d"
+    },
+    {
+      "bytes": 4042303,
+      "path": "data/passive-vessel-100m-surface-false.npz",
+      "sha256": "75aa83ba5bea61c68ffdf32d3d01cce41b4cebd69707c4518b440070bd9814e1"
+    },
+    {
+      "bytes": 199212,
+      "path": "data/passive-vessel-100m-surface-true-received-same-gain.wav",
+      "sha256": "92cb519edd46afbfb33ff9fee69f29736c7258980f9f32ab5762be6d894555c4"
+    },
+    {
+      "bytes": 199212,
+      "path": "data/passive-vessel-100m-surface-true-source-same-gain.wav",
+      "sha256": "81fa06d63c6721cc5c274a77f13351a8673b4b4bb5dbb2af201c251bcc9f17f7"
+    },
+    {
+      "bytes": 2927639,
+      "path": "data/passive-vessel-100m-surface-true-spectrogram.npz",
+      "sha256": "463266eb6abc872fa9ea508c49a9c95f5f7ef91f70a1265c8881f82ef77e4a87"
+    },
+    {
+      "bytes": 127168,
+      "path": "data/passive-vessel-100m-surface-true.csv",
+      "sha256": "6a894c09e05ba5a6f3060597f8739c0a757bbe9a348888e1d5d96ab7692f466d"
+    },
+    {
+      "bytes": 12041,
+      "path": "data/passive-vessel-100m-surface-true.json",
+      "sha256": "2cfd20d5e0678e198371018a2db0548c382c21b13e2b86a75193648880717e20"
+    },
+    {
+      "bytes": 4045655,
+      "path": "data/passive-vessel-100m-surface-true.npz",
+      "sha256": "e5d144594f3fcad43866dcfafbf89d48b578923b763ae7d8c2a424a8369de4c2"
+    },
+    {
+      "bytes": 194306,
+      "path": "data/passive-vessel-25m-surface-false-received-same-gain.wav",
+      "sha256": "8865b4873c562a82b04f13663ed2b212a17eebd6ee3bb88a6935993689d0d64c"
+    },
+    {
+      "bytes": 194306,
+      "path": "data/passive-vessel-25m-surface-false-source-same-gain.wav",
+      "sha256": "5b57685e52664866445e098cd4f6da4a810bfcd623ba11a00a5b9f881ecd6e29"
+    },
+    {
+      "bytes": 2928514,
+      "path": "data/passive-vessel-25m-surface-false-spectrogram.npz",
+      "sha256": "e729df023d3bb33fc291ac53e2913d98238dbd9fd6231e6508381bd6afa8ed65"
+    },
+    {
+      "bytes": 127133,
+      "path": "data/passive-vessel-25m-surface-false.csv",
+      "sha256": "cffcae005a6c331eec6c6682f334e8d3a25695965613b03aeb2f774b7ae2e1d9"
+    },
+    {
+      "bytes": 11877,
+      "path": "data/passive-vessel-25m-surface-false.json",
+      "sha256": "e3df9d9522b3964dd83edb416e590f55b621b21ed6c63cb54961e4aa5d31a52b"
+    },
+    {
+      "bytes": 3999070,
+      "path": "data/passive-vessel-25m-surface-false.npz",
+      "sha256": "e57b508051ad855d4bcc21cb5888c6e0759c1ed1651b4259b50cf8f144b3f711"
+    },
+    {
+      "bytes": 194734,
+      "path": "data/passive-vessel-25m-surface-true-received-same-gain.wav",
+      "sha256": "b25b23a4689e7483716b23995cc06a4dde4aca3a8ac66c51d3661695d54f85f5"
+    },
+    {
+      "bytes": 194734,
+      "path": "data/passive-vessel-25m-surface-true-source-same-gain.wav",
+      "sha256": "7586e4de41d5f5a2d6bf89ade2e9491d0a56cbc1e99a1b8c4327c4b0260281ce"
+    },
+    {
+      "bytes": 2930341,
+      "path": "data/passive-vessel-25m-surface-true-spectrogram.npz",
+      "sha256": "da34c7f4434301945ae4736dcb40f165a96a2ca393b2eba820572c747ea93893"
+    },
+    {
+      "bytes": 127155,
+      "path": "data/passive-vessel-25m-surface-true.csv",
+      "sha256": "dd05e27034ee844157458cc7181cc5f2501754036eeb2d478ad4e1e18ea7b6a9"
+    },
+    {
+      "bytes": 12045,
+      "path": "data/passive-vessel-25m-surface-true.json",
+      "sha256": "b5d4716f835d26e8c20f7a4c4dc359101c6f5102afcf233a38c65aea6b3df22b"
+    },
+    {
+      "bytes": 4005408,
+      "path": "data/passive-vessel-25m-surface-true.npz",
+      "sha256": "22f3d699dcab9caf1495f767f53d94ef07724ac6ccc0bd363a43aab9376a71bc"
+    },
+    {
+      "bytes": 218286,
+      "path": "data/passive-vessel-400m-surface-false-received-same-gain.wav",
+      "sha256": "45fd5c1da131b3d02425964bb5fa6ffeedf771b36d0b84ab8cbb7fd8979e755c"
+    },
+    {
+      "bytes": 218286,
+      "path": "data/passive-vessel-400m-surface-false-source-same-gain.wav",
+      "sha256": "197d9b1ea18ebe9c1d931d7daa5b6d89c9385e307b7a7917f144871ccac787b4"
+    },
+    {
+      "bytes": 2922482,
+      "path": "data/passive-vessel-400m-surface-false-spectrogram.npz",
+      "sha256": "1aad5e50886a62924b03dd3aa54b6d9126b032d0ee5ff8ad57e342ae4f847171"
+    },
+    {
+      "bytes": 127180,
+      "path": "data/passive-vessel-400m-surface-false.csv",
+      "sha256": "7ce857e318a59dbd77a09adb2c711b2ab37d01f0cec227be17f51d332332fc08"
+    },
+    {
+      "bytes": 11894,
+      "path": "data/passive-vessel-400m-surface-false.json",
+      "sha256": "e101b7e879e039e8878698738387bf82d50190114541d7eb80060f644c2af3c3"
+    },
+    {
+      "bytes": 4217135,
+      "path": "data/passive-vessel-400m-surface-false.npz",
+      "sha256": "cd81b40ac9b5ba4159ec6ecb58d5127abb5cbf96b2d2696c8cfd8da69b8324e9"
+    },
+    {
+      "bytes": 218316,
+      "path": "data/passive-vessel-400m-surface-true-received-same-gain.wav",
+      "sha256": "e6401849d663a84fce829463cb17b5d5f71383bb71264e363ee826cc175a389b"
+    },
+    {
+      "bytes": 218316,
+      "path": "data/passive-vessel-400m-surface-true-source-same-gain.wav",
+      "sha256": "ff247e7906dec484fcac19ad0ae96a5022349da8cf716e6f0052b9a29070f6b8"
+    },
+    {
+      "bytes": 2923426,
+      "path": "data/passive-vessel-400m-surface-true-spectrogram.npz",
+      "sha256": "0946a9806d34c82fc1c609b03b9f4e678a3fa3d18749ed73593b89d952688522"
+    },
+    {
+      "bytes": 127149,
+      "path": "data/passive-vessel-400m-surface-true.csv",
+      "sha256": "5d033c86ef04d5224dc84c6daade79eb9875594be45c8b57543aee5ec62c5762"
+    },
+    {
+      "bytes": 12056,
+      "path": "data/passive-vessel-400m-surface-true.json",
+      "sha256": "378fa12131944fc9a1c3a0391242be0aaf4b7243859c5a4ffa715bddf52f85f1"
+    },
+    {
+      "bytes": 4219909,
+      "path": "data/passive-vessel-400m-surface-true.npz",
+      "sha256": "b481deca0f998db1351744e8c3291dff71156e5e24a31f9ea03da19e67c67cf1"
+    },
+    {
+      "bytes": 199090,
+      "path": "data/passive-whistle-100m-surface-false-received-same-gain.wav",
+      "sha256": "4130f38e8753c756af65a57e766c5ab3eb136e753efe87e08bba0e1db073480e"
+    },
+    {
+      "bytes": 199090,
+      "path": "data/passive-whistle-100m-surface-false-source-same-gain.wav",
+      "sha256": "ddbdec4e61c28a8aff82abc02bb228d82690be53ae18e88a49a1c57b14593154"
+    },
+    {
+      "bytes": 2932081,
+      "path": "data/passive-whistle-100m-surface-false-spectrogram.npz",
+      "sha256": "3f78c36e3d2db983374cf6cd4fb85cc1540b440ab190acb907cc83fd2a14eb58"
+    },
+    {
+      "bytes": 127127,
+      "path": "data/passive-whistle-100m-surface-false.csv",
+      "sha256": "16e0551316cf5bb375d144a4482c53ed578e6f2df92372c3686c22edb6e6c287"
+    },
+    {
+      "bytes": 11869,
+      "path": "data/passive-whistle-100m-surface-false.json",
+      "sha256": "4d0f2b9aacf16bae43b32675352ab80641d8403f4cfe671378e253f9485eb99e"
+    },
+    {
+      "bytes": 4028598,
+      "path": "data/passive-whistle-100m-surface-false.npz",
+      "sha256": "bca9de71c162bb709c321ba219605bf64fde403dc8d675944c01560468e3bf37"
+    },
+    {
+      "bytes": 199212,
+      "path": "data/passive-whistle-100m-surface-true-received-same-gain.wav",
+      "sha256": "372483b1cef353ace3d2174cf254ec22884803e16d9169310384b28154623c35"
+    },
+    {
+      "bytes": 199212,
+      "path": "data/passive-whistle-100m-surface-true-source-same-gain.wav",
+      "sha256": "cc0ca5a6f4e2e9e4460bef4ae1aa09e9d452c1328f468e9d178400c975b7cfbb"
+    },
+    {
+      "bytes": 2932962,
+      "path": "data/passive-whistle-100m-surface-true-spectrogram.npz",
+      "sha256": "ae081ed9c4e7c75b3cadc9317fb761964e0e9b110768b6f595d720b4812cc6ea"
+    },
+    {
+      "bytes": 127123,
+      "path": "data/passive-whistle-100m-surface-true.csv",
+      "sha256": "7621c3bb345a2ad255276d79535507bc0397c3efc3a4cfa5cb5bc2086195086c"
+    },
+    {
+      "bytes": 12028,
+      "path": "data/passive-whistle-100m-surface-true.json",
+      "sha256": "1acf9f0871471649dbea6642c8c5aa06f661927cd69bb04a66ce7f4948a23224"
+    },
+    {
+      "bytes": 4034191,
+      "path": "data/passive-whistle-100m-surface-true.npz",
+      "sha256": "b0ffb2cd6d071ad17015b8fbd1dba696a039113934f417d81bafbff47f69a2c7"
+    },
+    {
+      "bytes": 194306,
+      "path": "data/passive-whistle-25m-surface-false-received-same-gain.wav",
+      "sha256": "01292f684eb9de9de08faea4bfb7d053ab0015ab86479fba0aad6f5bec2c33af"
+    },
+    {
+      "bytes": 194306,
+      "path": "data/passive-whistle-25m-surface-false-source-same-gain.wav",
+      "sha256": "2d028c63be4a0e63c8ea81334601f4a0f186df988e0b6b7dd44158c3b2b3b41e"
+    },
+    {
+      "bytes": 2935983,
+      "path": "data/passive-whistle-25m-surface-false-spectrogram.npz",
+      "sha256": "a5f6d965f7b84e29f6c0521a37ec4a56efb3b5e51fa85febee51abdb2ec5a995"
+    },
+    {
+      "bytes": 127152,
+      "path": "data/passive-whistle-25m-surface-false.csv",
+      "sha256": "cad016496b0155ee466c5de81311029ebc83c0939ea1c71f286bd23bd3741595"
+    },
+    {
+      "bytes": 11865,
+      "path": "data/passive-whistle-25m-surface-false.json",
+      "sha256": "a747945ff90d8fbbfe3d70ee965c29ce00a28319bc9d3fe0bfc3e800848d46cf"
+    },
+    {
+      "bytes": 3983643,
+      "path": "data/passive-whistle-25m-surface-false.npz",
+      "sha256": "b20d6dd3508a41a69e2055fc506380a0c286fe8f81b44ded25e1b7684b5984fc"
+    },
+    {
+      "bytes": 194734,
+      "path": "data/passive-whistle-25m-surface-true-received-same-gain.wav",
+      "sha256": "afee15f4f3994a427185d4a1033469064baa9843d62a3fb8f7c1d498d97f6594"
+    },
+    {
+      "bytes": 194734,
+      "path": "data/passive-whistle-25m-surface-true-source-same-gain.wav",
+      "sha256": "d552f51f656219bf10d273d362c527746456f972eb555eaaa3d9e0fa901a482d"
+    },
+    {
+      "bytes": 2938913,
+      "path": "data/passive-whistle-25m-surface-true-spectrogram.npz",
+      "sha256": "a0e94becc4003cf8906069b31c679ee451988420bd7f48f679762d952eac6758"
+    },
+    {
+      "bytes": 127154,
+      "path": "data/passive-whistle-25m-surface-true.csv",
+      "sha256": "4daec3e3427efcd54f447ad07fa7ba8cf82018ba3cc84c7b407d4728326856e8"
+    },
+    {
+      "bytes": 12033,
+      "path": "data/passive-whistle-25m-surface-true.json",
+      "sha256": "c303f593cc1021e992d9cd677cc74245afb7867af10a7648842b4c068030a6e7"
+    },
+    {
+      "bytes": 3999140,
+      "path": "data/passive-whistle-25m-surface-true.npz",
+      "sha256": "0f9a3667104158234011010e0cd489f1c724929749ef3e778918a0e4afc7dde3"
+    },
+    {
+      "bytes": 218286,
+      "path": "data/passive-whistle-400m-surface-false-received-same-gain.wav",
+      "sha256": "a23da3f5c50984e2f278fc19aaf9874ede3908c483132cfdde7efa276696797b"
+    },
+    {
+      "bytes": 218286,
+      "path": "data/passive-whistle-400m-surface-false-source-same-gain.wav",
+      "sha256": "f1f9d9d0429bc8beb32e7d8f149dda71dd9e7accf283963df5b2c952e7bfebee"
+    },
+    {
+      "bytes": 2930654,
+      "path": "data/passive-whistle-400m-surface-false-spectrogram.npz",
+      "sha256": "5e7f523077679e958bf44577b109a985bf0b9f0b7e252ab73b0bd8a9ac49f0d3"
+    },
+    {
+      "bytes": 127121,
+      "path": "data/passive-whistle-400m-surface-false.csv",
+      "sha256": "fb3fd777e16fc39adef99d78018dca20b44c32025b503f6b312713a8cef9d957"
+    },
+    {
+      "bytes": 11884,
+      "path": "data/passive-whistle-400m-surface-false.json",
+      "sha256": "8729b795045ff5381c6e4aa4acd04168f0671991e69b172938c4aa984cc4ae14"
+    },
+    {
+      "bytes": 4204151,
+      "path": "data/passive-whistle-400m-surface-false.npz",
+      "sha256": "3082ae52f30af7c9285a96546de19930e3b8d9569e4823761fbed538b3560248"
+    },
+    {
+      "bytes": 218316,
+      "path": "data/passive-whistle-400m-surface-true-received-same-gain.wav",
+      "sha256": "22f0c562917aab90f5ba5de98dd19ead353c77461eb6fcc6a5edabf2e0fa3a68"
+    },
+    {
+      "bytes": 218316,
+      "path": "data/passive-whistle-400m-surface-true-source-same-gain.wav",
+      "sha256": "8691ac60a6f2064c4a121ec239697389428f29f9d551eec74919a9894a9b2999"
+    },
+    {
+      "bytes": 2930785,
+      "path": "data/passive-whistle-400m-surface-true-spectrogram.npz",
+      "sha256": "c99b89571bd5695e010ef97af63a5b3551a72d1305baa5373fca0147f73b212d"
+    },
+    {
+      "bytes": 127162,
+      "path": "data/passive-whistle-400m-surface-true.csv",
+      "sha256": "bdabd1c2f9889e7c17071334beaf87f9c2ca31397ec60d49a7c6b249c4f22848"
+    },
+    {
+      "bytes": 12045,
+      "path": "data/passive-whistle-400m-surface-true.json",
+      "sha256": "ef579492a8fb0f747e80eeed364875cbdfdc446cab8dfb212aae92691a412727"
+    },
+    {
+      "bytes": 4205333,
+      "path": "data/passive-whistle-400m-surface-true.npz",
+      "sha256": "e78e62f1801560e1907a6da1e34fe07d7675a77b6dda69817a9cdbb1cface899"
+    },
+    {
+      "bytes": 15602,
+      "path": "data/plot-pack.json",
+      "sha256": "62bfbc84d03c20063642ece58877cd79261903a327ff1bb8536b49ef5e73aebe"
+    },
+    {
+      "bytes": 11135148,
+      "path": "data/selected-plates.pdf",
+      "sha256": "19efa9acb1f0a17fcd8441ed9acdb70809927805a858c160ae26f6f07049479c"
+    },
+    {
+      "bytes": 147402,
+      "path": "data/transfer.npz",
+      "sha256": "2d1f4490b9efb7e4119ceea56ec1fb2886a5dfd7c7479919821e59ebbb3397ec"
+    },
+    {
+      "bytes": 111546,
+      "path": "plots/active-150m-snr--18db-history.png",
+      "sha256": "a5fc308f81d2f1d9230e00941d4467d735b67cdd4b4aa899c9393a7f801c877c"
+    },
+    {
+      "bytes": 140342,
+      "path": "plots/active-150m-snr--18db-matched-filter.png",
+      "sha256": "e36c16bcb1f802bd2f714868b4509cfc110f73be90c2a479732365e286a14b46"
+    },
+    {
+      "bytes": 107038,
+      "path": "plots/active-150m-snr--6db-history.png",
+      "sha256": "3a29b571c4e5d10fe0bea33259bf2dc70ff374676d8d53db09b081df8d61eeec"
+    },
+    {
+      "bytes": 153052,
+      "path": "plots/active-150m-snr--6db-matched-filter.png",
+      "sha256": "98ca3a9e843e886bbcf538c5d6c3cdf64a8f5fc17a4fa3151eedf254fe5aedca"
+    },
+    {
+      "bytes": 106629,
+      "path": "plots/active-300m-snr--18db-history.png",
+      "sha256": "eaa272dc507a97abf0e44b5d27dc00ae66b303263f082f2c2b8769e321338de6"
+    },
+    {
+      "bytes": 137890,
+      "path": "plots/active-300m-snr--18db-matched-filter.png",
+      "sha256": "17f488d03a76d1c090c960536d58dd65a1e584382c074b755127ccf5c45a1e51"
+    },
+    {
+      "bytes": 106873,
+      "path": "plots/active-300m-snr--6db-history.png",
+      "sha256": "b881db1f18f6421bbeacefe0edcda64a5f275bd8bb300d90e0290bdea44ab630"
+    },
+    {
+      "bytes": 152033,
+      "path": "plots/active-300m-snr--6db-matched-filter.png",
+      "sha256": "4cd34a0815c4567f856a5766b684335217b3eee9d27687505060b2d02db8b4ff"
+    },
+    {
+      "bytes": 108820,
+      "path": "plots/active-75m-snr--18db-history.png",
+      "sha256": "abeacee0f05d6956478bdbe9258e0f935c6c8897cc8ef70b99dc54ca38f247e4"
+    },
+    {
+      "bytes": 135368,
+      "path": "plots/active-75m-snr--18db-matched-filter.png",
+      "sha256": "90acb4099544266b3415cedbc27efbba06fb1c770a47d547c7bfd897733eeb5d"
+    },
+    {
+      "bytes": 111090,
+      "path": "plots/active-75m-snr--6db-history.png",
+      "sha256": "42e22e233a13e879ec659c2f92f17c674e22fa9999300579dd3412235682da73"
+    },
+    {
+      "bytes": 149207,
+      "path": "plots/active-75m-snr--6db-matched-filter.png",
+      "sha256": "57d58e69c2f236182fa59fc2fa5c87a3b53df03c228a91011b8090d4c28c0d3e"
+    },
+    {
+      "bytes": 165712,
+      "path": "plots/gallery-active-range.png",
+      "sha256": "dec608b0581e44380616e5d479106fc73e7dd4bad3761cc6fff8d6903fe8f760"
+    },
+    {
+      "bytes": 124456,
+      "path": "plots/gallery-active-robustness.png",
+      "sha256": "16dba2de380640d58148b9c8c61d34024ce8b2177a319a4358bf0219307ca3d0"
+    },
+    {
+      "bytes": 342136,
+      "path": "plots/gallery-interference.png",
+      "sha256": "ee08a1e96ddf32ef558605c27ceed26fee1ef57b96b6c1fd0081793dd0439117"
+    },
+    {
+      "bytes": 201458,
+      "path": "plots/gallery-passive-range.png",
+      "sha256": "342bc705d7f476cae0f6d19ac95b4d618e34ab9ef7715aa19a03f3a5fc8fa92d"
+    },
+    {
+      "bytes": 165452,
+      "path": "plots/gallery-transfer.png",
+      "sha256": "3ea07dc242eef4be1a3ced85d65b6dac3109863ed773cb26e72c7c9d99424c3f"
+    },
+    {
+      "bytes": 148585,
+      "path": "plots/passive-clicks-100m-surface-false-psd.png",
+      "sha256": "167e5340567a112992a098a85fc5906f1e3a9217c7cab21c09051747597ffc8a"
+    },
+    {
+      "bytes": 342967,
+      "path": "plots/passive-clicks-100m-surface-false-spectrogram.png",
+      "sha256": "44fd2244a3f2cb5b91f1da1e59dbdeae72fdf51f42191dddd97b9026dc985ab4"
+    },
+    {
+      "bytes": 92267,
+      "path": "plots/passive-clicks-100m-surface-false-waveform.png",
+      "sha256": "8f4cfc99696db146674be295f38a3fb0d06d9ca366d3189d7d7487491f161f20"
+    },
+    {
+      "bytes": 161031,
+      "path": "plots/passive-clicks-100m-surface-true-psd.png",
+      "sha256": "a3a21fbe8953638e0d4dd7caa7da34f438310fb745a9c74404985c092240a45f"
+    },
+    {
+      "bytes": 343941,
+      "path": "plots/passive-clicks-100m-surface-true-spectrogram.png",
+      "sha256": "dd2c976a74400ace2447f9a75b0cda0552c3a8969c81d275fb3cd0642124eda3"
+    },
+    {
+      "bytes": 91066,
+      "path": "plots/passive-clicks-100m-surface-true-waveform.png",
+      "sha256": "7a915f8a5c66cb3a241d9f8e6fc2c30d30be9458debc2624319a50a069998fd5"
+    },
+    {
+      "bytes": 149956,
+      "path": "plots/passive-clicks-25m-surface-false-psd.png",
+      "sha256": "3077f91538b98214b883f6603204b34e552fa6da13375ab13f0d2ad061a03686"
+    },
+    {
+      "bytes": 343291,
+      "path": "plots/passive-clicks-25m-surface-false-spectrogram.png",
+      "sha256": "ee6415b10c9c217792aae1c68a2d2ce075484f3b3a6cbc48a0c21e38314315b1"
+    },
+    {
+      "bytes": 92261,
+      "path": "plots/passive-clicks-25m-surface-false-waveform.png",
+      "sha256": "6c75a1443414c73fa897faa3042b1968553d6e8932bf203fcc4754056f61b2bf"
+    },
+    {
+      "bytes": 170686,
+      "path": "plots/passive-clicks-25m-surface-true-psd.png",
+      "sha256": "a3762207f9aa951202b2ee73a4c5b4737cdac46ed7dc6021773a6c59ed70480b"
+    },
+    {
+      "bytes": 344337,
+      "path": "plots/passive-clicks-25m-surface-true-spectrogram.png",
+      "sha256": "cbbc9267268f7d11bbfb8193623f182d50bc7c287cd3fb7e9e47650db231e79b"
+    },
+    {
+      "bytes": 91225,
+      "path": "plots/passive-clicks-25m-surface-true-waveform.png",
+      "sha256": "1a603e51c0ed43172ad6a59467e15fd9038269eb951c35f3736f6dce0d10758d"
+    },
+    {
+      "bytes": 148305,
+      "path": "plots/passive-clicks-400m-surface-false-psd.png",
+      "sha256": "c8d2637ff0cc3ad39cd901ff05ff944efac698fd6a7b84bb0f41e64a0f4b1d9b"
+    },
+    {
+      "bytes": 342683,
+      "path": "plots/passive-clicks-400m-surface-false-spectrogram.png",
+      "sha256": "53eb3d4b8f17607a751f54a585cac57ff194318e0d62772fe85e378a5f285b0e"
+    },
+    {
+      "bytes": 91884,
+      "path": "plots/passive-clicks-400m-surface-false-waveform.png",
+      "sha256": "2fd7cebb29d3e8a3a323b2e026c8363dc508886b2c24bc5c6cb2a7de6803e325"
+    },
+    {
+      "bytes": 151819,
+      "path": "plots/passive-clicks-400m-surface-true-psd.png",
+      "sha256": "8a8c12377ba9289357bde34f3bc8f122c16ded04ca7eef8dbfaa21473a7da291"
+    },
+    {
+      "bytes": 342196,
+      "path": "plots/passive-clicks-400m-surface-true-spectrogram.png",
+      "sha256": "99976bd202edb3c7a7908dc946ec63697c5df775a72c232e94d90d1fbfa9bb1e"
+    },
+    {
+      "bytes": 91213,
+      "path": "plots/passive-clicks-400m-surface-true-waveform.png",
+      "sha256": "c0387d6514e6f2bf3514444dd8615582d7beaadb1c6b65ffb5c93487082e65c4"
+    },
+    {
+      "bytes": 154436,
+      "path": "plots/passive-vessel-100m-surface-false-psd.png",
+      "sha256": "702f3c8234696831dba52242413c3bcaa6b5839b1eea3ab2766300afa4aa43be"
+    },
+    {
+      "bytes": 579551,
+      "path": "plots/passive-vessel-100m-surface-false-spectrogram.png",
+      "sha256": "c058a03ce1eee35e9a400942a99b5db42f1d139706658e48c76d5d06c5d18c83"
+    },
+    {
+      "bytes": 115386,
+      "path": "plots/passive-vessel-100m-surface-false-waveform.png",
+      "sha256": "93684955a9a245cde84fcabf8d3079bd19ca583367f2ed759b705e6c8ff557f6"
+    },
+    {
+      "bytes": 166129,
+      "path": "plots/passive-vessel-100m-surface-true-psd.png",
+      "sha256": "ccb12fa02513f68c2d810479047b4967a0e29f651b64f9a9005188a75def2de4"
+    },
+    {
+      "bytes": 575172,
+      "path": "plots/passive-vessel-100m-surface-true-spectrogram.png",
+      "sha256": "816fad0e24007f1d7d5abc3bd362be4e21cf0cf7832876d99c676e5490767470"
+    },
+    {
+      "bytes": 114093,
+      "path": "plots/passive-vessel-100m-surface-true-waveform.png",
+      "sha256": "aef24232d58bf8ebbccddf4b36764f5147276418394543fffc9ef39b42790d5a"
+    },
+    {
+      "bytes": 153652,
+      "path": "plots/passive-vessel-25m-surface-false-psd.png",
+      "sha256": "fe0663244b8c2a82bd4943fd435aacbf76f8e361a0ccaf9ddea3fa03aec3a556"
+    },
+    {
+      "bytes": 581417,
+      "path": "plots/passive-vessel-25m-surface-false-spectrogram.png",
+      "sha256": "331afbfbbaacf33a32be59dcce539a3ff38fa8c3f5ee07d5120c507988546f68"
+    },
+    {
+      "bytes": 114142,
+      "path": "plots/passive-vessel-25m-surface-false-waveform.png",
+      "sha256": "1742cba4eb49f16191568b70b18c62c6fffe432e92711556c67b280fbc429b95"
+    },
+    {
+      "bytes": 175689,
+      "path": "plots/passive-vessel-25m-surface-true-psd.png",
+      "sha256": "fe57d4263cd9a76f0716c246f772d4d5817a55021164119555cde32f73c16f68"
+    },
+    {
+      "bytes": 577810,
+      "path": "plots/passive-vessel-25m-surface-true-spectrogram.png",
+      "sha256": "cbc37ea13df31d03f9dea50f71c999684c68aa986afe627b70411147cd308f25"
+    },
+    {
+      "bytes": 108226,
+      "path": "plots/passive-vessel-25m-surface-true-waveform.png",
+      "sha256": "4519e1845cf1d280d11d97b52bc5af3d379192cc3a9fdf421e88a774e6518553"
+    },
+    {
+      "bytes": 155483,
+      "path": "plots/passive-vessel-400m-surface-false-psd.png",
+      "sha256": "9b1ee7d3b1d5d123f7afc4961ba4297559839b3f6b65c352080fda28c6639486"
+    },
+    {
+      "bytes": 588691,
+      "path": "plots/passive-vessel-400m-surface-false-spectrogram.png",
+      "sha256": "0dca7dfec95605ddf7b10717159aaa18685cf3491b1a289e6e6900a056919d30"
+    },
+    {
+      "bytes": 116097,
+      "path": "plots/passive-vessel-400m-surface-false-waveform.png",
+      "sha256": "aa8c85f2bb2c09c2aabe345cc008fc5b552060c70f43e446c1616c5495794251"
+    },
+    {
+      "bytes": 157273,
+      "path": "plots/passive-vessel-400m-surface-true-psd.png",
+      "sha256": "a2deb94ce9402632fc0603f5b7e3b9149cdf883855b7583431e92b4d20ba7f3d"
+    },
+    {
+      "bytes": 586568,
+      "path": "plots/passive-vessel-400m-surface-true-spectrogram.png",
+      "sha256": "892b15f2db249407b51533b6abc26fa0603b3cfa6d11ac0d43b60f37b9f1269f"
+    },
+    {
+      "bytes": 119120,
+      "path": "plots/passive-vessel-400m-surface-true-waveform.png",
+      "sha256": "76f37e8796fcad823e2fad89318b1805b6cb9cfa56637a2e1e0a486505a9928b"
+    },
+    {
+      "bytes": 155179,
+      "path": "plots/passive-whistle-100m-surface-false-psd.png",
+      "sha256": "aec889ac7c64e695c291cbd5349fefc01bf5d11f27a0a1636c6ebb89a523be01"
+    },
+    {
+      "bytes": 438929,
+      "path": "plots/passive-whistle-100m-surface-false-spectrogram.png",
+      "sha256": "20502f0b7956cca644f55de946b7d6e1b4106c16cca955e802436e486a598d46"
+    },
+    {
+      "bytes": 105630,
+      "path": "plots/passive-whistle-100m-surface-false-waveform.png",
+      "sha256": "8b0a60f5e0e8b7d9572d86ac8d6ddbf579d18e77d3362f1a08c4203dc1a056b2"
+    },
+    {
+      "bytes": 154458,
+      "path": "plots/passive-whistle-100m-surface-true-psd.png",
+      "sha256": "50ecf0f152affd1e1b6f74b038a2164eafbdd24d894114e1aa2618767882bf6f"
+    },
+    {
+      "bytes": 438132,
+      "path": "plots/passive-whistle-100m-surface-true-spectrogram.png",
+      "sha256": "2ac743bbd06f5a4564e121498459ae2539ed2999a61607d121d38e3d093bbf90"
+    },
+    {
+      "bytes": 112174,
+      "path": "plots/passive-whistle-100m-surface-true-waveform.png",
+      "sha256": "05d9d08887ce5305122584dc4cd61d1e637c6c3e2b6d07f97105deb96ba40684"
+    },
+    {
+      "bytes": 160562,
+      "path": "plots/passive-whistle-25m-surface-false-psd.png",
+      "sha256": "9ffbc38cb8290832708e08a0dfd67c174dce7b417d143c1a2ad1694fe0ab9bfa"
+    },
+    {
+      "bytes": 437999,
+      "path": "plots/passive-whistle-25m-surface-false-spectrogram.png",
+      "sha256": "d623ca3f76cb06ec060e340abda4ce7108b09c866cbd058e3534b63ca174e0a7"
+    },
+    {
+      "bytes": 98674,
+      "path": "plots/passive-whistle-25m-surface-false-waveform.png",
+      "sha256": "e661a1106b17d969d336d237903bbd3f4720bb19c0c10da401927ca97d28ea77"
+    },
+    {
+      "bytes": 162070,
+      "path": "plots/passive-whistle-25m-surface-true-psd.png",
+      "sha256": "69cebedf5641d861a000d3e9c07ae79f399529b142ef8b4d462774c0238411f4"
+    },
+    {
+      "bytes": 437806,
+      "path": "plots/passive-whistle-25m-surface-true-spectrogram.png",
+      "sha256": "f81551b34374bf79cd2cbc55c2c13ac0a947cdc6749df4ca69d7e63dd720f94e"
+    },
+    {
+      "bytes": 107088,
+      "path": "plots/passive-whistle-25m-surface-true-waveform.png",
+      "sha256": "884bdec18befeb9854e48ab40ea26809ef386cde65737ed168d5203004d94921"
+    },
+    {
+      "bytes": 153471,
+      "path": "plots/passive-whistle-400m-surface-false-psd.png",
+      "sha256": "68d1abd8632cd47f62b694562227470659efdd536226dd4891745959b6c188dc"
+    },
+    {
+      "bytes": 440248,
+      "path": "plots/passive-whistle-400m-surface-false-spectrogram.png",
+      "sha256": "d348ca4f3f4b6381df2b116b19cf29673da219a2ade2b822c771b5a02a6c841f"
+    },
+    {
+      "bytes": 104580,
+      "path": "plots/passive-whistle-400m-surface-false-waveform.png",
+      "sha256": "eb27ef6d9afea4bf67015d5c63166a0abc9ea9b7e39738bbd5e7039d6f7b2af6"
+    },
+    {
+      "bytes": 152554,
+      "path": "plots/passive-whistle-400m-surface-true-psd.png",
+      "sha256": "a4fbcdc69df20be1eced0c90790740d2d199e73664c88f32f4774d32e5810dda"
+    },
+    {
+      "bytes": 439055,
+      "path": "plots/passive-whistle-400m-surface-true-spectrogram.png",
+      "sha256": "013eb1094b8c041ef07bee763bace1998e5de948446488d89e78e3ed611b4970"
+    },
+    {
+      "bytes": 113725,
+      "path": "plots/passive-whistle-400m-surface-true-waveform.png",
+      "sha256": "777acc346493e5e08663f78cd755c479f012d9e8b7b832730aceb2b33ccf91aa"
+    }
+  ],
+  "versions": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

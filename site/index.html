@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="An open underwater-acoustics field guide: follow a sound from source through water to a receiver, explore computed passive and active experiments, and inspect their assumptions and evidence.">
+  <title>OceanSignatures — A field guide to underwater sound</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the field guide</a>
+  <header class="masthead">
+    <a class="wordmark" href="#top" aria-label="OceanSignatures, top of page"><span class="wordmark-symbol" aria-hidden="true">≈</span> Ocean<span>Signatures</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#learn">Learn</a><a href="#passive">Listen</a><a href="#active">Locate</a><a href="#evidence">Evidence</a>
+    </nav>
+    <a class="repository-link" href="https://github.com/nishchayoxford/oceansignatures" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span><span class="sr-only"> (GitHub, new tab)</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">An open underwater-acoustics field guide</p>
+        <h1 id="hero-title">What survives<br>the <em>journey?</em></h1>
+        <p class="hero-deck">A sound is not a signature in isolation. The water changes it. The receiver changes it again.</p>
+        <p class="hero-context">Follow the chain from source to observation, then ask what the evidence actually lets you infer.</p>
+        <a class="button button-light" href="#learn">Start with the sound <span aria-hidden="true">↓</span></a>
+        <p class="hero-note">Synthetic experiments. Explicit assumptions. Reproducible results.</p>
+      </div>
+      <figure class="ocean-plate">
+        <div class="plate-heading"><span>Geometry / passive listening</span><span aria-hidden="true">01</span></div>
+        <svg viewBox="0 0 560 350" role="img" aria-labelledby="geometry-title geometry-desc">
+          <title id="geometry-title">Two routes from one source to one receiver</title>
+          <desc id="geometry-desc">An underwater source sends sound directly to a deeper receiver and by a longer path reflecting at the water surface. Horizontal separation R differs from the slant path lengths. This is a schematic, not a computed field.</desc>
+          <defs><marker id="arrow-teal" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 8 4 L 0 8 Z" fill="#85d6c7"/></marker></defs>
+          <g class="diagram-grid" stroke="#29464b" stroke-width="1"><path d="M40 60H520 M40 120H520 M40 180H520 M40 240H520 M40 300H520 M80 40V310 M180 40V310 M280 40V310 M380 40V310 M480 40V310"/></g>
+          <path d="M40 85H520" stroke="#cbd9d6" stroke-width="1.5"/>
+          <text x="40" y="64" class="diagram-label">pressure-release surface · −1 reflection</text>
+          <path d="M100 190L456 250" fill="none" stroke="#85d6c7" stroke-width="2.5" marker-end="url(#arrow-teal)"/>
+          <path d="M100 190L252 85L456 250" fill="none" stroke="#cbd9d6" stroke-width="1.5" stroke-dasharray="7 6"/>
+          <circle cx="100" cy="190" r="7" fill="#85d6c7"/><circle cx="460" cy="250" r="7" fill="#0e252b" stroke="#85d6c7" stroke-width="2"/>
+          <text x="75" y="220" class="diagram-label">source</text><text x="404" y="280" class="diagram-label">receiver</text>
+          <text x="232" y="200" class="diagram-accent">direct path</text><text x="325" y="132" class="diagram-label">surface path</text>
+          <path d="M100 300V320 M460 300V320 M100 312H460" fill="none" stroke="#859e9e"/>
+          <text x="188" y="340" class="diagram-label">R · horizontal separation</text>
+        </svg>
+        <figcaption>One source. Two arrivals. Their relative delay can reinforce some frequencies and cancel others.<span>Schematic only · not to scale · no seabed</span></figcaption>
+      </figure>
+      <div class="hero-bottom"><span>Source → channel → receiver</span><span>Listen first. Interpret second.</span></div>
+    </section>
+
+    <div class="catalog-bar" id="catalog-state" data-state="loading">
+      <p id="catalog-status" role="status" aria-live="polite">Loading computed experiments…</p>
+      <button id="catalog-retry" type="button" disabled>Reload catalogue</button>
+    </div>
+    <noscript><div class="noscript-note">The field guide works without JavaScript. Experiment selection needs JavaScript; no computed plots have been loaded. You can inspect the <a href="./data/catalog.json">catalogue JSON</a> directly.</div></noscript>
+
+    <section class="section introduction" id="learn" aria-labelledby="learn-title">
+      <div class="section-heading"><p class="eyebrow">01 / Follow the physical chain</p><h2 id="learn-title">The ocean is part<br>of the instrument.</h2></div>
+      <div class="intro-body">
+        <p class="lead">A recorded spectrum is the result of several mechanisms, not a label attached to an animal or a machine.</p>
+        <ol class="signal-chain">
+          <li><span class="chain-symbol" aria-hidden="true">s(t)</span><div><h3>Source</h3><p>A pressure history with a chosen amplitude, bandwidth and time structure. Here, the source library is synthetic.</p></div></li>
+          <li><span class="chain-symbol" aria-hidden="true">h(t)</span><div><h3>Channel</h3><p>Spreading changes amplitude; travel time changes arrival; a surface-reflected copy changes interference.</p></div></li>
+          <li><span class="chain-symbol" aria-hidden="true">y(t)</span><div><h3>Receiver</h3><p>An assumed response and noise alter what remains measurable. A generic model is not a calibrated hydrophone.</p></div></li>
+        </ol>
+        <div class="learning-route"><h3>A first pass through the lab</h3><ol><li><a href="#passive">Listen:</a> hold the source fixed and change only range. Then add the surface.</li><li><a href="#spectra">Read:</a> distinguish waveform, spectrum and spectrogram before comparing levels.</li><li><a href="#active">Locate:</a> correlate a known pulse with its return, then inspect the inferred range.</li><li><a href="#evidence">Question:</a> separate a verified calculation from a validated ocean model.</li></ol></div>
+      </div>
+    </section>
+
+    <section class="section experiment" id="passive" aria-labelledby="passive-title">
+      <header class="section-heading"><p class="eyebrow">02 / Passive acoustics</p><h2 id="passive-title">Listen without<br>transmitting.</h2><p class="section-deck">The question is not just “what made this sound?” It is “what did the journey leave behind?”</p></header>
+      <div class="experiment-layout">
+        <aside class="lesson-rail" aria-label="Passive lesson">
+          <h3>Change one thing.</h3>
+          <p>Start with the whistle-like source and the direct path. Compare the available ranges without changing the source. Inspect received pressure before looking at the spectrum.</p>
+          <p>Now include the surface reflection at the same range. A spectral notch need not mean that the source stopped producing that frequency: the paths can cancel at the receiver.</p>
+          <p class="reading-cue"><span>Look for</span>Arrival time in the waveform. Relative level in the PSD. Frequency-dependent interference when the reflected path is present.</p>
+          <details class="lesson-detail"><summary>What is in the source library?</summary>
+            <dl class="definitions"><div><dt>Whistle-like</dt><dd>A tonal, time-varying signature for following frequency through time. It is not a species model.</dd></div><div><dt>Click-like</dt><dd>Brief pulses spread energy across a band. A waveform resolves timing; a spectrogram shows repeated events.</dd></div><div><dt>Vessel-like</dt><dd>A phenomenological mixture of tonal and broadband content. No machinery identification or validated cavitation model is implied.</dd></div></dl>
+            <p>Source level, duration, seed and spectral construction are model parameters, not inferred field measurements. Exact executed values belong to each case’s downloaded metadata.</p>
+            <p><strong>Amplitude convention:</strong> taper the finite emission record, then scale its RMS at the nominal 1 m reference. Quiet intervals count in a click train. Equal source RMS does not mean equal peak pressure, equal audibility or equal received SNR.</p>
+            <dl class="definitions"><div><dt>Sampling / Hz</dt><dd>Sample rate sets the Nyquist limit; segment length and window set spectral-estimator resolution.</dd></div><div><dt>Duration / s</dt><dd>The unpadded emission duration is distinct from the longer propagated and filtered record.</dd></div><div><dt>Seed / integer</dt><dd>Controls the declared stochastic construction. Repeatability is not evidence of a realistic population of sources.</dd></div></dl>
+            <a class="text-link" href="https://github.com/nishchayoxford/oceansignatures/blob/main/docs/PASSIVE.md" target="_blank" rel="noopener noreferrer">Exact source recipes &amp; numerics<span class="sr-only"> (new tab)</span> ↗</a>
+          </details>
+          <details class="lesson-detail"><summary>Geometry &amp; model limits</summary>
+            <p>Range is <strong>horizontal separation</strong>, not slant distance. The source and receiver are stationary, at 8 m and 12 m depth. Depth is positive downward. The homogeneous-water sound speed is 1500 m/s.</p>
+            <p>Pressure scales as 1/r in an idealized three-dimensional free-space model, with source amplitude referenced to 1 m. The optional ideal surface has reflection coefficient −1.</p>
+            <p>No seabed, refraction, absorption, source motion or Doppler is included. Real water can violate every one of those simplifications.</p>
+            <p>The generic passive receiver uses a causal lowpass FIR. Its receiver group delay is retained, so a filtered arrival is not just the geometric travel time. Noise is filtered through the same assumed response. The source RMS window and the receiver analysis window are distinct.</p>
+          </details>
+        </aside>
+        <div class="experiment-main">
+          <form class="experiment-form" id="passive-form">
+            <fieldset id="passive-controls" disabled aria-describedby="passive-control-note"><legend>Explore precomputed passive cases</legend>
+              <div class="control-row passive-control-row">
+                <div class="control"><label for="passive-kind">Source signature</label><select id="passive-kind" name="kind"><option value="whistle">Whistle-like</option><option value="clicks">Click-like</option><option value="vessel">Vessel-like</option></select></div>
+                <div class="control"><label for="passive-range">Horizontal range</label><select id="passive-range" name="range"><option value="25">25 m</option><option value="100" selected>100 m</option><option value="400">400 m</option></select></div>
+                <div class="control"><label for="passive-surface">Propagation paths</label><select id="passive-surface" name="surface"><option value="false" selected>Direct only</option><option value="true">Direct + surface</option></select></div>
+              </div>
+            </fieldset>
+            <p class="control-note" id="passive-control-note">Each change loads one exact saved experiment. No interpolation, live solver or relabelled plot.</p>
+          </form>
+          <p id="passive-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+          <div id="passive-results" class="results-region" aria-busy="true"><p class="result-message">Waiting for the computed catalogue.</p></div>
+          <div class="interpretation"><h3>Read the plots in order</h3><p>The waveform tells you <em>when</em> pressure arrives. The power spectral density tells you <em>where in frequency</em> its mean-square pressure lies. The spectrogram reveals <em>when those frequencies occur</em>. Keep axis units, normalization and analysis windows in view: three different displays of a signal are not three independent measurements.</p><a href="#spectra" class="text-link">A short guide to the spectral units <span aria-hidden="true">↓</span></a></div>
+        </div>
+      </div>
+      <details class="theory" id="passive-theory"><summary>Go deeper / The two-path transfer function</summary>
+        <div class="theory-grid"><div><h3>Distance becomes delay and phase.</h3><p>Let R denote horizontal separation, z<sub>s</sub> source depth, z<sub>r</sub> receiver depth and c sound speed. The direct path and the path to the image source have different lengths.</p><p>The path difference sets the relative arrival time Δτ. In frequency space, that delay becomes phase. With the ideal negative surface reflection, the two complex contributions subtract; cancellation depends on frequency and geometry.</p><p>This expression describes the ideal propagation channel, <strong>before</strong> receiver filtering and noise. Numerical fractional-delay accuracy is a separate verification question.</p></div>
+          <div class="equation-stack">
+            <div class="equation" tabindex="0" role="region" aria-label="Direct and surface slant distances"><math display="block"><msub><mi>r</mi><mi>d</mi></msub><mo>=</mo><msqrt><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>z</mi><mi>r</mi></msub><mo>−</mo><msub><mi>z</mi><mi>s</mi></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt><mo>,</mo><mspace width="1em"/><msub><mi>r</mi><mi>s</mi></msub><mo>=</mo><msqrt><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><msub><mi>z</mi><mi>r</mi></msub><mo>+</mo><msub><mi>z</mi><mi>s</mi></msub><mo>)</mo></mrow><mn>2</mn></msup></msqrt></math></div>
+            <div class="equation" tabindex="0" role="region" aria-label="Relative surface-path delay"><math display="block"><mi>Δτ</mi><mo>=</mo><mfrac><mrow><msub><mi>r</mi><mi>s</mi></msub><mo>−</mo><msub><mi>r</mi><mi>d</mi></msub></mrow><mi>c</mi></mfrac></math></div>
+            <div class="equation" tabindex="0" role="region" aria-label="Ideal two-path frequency response"><math display="block"><mi>H</mi><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow><mo>=</mo><mfrac><msub><mi>r</mi><mn>0</mn></msub><msub><mi>r</mi><mi>d</mi></msub></mfrac><msup><mi>e</mi><mrow><mo>−</mo><mi>i</mi><mn>2</mn><mi>π</mi><mi>f</mi><msub><mi>τ</mi><mi>d</mi></msub></mrow></msup><mo>−</mo><mfrac><msub><mi>r</mi><mn>0</mn></msub><msub><mi>r</mi><mi>s</mi></msub></mfrac><msup><mi>e</mi><mrow><mo>−</mo><mi>i</mi><mn>2</mn><mi>π</mi><mi>f</mi><msub><mi>τ</mi><mi>s</mi></msub></mrow></msup></math></div>
+            <p class="equation-note">r<sub>0</sub> = 1 m; τ<sub>d</sub> and τ<sub>s</sub> are path delays on the declared source clock. Removing the surface means omitting the second term, not changing the source.</p>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section class="spectral-section" id="spectra" aria-labelledby="spectra-title">
+      <div class="section spectral-inner">
+        <header class="section-heading"><p class="eyebrow">03 / Reading the instruments</p><h2 id="spectra-title">A decibel needs<br>a reference.</h2><p class="section-deck">Pressure level, spectral density and listening loudness answer different questions.</p></header>
+        <div class="spectral-content">
+          <article class="spectral-entry"><div class="entry-label">Pressure level</div><div><h3>How much pressure?</h3><p>RMS pressure summarizes a specified time window. Underwater sound pressure level uses a reference of 1 µPa, not the airborne reference.</p><div class="equation" tabindex="0" role="region" aria-label="Sound pressure level in decibels"><math display="block"><msub><mi>L</mi><mi>p</mi></msub><mo>=</mo><mn>20</mn><msub><mi>log</mi><mn>10</mn></msub><mrow><mo>(</mo><mfrac><msub><mi>p</mi><mtext>rms</mtext></msub><mrow><mn>1</mn><mspace width="0.2em"/><mtext>µPa</mtext></mrow></mfrac><mo>)</mo></mrow></math></div><p class="equation-note">Reported as dB re 1 µPa. The RMS window matters, especially for intermittent clicks.</p></div></article>
+          <article class="spectral-entry"><div class="entry-label">Power spectral density</div><div><h3>How is that pressure distributed?</h3><p>PSD is mean-square pressure <em>per unit frequency</em>, in Pa²/Hz. A narrow spectral peak is not the same quantity as a band-integrated pressure level.</p><div class="equation" tabindex="0" role="region" aria-label="Pressure spectral density level"><math display="block"><msub><mi>L</mi><mi>S</mi></msub><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow><mo>=</mo><mn>10</mn><msub><mi>log</mi><mn>10</mn></msub><mrow><mo>(</mo><mfrac><mrow><msub><mi>S</mi><mrow><mi>p</mi><mi>p</mi></mrow></msub><mrow><mo>(</mo><mi>f</mi><mo>)</mo></mrow></mrow><mrow><msup><mn>10</mn><mrow><mo>−</mo><mn>12</mn></mrow></msup><mspace width="0.2em"/><msup><mtext>Pa</mtext><mn>2</mn></msup><mo>/</mo><mtext>Hz</mtext></mrow></mfrac><mo>)</mo></mrow></math></div><p class="equation-note">Reported as dB re 1 µPa²/Hz. Average or integrate linear PSD first; do not average decibels to obtain a band level.</p></div></article>
+          <article class="spectral-entry"><div class="entry-label">Time–frequency structure</div><div><h3>When is each frequency present?</h3><p>A spectrogram applies a spectral estimator to successive windows. A longer window resolves nearby frequencies more finely but blurs timing. Overlap provides more closely spaced estimates, not independent new observations.</p><p>Welch averaging reduces the variability of a PSD estimate. Window shape, segment length, overlap, detrending and one-sided normalization all affect interpretation; inspect the saved analysis settings before comparing panels.</p></div></article>
+          <div class="normalization-note"><h3>Three normalizations. Three meanings.</h3><p><strong>Source normalization</strong> sets a synthetic amplitude. <strong>PSD normalization</strong> gives a density whose linear band sum estimates mean-square pressure. <strong>Listening normalization</strong> adjusts digital playback level. A normalized audio clip is not evidence of an absolute underwater level.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experiment" id="active" aria-labelledby="active-title">
+      <header class="section-heading"><p class="eyebrow">04 / Active acoustics</p><h2 id="active-title">Know the pulse.<br>Find the return.</h2><p class="section-deck">Passive listening asks what is present. Active sensing adds a known transmitted waveform and asks how it came back.</p></header>
+      <div class="experiment-layout">
+        <aside class="lesson-rail" aria-label="Active lesson"><h3>From echo to range.</h3><p>This experiment is a stationary, analytic <strong>point target</strong>. The signal travels out and back; a scalar scattering factor represents the return. It is not an animal, a distributed body or a validated target-strength model.</p><p>A matched filter slides a copy of the known pulse across the noisy received record. The correlation peak is a candidate delay. Converting that two-way delay to range is the next, separate step.</p><p class="reading-cue"><span>Try this</span>Keep target range fixed and change input SNR. Compare the raw trace with the correlation output. Then change range and check whether the peak moves to the expected delay.</p>
+          <details class="lesson-detail"><summary>What does the SNR control mean?</summary><p>The benchmark defines input SNR using clean-echo mean-square pressure on the echo support, divided by the ensemble white-noise variance. It is a per-sample, full-Nyquist-band ratio, not a chirp-band or output SNR. A finite noise realization need not equal that requested ratio exactly.</p><p>Noise variance is recomputed for each target range and requested SNR. A <strong>fixed-SNR range comparison is not a range-performance curve at fixed ambient noise</strong>. The exact noise level, support and seed are in each case’s metadata.</p><p>SNR is not a universal property of a recording: measuring noise over the whole record and measuring the echo over only its pulse window can give different ratios. Do not compare values without matching definitions.</p></details>
+          <details class="lesson-detail"><summary>What a correlation peak cannot prove</summary><p>A peak is not a calibrated detection probability. False-alarm rates need independent noise-only trials and a specified search region and threshold. Localization error and an any-lag alarm are different outcomes.</p><p>The signed correlation is divided by the square root of template energy and the known simulation noise standard deviation. Its dimensionless score is not a pressure, a PSD or a probability. The range estimator selects the largest absolute score and always returns a range, even if noise wins.</p><a class="text-link" href="https://github.com/nishchayoxford/oceansignatures/blob/main/docs/ACTIVE.md" target="_blank" rel="noopener noreferrer">Exact lag &amp; SNR conventions<span class="sr-only"> (new tab)</span> ↗</a></details>
+        </aside>
+        <div class="experiment-main">
+          <form class="experiment-form" id="active-form"><fieldset id="active-controls" disabled aria-describedby="active-control-note"><legend>Explore precomputed active cases</legend><div class="control-row active-control-row"><div class="control"><label for="active-range">Point-target range</label><select id="active-range" name="range"><option value="75">75 m</option><option value="150" selected>150 m</option><option value="300">300 m</option></select></div><div class="control"><label for="active-snr">Input signal-to-noise ratio</label><select id="active-snr" name="snr"><option value="-18" selected>−18 dB</option><option value="-6">−6 dB</option></select></div></div></fieldset><p class="control-note" id="active-control-note">These controls select stored point-target experiments; nothing is transmitted or connected to hardware.</p></form>
+          <p id="active-announcement" class="sr-only" aria-live="polite" aria-atomic="true"></p>
+          <div id="active-results" class="results-region" aria-busy="true"><p class="result-message">Waiting for the computed catalogue.</p></div>
+          <div class="interpretation"><h3>Separate timing from detection.</h3><p>Read the transmitted pulse, noisy return and matched-filter lag together. Compare the known target range with the estimate. Agreement in a controlled synthetic case checks the delay-to-range calculation; it does not establish performance in reverberation, multipath, motion or an unknown environment.</p></div>
+        </div>
+      </div>
+      <details class="theory" id="active-theory"><summary>Go deeper / Correlation, lag and two-way range</summary><div class="theory-grid"><div><h3>The factor of two is physical.</h3><p>For real sampled signals, correlate the received record x with the template s. Let k̂ be the selected lag in samples and f<sub>s</sub> the sample rate. A monostatic point-target delay includes both the outward and return journeys.</p><p>Ordinary matched correlation has familiar optimality properties under a known template and additive white-noise assumptions. Coloured noise, reverberation and template mismatch require more care.</p><p>The sample spacing of the lag axis is not the same as the ability to separate two targets. Pulse bandwidth, waveform ambiguity and noise all matter. Neither a sharp peak nor a fine grid removes model uncertainty.</p></div><div class="equation-stack"><div class="equation" tabindex="0" role="region" aria-label="Real-signal cross-correlation"><math display="block"><mi>C</mi><mrow><mo>[</mo><mi>k</mi><mo>]</mo></mrow><mo>=</mo><munder><mo>∑</mo><mi>n</mi></munder><mi>x</mi><mrow><mo>[</mo><mi>n</mi><mo>]</mo></mrow><mi>s</mi><mrow><mo>[</mo><mi>n</mi><mo>−</mo><mi>k</mi><mo>]</mo></mrow></math></div><div class="equation" tabindex="0" role="region" aria-label="Delay and range estimates"><math display="block"><mover><mi>τ</mi><mo>^</mo></mover><mo>=</mo><mfrac><mover><mi>k</mi><mo>^</mo></mover><msub><mi>f</mi><mi>s</mi></msub></mfrac><mo>,</mo><mspace width="1em"/><mover><mi>R</mi><mo>^</mo></mover><mo>=</mo><mfrac><mrow><mi>c</mi><mover><mi>τ</mi><mo>^</mo></mover></mrow><mn>2</mn></mfrac></math></div><p class="equation-note">Conceptual real-signal correlation. The producer declares any output normalization and peak-selection convention in the exported metadata.</p></div></div></details>
+    </section>
+
+    <section class="section reference-section" id="reference" aria-labelledby="reference-title"><header class="section-heading"><p class="eyebrow">05 / An observational anchor</p><h2 id="reference-title">A recording is<br>a different kind<br>of evidence.</h2><p class="section-deck">Use a documented reference to inspect structure, not to retroactively calibrate a synthetic source.</p></header><div class="reference-body"><p class="lead">Provenance travels with the data.</p><p>A useful reference identifies the recording source, reuse conditions, processing and calibration status. Similar-looking spectrograms alone do not validate a biological source model or a receiver.</p><div id="reference-results" aria-busy="true"><p class="result-message">Waiting for reference provenance.</p></div><details id="recording-pipeline"><summary>From a recording to a spectrum</summary><p>The offline recording pipeline preserves the original file, selects a declared channel, checks sample counts and finite values, flags near-full-scale samples, and retains a content hash. Potential saturation is a diagnostic, not proof of hardware clipping.</p><p>Without calibration, waveform and PSD remain in digital amplitude and digital amplitude²/Hz. A pressure conversion needs known ADC scaling, gain and sensitivity. A declared flat scalar calibration is not a frequency-dependent calibration certificate.</p><p>Analysis exports keep their units and estimator settings. A decoded WAV does not by itself establish deployment timing, sensor orientation, source distance or label truth.</p><a class="text-link" href="https://github.com/nishchayoxford/oceansignatures/blob/main/docs/PIPELINE.md" target="_blank" rel="noopener noreferrer">Recording pipeline &amp; calibration equation<span class="sr-only"> (new tab)</span> ↗</a></details></div></section>
+
+    <section class="section gallery-section-wrap" id="gallery" aria-labelledby="gallery-title"><header class="section-heading"><p class="eyebrow">06 / Further observations</p><h2 id="gallery-title">Read across<br>the experiments.</h2><p class="section-deck">Supplementary computed plates, with their own captions and scope. Read the axis labels before comparing colour or height.</p></header><div class="gallery-body"><div id="gallery-results" aria-busy="true"><p class="result-message">Waiting for supplementary plates.</p></div></div></section>
+
+    <section class="evidence-section" id="evidence" aria-labelledby="evidence-title"><div class="section evidence-inner"><header class="section-heading"><p class="eyebrow">07 / Methods &amp; trust</p><h2 id="evidence-title">A working model<br>is not a measured<br>ocean.</h2></header><div class="evidence-body"><p class="lead">Verification asks whether the calculation implements the intended equations. Validation asks whether those equations adequately describe the real phenomenon.</p><div class="evidence-distinction"><article><h3>Verify the implementation.</h3><p>Check units, deterministic seeds, propagation delay, spectral normalization and point-target range recovery against independent expectations. These checks can expose numerical mistakes.</p></article><article><h3>Validate the physical claim.</h3><p>Compare with independent, suitably calibrated observations and account for measurement and model uncertainty. An ideal surface, synthetic source or assumed receiver does not become field-validated because software tests pass.</p></article></div>
+          <details id="pipeline" open><summary>The reproducible data pipeline</summary><ol class="pipeline"><li><strong>Declare</strong><span>Source, geometry, sampling, seed, noise and receiver assumptions.</span></li><li><strong>Compute</strong><span>Python produces pressure histories, delayed returns and analysis products.</span></li><li><strong>Inspect</strong><span>Numerical checks and exported metadata accompany the arrays and figures.</span></li><li><strong>Publish</strong><span>A versioned JSON catalogue binds each exact case to its saved figures and downloads.</span></li><li><strong>Read</strong><span>This static browser selects those assets. It does not regenerate or adjust the underlying experiment.</span></li></ol></details>
+          <div class="provenance-block"><h3>Dataset provenance</h3><div id="provenance-results" aria-busy="true"><p class="result-message">Waiting for the catalogue’s provenance note.</p></div></div>
+          <details id="verification-details"><summary>Reported verification evidence</summary><div id="verification-results" aria-busy="true"><p class="result-message">Verification status has not been loaded.</p></div></details>
+          <details id="downloads-details"><summary>Download the reproducible data</summary><div id="download-results" aria-busy="true"><p class="result-message">Waiting for data links.</p></div><p class="quiet">Downloads are the producer’s published assets. Reproduction instructions and implementation are in the <a href="https://github.com/nishchayoxford/oceansignatures" target="_blank" rel="noopener noreferrer">source repository<span class="sr-only"> (new tab)</span></a>.</p></details>
+        </div></div></section>
+
+    <section class="section sources-section" id="sources" aria-labelledby="sources-title"><header class="section-heading"><p class="eyebrow">08 / Scientific references</p><h2 id="sources-title">Follow the<br>sources.</h2><p class="section-deck">The catalogue is the source of truth for this release’s references and dataset links.</p></header><div id="source-results" aria-busy="true"><p class="result-message">Waiting for the scientific source register.</p></div></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#top">Ocean<span>Signatures</span></a><p>An open educational acoustics lab.<br>Generic models; no product endorsement or field-performance claim.</p><a href="#top" class="text-link">Back to the surface <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

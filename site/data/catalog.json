@@ -1,0 +1,1636 @@
+{
+  "active_cases": [
+    {
+      "downloads": [
+        {
+          "href": "data/active-75m-snr--18db.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/active-75m-snr--18db.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/active-75m-snr--18db.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Locate the echo inside a noisy acquisition. Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.1 s and pressure gain is 0.000177778. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "caption": "Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.1 s and pressure gain is 0.000177778. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "src": "plots/active-75m-snr--18db-history.png",
+          "title": "1 \u00b7 Locate the echo inside a noisy acquisition"
+        },
+        {
+          "alt": "2 \u00b7 Search globally; inspect the peak locally. Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "caption": "Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "src": "plots/active-75m-snr--18db-matched-filter.png",
+          "title": "2 \u00b7 Search globally; inspect the peak locally"
+        }
+      ],
+      "id": "active-75m-snr--18db",
+      "metrics": [
+        {
+          "label": "Estimated range",
+          "unit": "m",
+          "value": 75.0
+        },
+        {
+          "label": "Range error",
+          "unit": "m",
+          "value": 0.0
+        },
+        {
+          "label": "Realized echo-support SNR",
+          "unit": "dB",
+          "value": -18.142576912653038
+        }
+      ],
+      "range_m": 75,
+      "snr_db": -18,
+      "summary": "A finite 50 ms Hann-tapered 3\u20139 kHz reference ping and scalar target gain 1. Range is the global absolute signed-correlation maximum, not a detection. Noise is readjusted for each range/SNR, not fixed ambient noise.",
+      "title": "75 m point target \u00b7 -18 dB input SNR"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/active-75m-snr--6db.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/active-75m-snr--6db.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/active-75m-snr--6db.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Locate the echo inside a noisy acquisition. Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.1 s and pressure gain is 0.000177778. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "caption": "Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.1 s and pressure gain is 0.000177778. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "src": "plots/active-75m-snr--6db-history.png",
+          "title": "1 \u00b7 Locate the echo inside a noisy acquisition"
+        },
+        {
+          "alt": "2 \u00b7 Search globally; inspect the peak locally. Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "caption": "Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "src": "plots/active-75m-snr--6db-matched-filter.png",
+          "title": "2 \u00b7 Search globally; inspect the peak locally"
+        }
+      ],
+      "id": "active-75m-snr--6db",
+      "metrics": [
+        {
+          "label": "Estimated range",
+          "unit": "m",
+          "value": 75.0
+        },
+        {
+          "label": "Range error",
+          "unit": "m",
+          "value": 0.0
+        },
+        {
+          "label": "Realized echo-support SNR",
+          "unit": "dB",
+          "value": -6.1425769126530385
+        }
+      ],
+      "range_m": 75,
+      "snr_db": -6,
+      "summary": "A finite 50 ms Hann-tapered 3\u20139 kHz reference ping and scalar target gain 1. Range is the global absolute signed-correlation maximum, not a detection. Noise is readjusted for each range/SNR, not fixed ambient noise.",
+      "title": "75 m point target \u00b7 -6 dB input SNR"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/active-150m-snr--18db.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/active-150m-snr--18db.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/active-150m-snr--18db.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Locate the echo inside a noisy acquisition. Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.2 s and pressure gain is 4.44444e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "caption": "Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.2 s and pressure gain is 4.44444e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "src": "plots/active-150m-snr--18db-history.png",
+          "title": "1 \u00b7 Locate the echo inside a noisy acquisition"
+        },
+        {
+          "alt": "2 \u00b7 Search globally; inspect the peak locally. Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "caption": "Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "src": "plots/active-150m-snr--18db-matched-filter.png",
+          "title": "2 \u00b7 Search globally; inspect the peak locally"
+        }
+      ],
+      "id": "active-150m-snr--18db",
+      "metrics": [
+        {
+          "label": "Estimated range",
+          "unit": "m",
+          "value": 149.9375
+        },
+        {
+          "label": "Range error",
+          "unit": "m",
+          "value": -0.0625
+        },
+        {
+          "label": "Realized echo-support SNR",
+          "unit": "dB",
+          "value": -17.957477515862635
+        }
+      ],
+      "range_m": 150,
+      "snr_db": -18,
+      "summary": "A finite 50 ms Hann-tapered 3\u20139 kHz reference ping and scalar target gain 1. Range is the global absolute signed-correlation maximum, not a detection. Noise is readjusted for each range/SNR, not fixed ambient noise.",
+      "title": "150 m point target \u00b7 -18 dB input SNR"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/active-150m-snr--6db.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/active-150m-snr--6db.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/active-150m-snr--6db.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Locate the echo inside a noisy acquisition. Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.2 s and pressure gain is 4.44444e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "caption": "Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.2 s and pressure gain is 4.44444e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "src": "plots/active-150m-snr--6db-history.png",
+          "title": "1 \u00b7 Locate the echo inside a noisy acquisition"
+        },
+        {
+          "alt": "2 \u00b7 Search globally; inspect the peak locally. Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "caption": "Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "src": "plots/active-150m-snr--6db-matched-filter.png",
+          "title": "2 \u00b7 Search globally; inspect the peak locally"
+        }
+      ],
+      "id": "active-150m-snr--6db",
+      "metrics": [
+        {
+          "label": "Estimated range",
+          "unit": "m",
+          "value": 150.0
+        },
+        {
+          "label": "Range error",
+          "unit": "m",
+          "value": 0.0
+        },
+        {
+          "label": "Realized echo-support SNR",
+          "unit": "dB",
+          "value": -5.957477515862635
+        }
+      ],
+      "range_m": 150,
+      "snr_db": -6,
+      "summary": "A finite 50 ms Hann-tapered 3\u20139 kHz reference ping and scalar target gain 1. Range is the global absolute signed-correlation maximum, not a detection. Noise is readjusted for each range/SNR, not fixed ambient noise.",
+      "title": "150 m point target \u00b7 -6 dB input SNR"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/active-300m-snr--18db.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/active-300m-snr--18db.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/active-300m-snr--18db.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Locate the echo inside a noisy acquisition. Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.4 s and pressure gain is 1.11111e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "caption": "Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.4 s and pressure gain is 1.11111e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "src": "plots/active-300m-snr--18db-history.png",
+          "title": "1 \u00b7 Locate the echo inside a noisy acquisition"
+        },
+        {
+          "alt": "2 \u00b7 Search globally; inspect the peak locally. Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "caption": "Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "src": "plots/active-300m-snr--18db-matched-filter.png",
+          "title": "2 \u00b7 Search globally; inspect the peak locally"
+        }
+      ],
+      "id": "active-300m-snr--18db",
+      "metrics": [
+        {
+          "label": "Estimated range",
+          "unit": "m",
+          "value": 300.0
+        },
+        {
+          "label": "Range error",
+          "unit": "m",
+          "value": 0.0
+        },
+        {
+          "label": "Realized echo-support SNR",
+          "unit": "dB",
+          "value": -17.77762601294285
+        }
+      ],
+      "range_m": 300,
+      "snr_db": -18,
+      "summary": "A finite 50 ms Hann-tapered 3\u20139 kHz reference ping and scalar target gain 1. Range is the global absolute signed-correlation maximum, not a detection. Noise is readjusted for each range/SNR, not fixed ambient noise.",
+      "title": "300 m point target \u00b7 -18 dB input SNR"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/active-300m-snr--6db.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/active-300m-snr--6db.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/active-300m-snr--6db.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Locate the echo inside a noisy acquisition. Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.4 s and pressure gain is 1.11111e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "caption": "Start with the known 1 Pa RMS ping over its unpadded 50 ms support, then its delayed scalar echo. The panels have different clocks and pressure scales; block min\u2013max strokes retain extrema. The analytic two-way delay is 0.4 s and pressure gain is 1.11111e-05. The ideal pressure sampler has no FIR, leakage, reverberation or multipath. Input SNR divides clean echo-support mean square by expected full-band noise variance; noise is readjusted for every chosen range/SNR, not held at fixed ambient level. No normalization is applied to the received waveform.",
+          "src": "plots/active-300m-snr--6db-history.png",
+          "title": "1 \u00b7 Locate the echo inside a noisy acquisition"
+        },
+        {
+          "alt": "2 \u00b7 Search globally; inspect the peak locally. Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "caption": "Now correlate against the entire known ping. The top panel retains min\u2013max score extrema over the full search; the lower panel plots every local lag sample around truth, solely as a display close-up. The estimator always selects the global maximum of the absolute signed score over 0\u2013750 m, never a truth-gated maximum. Score = correlation / (known simulation noise SD \u00d7 square-root template energy), dimensionless; noise-only SD is one at each lag, but neighbouring lags are correlated. The signed oscillations and possible carrier-lobe error are retained. All six cases share \u00b130 score axes. This is a range estimator, not a thresholded detector or calibrated probability of detection.",
+          "src": "plots/active-300m-snr--6db-matched-filter.png",
+          "title": "2 \u00b7 Search globally; inspect the peak locally"
+        }
+      ],
+      "id": "active-300m-snr--6db",
+      "metrics": [
+        {
+          "label": "Estimated range",
+          "unit": "m",
+          "value": 300.0
+        },
+        {
+          "label": "Range error",
+          "unit": "m",
+          "value": 0.0
+        },
+        {
+          "label": "Realized echo-support SNR",
+          "unit": "dB",
+          "value": -5.777626012942852
+        }
+      ],
+      "range_m": 300,
+      "snr_db": -6,
+      "summary": "A finite 50 ms Hann-tapered 3\u20139 kHz reference ping and scalar target gain 1. Range is the global absolute signed-correlation maximum, not a detection. Noise is readjusted for each range/SNR, not fixed ambient noise.",
+      "title": "300 m point target \u00b7 -6 dB input SNR"
+    }
+  ],
+  "downloads": [
+    {
+      "href": "data/full-waveforms.zip",
+      "label": "All 24 full-resolution waveform NPZs (ZIP)"
+    },
+    {
+      "href": "data/selected-plates.pdf",
+      "label": "Selected explanatory plates (10-page vector/mixed PDF)"
+    },
+    {
+      "href": "data/plot-pack.json",
+      "label": "Plot-pack page order and full interpretive captions (JSON)"
+    },
+    {
+      "href": "data/active-robustness.csv",
+      "label": "All 72 repeated-noise estimates, including outliers (CSV)"
+    },
+    {
+      "href": "data/active-robustness.json",
+      "label": "Robustness definitions and all-trial statistics (JSON)"
+    },
+    {
+      "href": "data/catalog.json",
+      "label": "Complete computed catalogue (JSON)"
+    },
+    {
+      "href": "data/artifact-manifest.json",
+      "label": "Generated asset SHA-256 manifest (JSON)"
+    }
+  ],
+  "gallery": [
+    {
+      "alt": "Interference is a range\u2013frequency structure. First isolate interference from spherical spreading: this continuous analytic contour divides the coherent direct-plus-pressure-release image transfer by the direct-path transfer. Source/receiver depths are 8/12 m, c = 1500 m/s, surface coefficient \u22121. Blue bands are cancellation, red bands reinforcement; white is 0 dB relative to direct, not zero pressure. The logarithmic range axis spans 25\u2013500 m. This is an independently evaluated continuous two-ray reference, not the discrete propagator, receiver FIR, or a ray-traced ocean model. Values below \u221245 dB saturate.",
+      "caption": "First isolate interference from spherical spreading: this continuous analytic contour divides the coherent direct-plus-pressure-release image transfer by the direct-path transfer. Source/receiver depths are 8/12 m, c = 1500 m/s, surface coefficient \u22121. Blue bands are cancellation, red bands reinforcement; white is 0 dB relative to direct, not zero pressure. The logarithmic range axis spans 25\u2013500 m. This is an independently evaluated continuous two-ray reference, not the discrete propagator, receiver FIR, or a ray-traced ocean model. Values below \u221245 dB saturate.",
+      "section": "Channel geometry",
+      "src": "plots/gallery-interference.png",
+      "title": "Interference is a range\u2013frequency structure"
+    },
+    {
+      "alt": "Direct path, reflection and receiver response. Read the upper panel as complex pressure addition: reflected and direct magnitudes are nearly coincident at 100 m, but the reflected path carries a sign reversal and a different delay. Their coherent sum has deep notches; adding magnitude curves would miss them. Gains reference the nominal 1 m source pressure. The lower panel is computed from the actual generic receiver coefficients, not a measured instrument: 257-tap Kaiser FIR, 10 kHz cutoff and 128/48000 s group delay. The continuous channel does not include fractional-delay interpolation error; the receiver is a separate operation.",
+      "caption": "Read the upper panel as complex pressure addition: reflected and direct magnitudes are nearly coincident at 100 m, but the reflected path carries a sign reversal and a different delay. Their coherent sum has deep notches; adding magnitude curves would miss them. Gains reference the nominal 1 m source pressure. The lower panel is computed from the actual generic receiver coefficients, not a measured instrument: 257-tap Kaiser FIR, 10 kHz cutoff and 128/48000 s group delay. The continuous channel does not include fractional-delay interpolation error; the receiver is a separate operation.",
+      "section": "Channel \u2192 receiver",
+      "src": "plots/gallery-transfer.png",
+      "title": "Direct path, reflection and receiver response"
+    },
+    {
+      "alt": "Range changes level and interference together. Move from an analytic channel to all 18 saved passive experiments. Markers are computed cases, lines only connect the three ranges; they are not a dense sampled performance curve. All sources have 1 Pa unpadded-record RMS, but different spectra and peak pressures. The receiver and input-referred noise SD remain fixed; RMS and SNR use each complete arrival/tail window. Solid curves include the ideal surface, dashed curves use only the direct path. Interference therefore changes broadband energy in a source-dependent way. Seeds are shared, not independent trials; there is no inference of detectability or field range.",
+      "caption": "Move from an analytic channel to all 18 saved passive experiments. Markers are computed cases, lines only connect the three ranges; they are not a dense sampled performance curve. All sources have 1 Pa unpadded-record RMS, but different spectra and peak pressures. The receiver and input-referred noise SD remain fixed; RMS and SNR use each complete arrival/tail window. Solid curves include the ideal surface, dashed curves use only the direct path. Interference therefore changes broadband energy in a source-dependent way. Seeds are shared, not independent trials; there is no inference of detectability or field range.",
+      "section": "Actual passive cases",
+      "src": "plots/gallery-passive-range.png",
+      "title": "Range changes level and interference together"
+    },
+    {
+      "alt": "Why fixed-SNR cases are not fixed-noise range performance. These six actual cases do not share a fixed ambient noise level: expected noise variance is recalculated from echo-support mean square and the selected input SNR. Both echo and noise pressure fall with the chosen two-way 1/R\u00b2 gain at fixed SNR. The lower panel reports the actual global-search range error, including the 150 m, \u221218 dB neighbouring-lobe error. Shared seed 2026 is a controlled illustration, not a trial average. Zero errors at these grid-aligned ranges do not establish perfect ranging. The next plate repeats the experiment and exposes estimates far away from truth.",
+      "caption": "These six actual cases do not share a fixed ambient noise level: expected noise variance is recalculated from echo-support mean square and the selected input SNR. Both echo and noise pressure fall with the chosen two-way 1/R\u00b2 gain at fixed SNR. The lower panel reports the actual global-search range error, including the 150 m, \u221218 dB neighbouring-lobe error. Shared seed 2026 is a controlled illustration, not a trial average. Zero errors at these grid-aligned ranges do not establish perfect ranging. The next plate repeats the experiment and exposes estimates far away from truth.",
+      "section": "Actual active cases",
+      "src": "plots/gallery-active-range.png",
+      "title": "Why fixed-SNR cases are not fixed-noise range performance"
+    },
+    {
+      "alt": "Do not hide low-SNR failures behind a median. At true range 150 m, run every seed 2026\u20132049 at each SNR, always searching 0\u2013750 m. Both panels show every estimate: linear and symmetric-log axes, with no success-only clipping. -30 dB: 0/24 within \u00b10.125 m, all-trial RMSE 298.716 m; -18 dB: 23/24 within \u00b10.125 m, all-trial RMSE 56.479 m; -6 dB: 24/24 within \u00b10.125 m, all-trial RMSE 0.000 m. The shaded \u00b10.125 m band is an illustrative c/(2B) scale, not a validated detection threshold. Matched noise seeds across SNRs share underlying draws. A target is present in every trial; there is no target-absent experiment or false-alarm calibration. These finite seeded synthetic results are not field accuracy, population performance, or detection probability. The catastrophic \u221218 dB outlier is included in RMSE.",
+      "caption": "At true range 150 m, run every seed 2026\u20132049 at each SNR, always searching 0\u2013750 m. Both panels show every estimate: linear and symmetric-log axes, with no success-only clipping. -30 dB: 0/24 within \u00b10.125 m, all-trial RMSE 298.716 m; -18 dB: 23/24 within \u00b10.125 m, all-trial RMSE 56.479 m; -6 dB: 24/24 within \u00b10.125 m, all-trial RMSE 0.000 m. The shaded \u00b10.125 m band is an illustrative c/(2B) scale, not a validated detection threshold. Matched noise seeds across SNRs share underlying draws. A target is present in every trial; there is no target-absent experiment or false-alarm calibration. These finite seeded synthetic results are not field accuracy, population performance, or detection probability. The catastrophic \u221218 dB outlier is included in RMSE.",
+      "section": "Estimator limitations",
+      "src": "plots/gallery-active-robustness.png",
+      "title": "Do not hide low-SNR failures behind a median"
+    }
+  ],
+  "passive_cases": [
+    {
+      "downloads": [
+        {
+          "href": "data/passive-whistle-25m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97131) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97131) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-whistle-25m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-whistle-25m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-whistle-25m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-whistle-25m-surface-false",
+      "kind": "whistle",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 41.79710354344035
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0
+        }
+      ],
+      "range_m": 25,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Whistle at 25 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-whistle-25m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-25m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97345) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97345) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-whistle-25m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-whistle-25m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-whistle-25m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-whistle-25m-surface-true",
+      "kind": "whistle",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 43.939121596357865
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0
+        }
+      ],
+      "range_m": 25,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Whistle at 25 m \u2014 two paths"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-whistle-100m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99523) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99523) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-whistle-100m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-whistle-100m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-whistle-100m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-whistle-100m-surface-false",
+      "kind": "whistle",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 29.860244829523342
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0
+        }
+      ],
+      "range_m": 100,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Whistle at 100 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-whistle-100m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-100m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99584) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99584) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-whistle-100m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-whistle-100m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-whistle-100m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-whistle-100m-surface-true",
+      "kind": "whistle",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 32.64374026199154
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0
+        }
+      ],
+      "range_m": 100,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Whistle at 100 m \u2014 two paths"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-whistle-400m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109121) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109121) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-whistle-400m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-whistle-400m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-whistle-400m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-whistle-400m-surface-false",
+      "kind": "whistle",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 17.821628656492052
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0
+        }
+      ],
+      "range_m": 400,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Whistle at 400 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-whistle-400m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-whistle-400m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109136) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109136) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-whistle-400m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-whistle-400m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-whistle-400m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-whistle-400m-surface-true",
+      "kind": "whistle",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 19.935080686146883
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0
+        }
+      ],
+      "range_m": 400,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Whistle at 400 m \u2014 two paths"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-clicks-25m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97131) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97131) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-clicks-25m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-clicks-25m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-clicks-25m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-clicks-25m-surface-false",
+      "kind": "clicks",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 41.69898284479403
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0000000000000002
+        }
+      ],
+      "range_m": 25,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Clicks at 25 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-clicks-25m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-25m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97345) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97345) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-clicks-25m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-clicks-25m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-clicks-25m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-clicks-25m-surface-true",
+      "kind": "clicks",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 43.80022992308871
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0000000000000002
+        }
+      ],
+      "range_m": 25,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Clicks at 25 m \u2014 two paths"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-clicks-100m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99523) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99523) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-clicks-100m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-clicks-100m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-clicks-100m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-clicks-100m-surface-false",
+      "kind": "clicks",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 29.76212447169211
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0000000000000002
+        }
+      ],
+      "range_m": 100,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Clicks at 100 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-clicks-100m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-100m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99584) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99584) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-clicks-100m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-clicks-100m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-clicks-100m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-clicks-100m-surface-true",
+      "kind": "clicks",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 32.68380296168984
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0000000000000002
+        }
+      ],
+      "range_m": 100,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Clicks at 100 m \u2014 two paths"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-clicks-400m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109121) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109121) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-clicks-400m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-clicks-400m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-clicks-400m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-clicks-400m-surface-false",
+      "kind": "clicks",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 17.723508319771536
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0000000000000002
+        }
+      ],
+      "range_m": 400,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Clicks at 400 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-clicks-400m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-clicks-400m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109136) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109136) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-clicks-400m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-clicks-400m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-clicks-400m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-clicks-400m-surface-true",
+      "kind": "clicks",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 21.37712420728979
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 1.0000000000000002
+        }
+      ],
+      "range_m": 400,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Clicks at 400 m \u2014 two paths"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-vessel-25m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97131) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97131) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-vessel-25m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-vessel-25m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-vessel-25m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-vessel-25m-surface-false",
+      "kind": "vessel",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 41.77905644694565
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 0.9999999999999999
+        }
+      ],
+      "range_m": 25,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Vessel at 25 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-vessel-25m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-25m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97345) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [746, 97345) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-vessel-25m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-vessel-25m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-vessel-25m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-vessel-25m-surface-true",
+      "kind": "vessel",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 45.342271595642515
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 0.9999999999999999
+        }
+      ],
+      "range_m": 25,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Vessel at 25 m \u2014 two paths"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-vessel-100m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99523) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99523) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-vessel-100m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-vessel-100m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-vessel-100m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-vessel-100m-surface-false",
+      "kind": "vessel",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 29.842197795619107
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 0.9999999999999999
+        }
+      ],
+      "range_m": 100,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Vessel at 100 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-vessel-100m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-100m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99584) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [3138, 99584) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-vessel-100m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-vessel-100m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-vessel-100m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-vessel-100m-surface-true",
+      "kind": "vessel",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 29.656489923444127
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 0.9999999999999999
+        }
+      ],
+      "range_m": 100,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Vessel at 100 m \u2014 two paths"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-vessel-400m-surface-false.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-false.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-false.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-false-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-false-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-false-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109121) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109121) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-vessel-400m-surface-false-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-vessel-400m-surface-false-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-vessel-400m-surface-false-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-vessel-400m-surface-false",
+      "kind": "vessel",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 17.80358162525117
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 0.9999999999999999
+        }
+      ],
+      "range_m": 400,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": false,
+      "title": "Vessel at 400 m \u2014 direct path"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/passive-vessel-400m-surface-true.npz",
+          "label": "Full-resolution pressure, clock and spectrum arrays (NPZ)"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-true.csv",
+          "label": "One-sided Welch spectrum components (Pa\u00b2/Hz CSV)"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-true.json",
+          "label": "Exact model, support and analysis metadata (JSON)"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-true-source-same-gain.wav",
+          "label": "Synthetic source listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-true-received-same-gain.wav",
+          "label": "Synthetic received listening WAV \u00b7 same gain, not playback-calibrated"
+        },
+        {
+          "href": "data/passive-vessel-400m-surface-true-spectrogram.npz",
+          "label": "Exact source/receiver spectrogram matrices (NPZ)"
+        }
+      ],
+      "figures": [
+        {
+          "alt": "1 \u00b7 Follow pressure from source to receiver. Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109136) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "caption": "Start with the source: 1 Pa RMS over its full unpadded [0, 2) s emission, including quiet click intervals. Then compare the receiver in Pa (a separate, per-case amplitude axis). Each vertical stroke retains a block minimum and maximum; it is not decimated point sampling. The receiver analysis is [12736, 109136) samples, excluding the shaded idle interval. Clean means after the 257-tap 10 kHz FIR; its 128-sample group delay is retained. A centred interpolation kernel may pre-ring numerically; this is not a physical precursor.",
+          "src": "plots/passive-vessel-400m-surface-true-waveform.png",
+          "title": "1 \u00b7 Follow pressure from source to receiver"
+        },
+        {
+          "alt": "2 \u00b7 Separate propagation, receiver and noise. Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "caption": "Next separate the spectrum into source, pre-filter channel, clean filtered signal, filtered noise and their actual sum. The sum PSD includes finite-record cross terms; it is not manufactured by adding the two component PSDs. All cases share frequency/level axes. Welch: 2048-sample periodic Hann, 1024 overlap, segment-mean removal, one-sided Pa\u00b2/Hz; source uses only emission and receiver uses its metadata window. Spectral dB = 10 log10(PSD / 10\u207b\u00b9\u00b2 Pa\u00b2/Hz); displayed 0\u201312 kHz and \u221290\u2013115 dB, with a \u2212120 dB computational display floor only. Exact full-Nyquist linear spectra are downloadable. Welch window weighting is not the full-record RMS convention.",
+          "src": "plots/passive-vessel-400m-surface-true-psd.png",
+          "title": "2 \u00b7 Separate propagation, receiver and noise"
+        },
+        {
+          "alt": "3 \u00b7 Read the time\u2013frequency signature. Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "caption": "Finally ask when each frequency occurs. These are density spectrograms, not independently normalized pictures: source and receiver, and every passive case, share \u221220 to 100 dB re 1 \u00b5Pa\u00b2/Hz. Values outside this display interval saturate; exact linear matrices are supplied separately. Frames use 512-sample periodic Hann windows, 384 overlap, per-frame mean removal, no padding; times are frame centres on the emission clock. Source frames lie inside the unpadded emission; receiver frames lie inside its analysis window. Blank regions have no complete frame, not measured silence. The receiver delay, coloration and noise are not removed to improve appearance.",
+          "src": "plots/passive-vessel-400m-surface-true-spectrogram.png",
+          "title": "3 \u00b7 Read the time\u2013frequency signature"
+        }
+      ],
+      "id": "passive-vessel-400m-surface-true",
+      "kind": "vessel",
+      "metrics": [
+        {
+          "label": "Analysis-window SNR",
+          "unit": "dB",
+          "value": 12.608395298468523
+        },
+        {
+          "label": "Source emission RMS",
+          "unit": "Pa",
+          "value": 0.9999999999999999
+        }
+      ],
+      "range_m": 400,
+      "summary": "Synthetic 1 Pa RMS source at a nominal 1 m; 8 m source and 12 m receiver depths. A generic causal 10 kHz receiver filters signal and noise. No field validation.",
+      "surface": true,
+      "title": "Vessel at 400 m \u2014 two paths"
+    }
+  ],
+  "provenance_note": "Executed deterministic synthetic experiments, 48 kHz and seed 2026 unless stated. All pressure and spectral arrays are saved without display normalization. No experimental or field validation; no reference recording is bundled. Rebuild from public core modules, scripts and source registry; no development cache needed.",
+  "reference": null,
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "1",
+      "title": "SciPy: Welch power spectral density",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.welch.html"
+    },
+    {
+      "id": "2",
+      "title": "SciPy: cross-correlation",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.correlate.html"
+    },
+    {
+      "id": "3",
+      "title": "PAMGuard: simulated sound acquisition",
+      "url": "https://www.pamguard.org/olhelp/sound_processing/AcquisitionHelp/docs/AcquisitionSimulator.html"
+    },
+    {
+      "id": "4",
+      "title": "DOSITS: sonar equation",
+      "url": "https://dosits.org/science/advanced-topics/sonar-equation"
+    }
+  ],
+  "title": "OceanSignatures",
+  "verification": {
+    "checks": [
+      {
+        "detail": "Four fractional offsets; 401 frequencies from DC to 0.4 fs; complex error against an independent ideal delay. Maximum error 1.3726059e-05; acceptance \u2264 5e-05.",
+        "name": "Fractional-delay impulse response",
+        "status": "passed"
+      },
+      {
+        "detail": "Independent slant distances and signed phase at 100 m; continuous reference, not a sampled-channel equivalence claim. Maximum error 0; acceptance \u2264 1e-12.",
+        "name": "Continuous two-ray reference",
+        "status": "passed"
+      },
+      {
+        "detail": "Coincident direct/image path lengths with source depth zero must cancel. Maximum error 0; acceptance \u2264 1e-12.",
+        "name": "Pressure-release boundary cancellation",
+        "status": "passed"
+      },
+      {
+        "detail": "A unit-amplitude bin-centred 3 kHz cosine has independently known mean square 0.5 Pa\u00b2. Maximum error 5.5511151e-16; acceptance \u2264 1e-12.",
+        "name": "Welch tone density normalization",
+        "status": "passed"
+      },
+      {
+        "detail": "80 dB synthetic control at 123.4567 m; half an integer-lag range bin, not a low-SNR or field error bound. Maximum error 0.003575; acceptance \u2264 0.0078125.",
+        "name": "Fractional active-delay range quantization",
+        "status": "passed"
+      },
+      {
+        "detail": "Four valid template-start lags, including both search endpoints, independently evaluated by direct dot products. Maximum error 1.7763568e-15; acceptance \u2264 1e-10.",
+        "name": "Signed correlation direct-dot check",
+        "status": "passed"
+      }
+    ],
+    "status": "Analytic numerical controls passed",
+    "summary": "These controls were executed by this build. They verify ideal-model calculations only; they are not field validation, a detector evaluation, or an asserted software-suite test count."
+  },
+  "version": "0.1.0"
+}
