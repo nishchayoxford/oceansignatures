@@ -1,0 +1,820 @@
+{
+  "array_units": {
+    "all_other_psd_arrays": "Pa2/Hz",
+    "band_power_arrays": "Pa2",
+    "comparison_frequency_hz": "Hz",
+    "coverage_fraction": "dimensionless",
+    "digital_psd": "digital2/Hz",
+    "distance_m": "m",
+    "emission_time_s": "s",
+    "frequency_hz": "Hz",
+    "propagation_loss_db": "dB",
+    "receiver_time_s": "s",
+    "residual_arrays": "dB",
+    "source_psd_pa2_m2_hz": "Pa2 m2/Hz",
+    "travel_time_s": "s",
+    "wind_speed_m_s": "m/s",
+    "window_start_s": "s",
+    "window_stop_s": "s"
+  },
+  "baseline": {
+    "active_intervals_relative_s": [
+      [
+        150.25,
+        153.125
+      ]
+    ],
+    "anchor_utc": "2000-01-01T00:00:00.000000Z",
+    "band_edge_policy": "low inclusive; high exclusive except Nyquist inclusive; sum PSD bins * df",
+    "band_level_reference": "1 uPa^2",
+    "band_power_units": "Pa^2",
+    "bands_hz": {
+      "1000\u20134000 Hz": [
+        1000.0,
+        4000.0
+      ],
+      "100\u2013500 Hz": [
+        100.0,
+        500.0
+      ],
+      "500\u20131000 Hz": [
+        500.0,
+        1000.0
+      ]
+    },
+    "chunks": [
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 2277434,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/baseline/synthetic-00.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "98573bca951e9f381ccff425c95816b3c86e01fa9811b11ffc012d8319d8fbb3",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 0,
+        "start_utc": "2000-01-01T00:00:00.000000Z",
+        "stop_sample": 142336,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 4685882,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/baseline/synthetic-01.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "dd6611b09a7924296ddcfb64d8e83ab5bb4716afd7881732913e5595311a01ba",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 142336,
+        "start_utc": "2000-01-01T00:00:17.375000Z",
+        "stop_sample": 435200,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 3522618,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/baseline/synthetic-02.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "400962f5cd583a3e35d9df9dc6e544605159bb49426e3c4a8cdbc24fecd89cad",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 435200,
+        "start_utc": "2000-01-01T00:00:53.125000Z",
+        "stop_sample": 655360,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 3620922,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/baseline/synthetic-04.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "a7c7976abc0d11a5c27b6bd891d111d2b69afa0268c1e2fec994e92ab8375c9a",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 671744,
+        "start_utc": "2000-01-01T00:01:22.000000Z",
+        "stop_sample": 898048,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 5357626,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/baseline/synthetic-05.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "f9dca5916a22a31e1723a0d703e1b2152f57c5e84729dc8ea5c8aa667b91acbd",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 898048,
+        "start_utc": "2000-01-01T00:01:49.625000Z",
+        "stop_sample": 1232896,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 5292090,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/baseline/synthetic-06.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "ce3ae7a6c4ff611f157b02a2b06577eea71e5659d81f6c818efe1e389b0a1bf6",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1232896,
+        "start_utc": "2000-01-01T00:02:30.500000Z",
+        "stop_sample": 1563648,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 3326010,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/baseline/synthetic-07.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "5d676e811953a396a20d5468244f5d8415439d63d193ca0cd911f60df110d839",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1563648,
+        "start_utc": "2000-01-01T00:03:10.875000Z",
+        "stop_sample": 1771520,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 3113018,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/baseline/synthetic-08.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "635b9382731abf17f2e6df01a8e7406a25fac561e6ade4379fd99caefcecaa97",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1771520,
+        "start_utc": "2000-01-01T00:03:36.250000Z",
+        "stop_sample": 1966080,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      }
+    ],
+    "clipping_caveat": "potential full-scale contact, not proof of hardware clipping",
+    "clock": "integer sample offsets / fs; UTC labels rounded to microseconds; half-open windows",
+    "evidence_kind": "synthetic",
+    "execution": "bounded offline chunk decoding; no onboard realtime performance claim",
+    "gaps": [
+      {
+        "start_sample": 655360,
+        "stop_sample": 671744
+      }
+    ],
+    "near_full_scale_threshold": 0.999,
+    "processing": {
+      "average": "mean",
+      "detrend": false,
+      "frame_samples": 16384,
+      "noverlap": 2048,
+      "nperseg": 4096,
+      "onesided": true,
+      "padding": false,
+      "scaling": "density",
+      "unused_tail_samples_per_frame": 0,
+      "window": "hann",
+      "window_periodic": true
+    },
+    "psd_units": "Pa^2/Hz",
+    "schema": "oceansignatures.observations.v1",
+    "stft_units": "Pa/sqrt(Hz)",
+    "timestamp_rounding_tolerance_s": 5.00001e-07
+  },
+  "calibration": {
+    "full_scale_voltage": 2.0,
+    "gain_db": 20.0,
+    "sensitivity_db_v_per_upa": -180.0
+  },
+  "digital_control": {
+    "active_intervals_relative_s": [
+      [
+        150.25,
+        153.125
+      ]
+    ],
+    "anchor_utc": "2000-01-01T00:00:00.000000Z",
+    "band_edge_policy": "low inclusive; high exclusive except Nyquist inclusive; sum PSD bins * df",
+    "band_level_reference": "1 digital^2",
+    "band_power_units": "digital^2",
+    "bands_hz": {
+      "1000\u20134000 Hz": [
+        1000.0,
+        4000.0
+      ],
+      "100\u2013500 Hz": [
+        100.0,
+        500.0
+      ],
+      "500\u20131000 Hz": [
+        500.0,
+        1000.0
+      ]
+    },
+    "chunks": [
+      {
+        "adc_full_scale_convention": null,
+        "bytes": 2277434,
+        "calibration": null,
+        "calibration_assumption": null,
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-00.wav",
+        "pressure_scale_pa_per_digital_fraction": null,
+        "sample_rate_hz": 8192,
+        "sha256": "55b89bff66fe8c177c56939eb0426466629fa588a8d1eef6abb1b93896db632f",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 0,
+        "start_utc": "2000-01-01T00:00:00.000000Z",
+        "stop_sample": 142336,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": null,
+        "bytes": 4685882,
+        "calibration": null,
+        "calibration_assumption": null,
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-01.wav",
+        "pressure_scale_pa_per_digital_fraction": null,
+        "sample_rate_hz": 8192,
+        "sha256": "464f957082a53a740431c14d3ace3566bd02a803e123d9acd488bd12a7fc333a",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 142336,
+        "start_utc": "2000-01-01T00:00:17.375000Z",
+        "stop_sample": 435200,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": null,
+        "bytes": 3522618,
+        "calibration": null,
+        "calibration_assumption": null,
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-02.wav",
+        "pressure_scale_pa_per_digital_fraction": null,
+        "sample_rate_hz": 8192,
+        "sha256": "c07c5686c95c1e0da2d7091dc0f76ee0b6b9650d6f78cccda2b265861d99690b",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 435200,
+        "start_utc": "2000-01-01T00:00:53.125000Z",
+        "stop_sample": 655360,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": null,
+        "bytes": 3620922,
+        "calibration": null,
+        "calibration_assumption": null,
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-04.wav",
+        "pressure_scale_pa_per_digital_fraction": null,
+        "sample_rate_hz": 8192,
+        "sha256": "ee22defa24af177b1e53d83b9e94ab8ba73fe32cee943e521d779237b2f17086",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 671744,
+        "start_utc": "2000-01-01T00:01:22.000000Z",
+        "stop_sample": 898048,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": null,
+        "bytes": 5357626,
+        "calibration": null,
+        "calibration_assumption": null,
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-05.wav",
+        "pressure_scale_pa_per_digital_fraction": null,
+        "sample_rate_hz": 8192,
+        "sha256": "d912e5ae808e063b1b93a66059a75c37fa218896b7c912cda56d495909a369ac",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 898048,
+        "start_utc": "2000-01-01T00:01:49.625000Z",
+        "stop_sample": 1232896,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": null,
+        "bytes": 5292090,
+        "calibration": null,
+        "calibration_assumption": null,
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-06.wav",
+        "pressure_scale_pa_per_digital_fraction": null,
+        "sample_rate_hz": 8192,
+        "sha256": "99044b3219e05662b0125b4bafc944825f7f634070fe68ef32e3e416930f485b",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1232896,
+        "start_utc": "2000-01-01T00:02:30.500000Z",
+        "stop_sample": 1563648,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": null,
+        "bytes": 3326010,
+        "calibration": null,
+        "calibration_assumption": null,
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-07.wav",
+        "pressure_scale_pa_per_digital_fraction": null,
+        "sample_rate_hz": 8192,
+        "sha256": "92eb0ab84c3677f0db60a0ee734f6df0695c7bceb1ee914e626197be9432182c",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1563648,
+        "start_utc": "2000-01-01T00:03:10.875000Z",
+        "stop_sample": 1771520,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": null,
+        "bytes": 3113018,
+        "calibration": null,
+        "calibration_assumption": null,
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-08.wav",
+        "pressure_scale_pa_per_digital_fraction": null,
+        "sample_rate_hz": 8192,
+        "sha256": "b483dd4724cde52e9912b393d8a547d1fbcd3ce22b2e676120770d9da1f17dbb",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1771520,
+        "start_utc": "2000-01-01T00:03:36.250000Z",
+        "stop_sample": 1966080,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      }
+    ],
+    "clipping_caveat": "potential full-scale contact, not proof of hardware clipping",
+    "clock": "integer sample offsets / fs; UTC labels rounded to microseconds; half-open windows",
+    "evidence_kind": "synthetic",
+    "execution": "bounded offline chunk decoding; no onboard realtime performance claim",
+    "gaps": [
+      {
+        "start_sample": 655360,
+        "stop_sample": 671744
+      }
+    ],
+    "near_full_scale_threshold": 0.999,
+    "processing": {
+      "average": "mean",
+      "detrend": false,
+      "frame_samples": 16384,
+      "noverlap": 2048,
+      "nperseg": 4096,
+      "onesided": true,
+      "padding": false,
+      "scaling": "density",
+      "unused_tail_samples_per_frame": 0,
+      "window": "hann",
+      "window_periodic": true
+    },
+    "psd_units": "digital^2/Hz",
+    "schema": "oceansignatures.observations.v1",
+    "stft_units": "digital/sqrt(Hz)",
+    "timestamp_rounding_tolerance_s": 5.00001e-07
+  },
+  "expected_estimator": {
+    "detrend": false,
+    "mean": "Exact ensemble mean for this finite circular surrogate, including support-edge leakage",
+    "method": "Circular convolution of two-sided finite-frame density with abs(FFT(zero-padded periodic Hann))^2/(N*sum(w^2)); sample every N/nperseg bins and restore one-sided weights",
+    "overlap": "Seven 4096-sample segments, step 2048; correlation affects variance, not mean"
+  },
+  "missing_chunk_s": [
+    80.0,
+    82.0
+  ],
+  "observed": {
+    "active_intervals_relative_s": [
+      [
+        150.25,
+        153.125
+      ]
+    ],
+    "anchor_utc": "2000-01-01T00:00:00.000000Z",
+    "band_edge_policy": "low inclusive; high exclusive except Nyquist inclusive; sum PSD bins * df",
+    "band_level_reference": "1 uPa^2",
+    "band_power_units": "Pa^2",
+    "bands_hz": {
+      "1000\u20134000 Hz": [
+        1000.0,
+        4000.0
+      ],
+      "100\u2013500 Hz": [
+        100.0,
+        500.0
+      ],
+      "500\u20131000 Hz": [
+        500.0,
+        1000.0
+      ]
+    },
+    "chunks": [
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 2277434,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-00.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "55b89bff66fe8c177c56939eb0426466629fa588a8d1eef6abb1b93896db632f",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 0,
+        "start_utc": "2000-01-01T00:00:00.000000Z",
+        "stop_sample": 142336,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 4685882,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-01.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "464f957082a53a740431c14d3ace3566bd02a803e123d9acd488bd12a7fc333a",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 142336,
+        "start_utc": "2000-01-01T00:00:17.375000Z",
+        "stop_sample": 435200,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 3522618,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-02.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "c07c5686c95c1e0da2d7091dc0f76ee0b6b9650d6f78cccda2b265861d99690b",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 435200,
+        "start_utc": "2000-01-01T00:00:53.125000Z",
+        "stop_sample": 655360,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 3620922,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-04.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "ee22defa24af177b1e53d83b9e94ab8ba73fe32cee943e521d779237b2f17086",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 671744,
+        "start_utc": "2000-01-01T00:01:22.000000Z",
+        "stop_sample": 898048,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 5357626,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-05.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "d912e5ae808e063b1b93a66059a75c37fa218896b7c912cda56d495909a369ac",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 898048,
+        "start_utc": "2000-01-01T00:01:49.625000Z",
+        "stop_sample": 1232896,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 5292090,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-06.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "99044b3219e05662b0125b4bafc944825f7f634070fe68ef32e3e416930f485b",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1232896,
+        "start_utc": "2000-01-01T00:02:30.500000Z",
+        "stop_sample": 1563648,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 3326010,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-07.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "92eb0ab84c3677f0db60a0ee734f6df0695c7bceb1ee914e626197be9432182c",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1563648,
+        "start_utc": "2000-01-01T00:03:10.875000Z",
+        "stop_sample": 1771520,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      },
+      {
+        "adc_full_scale_convention": "digital +/-1 = +/-full_scale_voltage V (peak, not RMS or peak-to-peak)",
+        "bytes": 3113018,
+        "calibration": {
+          "full_scale_voltage": 2.0,
+          "gain_db": 20.0,
+          "sensitivity_db_v_per_upa": -180.0
+        },
+        "calibration_assumption": "flat scalar response over the analysed band",
+        "channel": 1,
+        "channels": 2,
+        "evidence_kind": "synthetic",
+        "path": "wav/observed/synthetic-08.wav",
+        "pressure_scale_pa_per_digital_fraction": 200.0,
+        "sample_rate_hz": 8192,
+        "sha256": "b483dd4724cde52e9912b393d8a547d1fbcd3ce22b2e676120770d9da1f17dbb",
+        "source": "seeded receiver surrogate; not a recording of the ocean",
+        "start_sample": 1771520,
+        "start_utc": "2000-01-01T00:03:36.250000Z",
+        "stop_sample": 1966080,
+        "subtype": "DOUBLE",
+        "timestamp_rounding_residual_s": 0.0
+      }
+    ],
+    "clipping_caveat": "potential full-scale contact, not proof of hardware clipping",
+    "clock": "integer sample offsets / fs; UTC labels rounded to microseconds; half-open windows",
+    "evidence_kind": "synthetic",
+    "execution": "bounded offline chunk decoding; no onboard realtime performance claim",
+    "gaps": [
+      {
+        "start_sample": 655360,
+        "stop_sample": 671744
+      }
+    ],
+    "near_full_scale_threshold": 0.999,
+    "processing": {
+      "average": "mean",
+      "detrend": false,
+      "frame_samples": 16384,
+      "noverlap": 2048,
+      "nperseg": 4096,
+      "onesided": true,
+      "padding": false,
+      "scaling": "density",
+      "unused_tail_samples_per_frame": 0,
+      "window": "hann",
+      "window_periodic": true
+    },
+    "psd_units": "Pa^2/Hz",
+    "schema": "oceansignatures.observations.v1",
+    "stft_units": "Pa/sqrt(Hz)",
+    "timestamp_rounding_tolerance_s": 5.00001e-07
+  },
+  "prediction": {
+    "absorption_model": "Ainslie-McColm 1998; NPL domain guidance",
+    "allow_low_frequency_extrapolation": false,
+    "clock": "receiver arrival time; retarded emission geometry",
+    "component_sum": "incoherent powers; ambient is already receiver-level, never spread",
+    "doppler": "omitted",
+    "kind": "deterministic expected PSD; not field data or a random waveform",
+    "low_frequency_extrapolation_hz": [],
+    "omissions": [
+      "Doppler",
+      "surface and seabed",
+      "refraction",
+      "directionality",
+      "tonals",
+      "flow/self noise",
+      "rain",
+      "distant shipping",
+      "thermal noise"
+    ],
+    "parameters": {
+      "closest_approach_emission_time_s": 120.0,
+      "closest_approach_m": 250.0,
+      "include_vessel": true,
+      "include_wind": true,
+      "length_m": 150.0,
+      "receiver_depth_m": 50.0,
+      "sound_speed_m_s": 1500.0,
+      "source_depth_m": 8.0,
+      "source_offset_db": 0.0,
+      "speed_kn": 12.0,
+      "vessel_class": "bulker",
+      "wind_offset_m_s": 0.0,
+      "wind_speed_m_s": "declared linear 4 to 8 m/s over receiver seconds 0 to 240; held at each frame midpoint"
+    },
+    "propagation": "direct spherical spreading plus full-path absorption",
+    "quasi_stationary": true,
+    "receiver_psd_units": "Pa^2/Hz",
+    "source_psd_units": "Pa^2 m^2/Hz",
+    "source_reference": "loss-free monopole strength; nominal 1 m pressure equivalent",
+    "spectral_convention": "one-sided, positive frequency",
+    "uncertainty_note": "population source-model residual, not a receiver confidence interval",
+    "vessel_model": "MacGillivray and de Jong 2021 JOMOPANS-ECHO Eqs. 9-11, Table 1",
+    "vessel_model_residual_sd_db": 6.0,
+    "water": {
+      "depth_m": 50.0,
+      "ph": 8.0,
+      "salinity_ppt": 35.0,
+      "temperature_c": 10.0
+    },
+    "wind_model": "Stojanovic 2007 Eq. 6 (Coates empirical fit)"
+  },
+  "provenance": {
+    "libraries": {
+      "matplotlib": "3.11.2",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "soundfile": "0.14.0"
+    },
+    "python": "3.11.16",
+    "source_sha256": {
+      "src/oceansignatures/comparison.py": "3c0ae54498d0e279ca5c314039e075c07be85398fa57c67403dae406ef90a6a7",
+      "src/oceansignatures/noise_prediction.py": "ad831d2914079d547b097fe528909fbdbb18e8201b41b8e1593ff6e39ba458be",
+      "src/oceansignatures/observations.py": "88867b3d9a4fd9dd7e6e7fa4f940df11b2201d2e14bc7e06f9973d4cf31f3993",
+      "src/oceansignatures/passive.py": "29606452511bc859118dee4eaad2b046728ef5e8d54e247325db7a15092ed408",
+      "src/oceansignatures/pipeline.py": "d9f72aea153b9f9cbf241de2e7dbe8fa455d3c5aa73ab5dbcb27dcd44076e503",
+      "src/oceansignatures/research.py": "3c8876bca104907617aaa8f675e01d65c79f6520efa530e9f3be19caa30fc5dc"
+    }
+  },
+  "schema": "oceansignatures.research.metadata.v1",
+  "serialization": "Missing spectra/residuals are NaN in NPZ, blank in CSV, null in JSON. Complete active spectra are retained; use qc_ok for comparisons.",
+  "synthesis": {
+    "active_contamination": {
+      "amplitude_pa": 0.3,
+      "frequency_hz": 1200.0,
+      "interval_s": [
+        150.25,
+        153.125
+      ],
+      "treatment": "Same baseline contamination is scaled with the injected gain; intersecting frames excluded"
+    },
+    "coefficient": "X[k] = sqrt(N*fs*S1[k]/4) * (normal(0,1) + i*normal(0,1)); zero DC/Nyquist",
+    "edges": "both synthesis endpoint bins included",
+    "frame_count": 120,
+    "frame_samples": 16384,
+    "frequency_step_hz": 0.5,
+    "gain_db": 6.0,
+    "gain_interpretation": "Synthetic pressure amplitude multiplier before declared ADC conversion; not an instrument fault measurement",
+    "generator": "NumPy PCG64; real then imaginary full-frame arrays",
+    "normalization": "Ensemble normalization only; no realized RMS rescaling",
+    "positive_support_hz": [
+      100.0,
+      4000.0
+    ],
+    "seed": 1729,
+    "transition": "Independent periodic Gaussian frames concatenated abruptly, no crossfade; not globally bandlimited. No Welch segment crosses a frame seam."
+  },
+  "synthetic_clock": "arbitrary 2000 epoch; not an acquisition date"
+}

@@ -1,0 +1,11 @@
+Native hydrodynamic CFD analysis replay
+
+python replay/build_cfd_results.py --baseline native/baseline --sensitivity native/sensitivity --output "$(dirname "$PWD")/replay-new"
+
+Run from this export folder. Requires Python, numpy, scipy, matplotlib; ffmpeg is optional.
+No OpenFOAM, original cache, sibling repository or native solver is required.
+Keep native/*/package.json and every original-data-*.zip together. Do not extract or edit them.
+The native completion receipts retain every original expected pin. Each included member
+is verified against those pins. Full volume fields and unused VTP frames stay local.
+Replay means the same analysis of the same saved data, not another simulation.
+Only the exact historical native logs/receipts retain machine paths; no ordinary output metadata needs them.

@@ -1,0 +1,261 @@
+{
+  "configuration": {
+    "band_names": [
+      "100\u2013500 Hz",
+      "500\u20131000 Hz",
+      "1000\u20134000 Hz"
+    ],
+    "bands_hz": {
+      "1000\u20134000 Hz": [
+        1000.0,
+        4000.0
+      ],
+      "100\u2013500 Hz": [
+        100.0,
+        500.0
+      ],
+      "500\u20131000 Hz": [
+        500.0,
+        1000.0
+      ]
+    },
+    "calibration": {
+      "full_scale_voltage": 2.0,
+      "gain_db": 20.0,
+      "sensitivity_db_v_per_upa": -180.0
+    },
+    "closest_approach_emission_time_s": 120.0,
+    "closest_approach_m": 250.0,
+    "detrend": false,
+    "duration_s": 240,
+    "frame_seconds": 2,
+    "gain_db": 6.0,
+    "include_vessel": true,
+    "include_wind": true,
+    "length_m": 150.0,
+    "noverlap": 2048,
+    "nperseg": 4096,
+    "receiver_depth_m": 50.0,
+    "sample_rate_hz": 8192,
+    "seed": 1729,
+    "selected_channel": 1,
+    "sound_speed_m_s": 1500.0,
+    "source_depth_m": 8.0,
+    "source_offset_db": 0.0,
+    "speed_kn": 12.0,
+    "time_origin_utc": "2000-01-01T00:00:00.000000Z",
+    "vessel_class": "bulker",
+    "water": {
+      "depth_m": 50.0,
+      "ph": 8.0,
+      "salinity_ppt": 35.0,
+      "temperature_c": 10.0
+    },
+    "wind_offset_m_s": 0.0,
+    "wind_speed_m_s": "declared linear 4 to 8 m/s over receiver seconds 0 to 240; held at each frame midpoint",
+    "window": "hann"
+  },
+  "downloads": [
+    {
+      "label": "Prediction, observed, control and residual arrays (NPZ)",
+      "path": "research.npz"
+    },
+    {
+      "label": "Window/band comparison and QC (CSV)",
+      "path": "windows.csv"
+    },
+    {
+      "label": "Calibration, estimator and SHA256 source provenance",
+      "path": "metadata.json"
+    },
+    {
+      "label": "One-factor sensitivity arrays (NPZ)",
+      "path": "sensitivity.npz"
+    },
+    {
+      "label": "Sensitivity cases and estimator contract",
+      "path": "sensitivity.json"
+    },
+    {
+      "label": "SHA256 manifest of every exported file except itself",
+      "path": "manifest.json"
+    },
+    {
+      "label": "Synthetic baseline WAV: synthetic-00.wav",
+      "path": "wav/baseline/synthetic-00.wav"
+    },
+    {
+      "label": "Synthetic baseline WAV: synthetic-01.wav",
+      "path": "wav/baseline/synthetic-01.wav"
+    },
+    {
+      "label": "Synthetic baseline WAV: synthetic-02.wav",
+      "path": "wav/baseline/synthetic-02.wav"
+    },
+    {
+      "label": "Synthetic baseline WAV: synthetic-04.wav",
+      "path": "wav/baseline/synthetic-04.wav"
+    },
+    {
+      "label": "Synthetic baseline WAV: synthetic-05.wav",
+      "path": "wav/baseline/synthetic-05.wav"
+    },
+    {
+      "label": "Synthetic baseline WAV: synthetic-06.wav",
+      "path": "wav/baseline/synthetic-06.wav"
+    },
+    {
+      "label": "Synthetic baseline WAV: synthetic-07.wav",
+      "path": "wav/baseline/synthetic-07.wav"
+    },
+    {
+      "label": "Synthetic baseline WAV: synthetic-08.wav",
+      "path": "wav/baseline/synthetic-08.wav"
+    },
+    {
+      "label": "Synthetic observed WAV: synthetic-00.wav",
+      "path": "wav/observed/synthetic-00.wav"
+    },
+    {
+      "label": "Synthetic observed WAV: synthetic-01.wav",
+      "path": "wav/observed/synthetic-01.wav"
+    },
+    {
+      "label": "Synthetic observed WAV: synthetic-02.wav",
+      "path": "wav/observed/synthetic-02.wav"
+    },
+    {
+      "label": "Synthetic observed WAV: synthetic-04.wav",
+      "path": "wav/observed/synthetic-04.wav"
+    },
+    {
+      "label": "Synthetic observed WAV: synthetic-05.wav",
+      "path": "wav/observed/synthetic-05.wav"
+    },
+    {
+      "label": "Synthetic observed WAV: synthetic-06.wav",
+      "path": "wav/observed/synthetic-06.wav"
+    },
+    {
+      "label": "Synthetic observed WAV: synthetic-07.wav",
+      "path": "wav/observed/synthetic-07.wav"
+    },
+    {
+      "label": "Synthetic observed WAV: synthetic-08.wav",
+      "path": "wav/observed/synthetic-08.wav"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Empirical source spectrum and separate received vessel/wind powers on 100\u20134000 Hz. Source includes m\u00b2; ambient is not spread again. No field measurements.",
+      "path": "figures/spectra.png",
+      "title": "Source strength is not received pressure"
+    },
+    {
+      "caption": "240 s, 2 s frames; CPA is at emission second 120. Wind follows a declared 4\u21928 m/s schedule, not weather data. Spectrogram is the exact ensemble mean for the finite Fourier/Hann surrogate.",
+      "path": "figures/passage.png",
+      "title": "A chosen passage with changing wind"
+    },
+    {
+      "caption": "Range solves arrival = emission + range/1500. Loss is spherical spreading plus full-path Ainslie\u2013McColm absorption. No waveguide, reflections, refraction or Doppler.",
+      "path": "figures/propagation.png",
+      "title": "Retarded geometry and direct-path loss"
+    },
+    {
+      "caption": "Half-open bands and identical clocks/processing. Gray: absent 80\u201382 s chunk; amber: active-contaminated frames 150\u2013154 s. Gaps are retained NaN, not zero. Crosses retain excluded active spectra.",
+      "path": "figures/comparison.png",
+      "title": "Compare like support, then inspect the discrepancy"
+    },
+    {
+      "caption": "Top: stochastic observed-minus-ensemble spectra (color limits only; arrays are not clipped). Middle: independent band sampling errors. Bottom: same-realization gain verification, excluded intervals shaded. No field-validation inference.",
+      "path": "figures/residuals.png",
+      "title": "Gain recovery is not model validation"
+    },
+    {
+      "caption": "Alternatives change only the named property. Source offsets affect vessel only; speed changes source law and track. Receiver depth changes geometry, not absorption depth. These use raw empirical midpoint PSD bin sums and linear-power time averages, not Welch sampling or probability coverage.",
+      "path": "figures/sensitivity.png",
+      "title": "One factor at a time \u2014 not confidence intervals"
+    }
+  ],
+  "kind": "predictive approximations + synthetic verification",
+  "limitations": [
+    "Predictive approximations plus synthetic software verification, never measured or field validated.",
+    "Empirical source and wind fits; generic constant water, not a site forecast. No proprietary hardware or NOAA audio.",
+    "Direct spherical propagation; no reflections, bathymetry, refraction, directionality, tonals, Doppler, flow/self-noise or CFD coupling.",
+    "Independent 2 s circular Gaussian frames, midpoint-frozen PSD; abrupt seams, no crossfade. Welch segments never cross seams. The concatenation is not globally bandlimited.",
+    "100\u20134000 Hz finite-frame synthesis only; no low-frequency extrapolation. Hann leakage is included in expected spectra, including outside synthesis support.",
+    "Exact expected Welch is for this discrete Fourier ensemble, not a claim that empirical continuous spectra equal one finite realization.",
+    "Same-realization gain control cancels sampling error; comparison against ensemble expectation does not. No stochastic RMS normalization.",
+    "Calibration is a declared flat synthetic ADC chain, not a certificate. Digital-only control has no absolute SPL.",
+    "Sensitivity alternatives are one-at-a-time deterministic changes, not probabilistic confidence intervals.",
+    "Synthetic UTC uses an arbitrary 2000 epoch and is not a real acquisition-date claim."
+  ],
+  "numericalsummary": {
+    "compared_windows": 117,
+    "empirical_spectral_summary": {
+      "compared_windows": 117,
+      "excluded_windows": 3,
+      "finite_db_pairs": 228267,
+      "mean_bias_db": 5.669215710205785,
+      "rmse_db": 5.929606196312119
+    },
+    "excluded_windows": 3,
+    "expected_band_level_max_db": [
+      122.20385421311184,
+      113.7548678156837,
+      112.34007487902285
+    ],
+    "expected_band_level_min_db": [
+      112.44701344082893,
+      104.04151993049521,
+      102.70633258090228
+    ],
+    "gain_bias_db": 6.0,
+    "gain_max_error_db": 4.085620730620576e-14,
+    "minimum_snapshot_range_m": 253.5553489344946,
+    "observation_output_cells": 1967040,
+    "quasi_stationary_edge_max_abs_db": 0.10605614928233668,
+    "sampling_band_mean_db": [
+      -0.013300311587606533,
+      -0.0017066525229244803,
+      0.006815703560402549
+    ],
+    "sampling_band_rmse_db": [
+      0.2476561516891248,
+      0.16616602425248697,
+      0.07984742193231777
+    ],
+    "sampling_broadband_mean_db": -0.008659234888100671,
+    "sampling_broadband_rmse_db": 0.19905314406605468,
+    "sampling_spectral_summary": {
+      "compared_windows": 117,
+      "excluded_windows": 3,
+      "finite_db_pairs": 228267,
+      "mean_bias_db": -0.33078428979421526,
+      "rmse_db": 1.7690791731501623
+    },
+    "travel_time_max_s": 0.5201145973711476,
+    "travel_time_min_s": 0.16903689928966306,
+    "welch_smoothing_max_abs_db": 2.3706485874557592
+  },
+  "schema": "oceansignatures.research.overview.v1",
+  "source_refs": [
+    {
+      "label": "Stojanovic 2007, Eq. 6: wind fit",
+      "url": "https://www.mit.edu/~millitsa/resources/pdfs/bwdx.pdf"
+    },
+    {
+      "label": "MacGillivray and de Jong 2021, Eqs. 9\u201311 / Table 1: vessel model",
+      "url": "https://publications.tno.nl/publication/34637939/jkMYWh/macgillivray-2021-reference.pdf"
+    },
+    {
+      "label": "NPL: absorption domain guidance",
+      "url": "https://resource.npl.co.uk/acoustics/techguides/seaabsorption"
+    },
+    {
+      "label": "Ainslie\u2013McColm equation transcription (secondary)",
+      "url": "https://gorbatschow.github.io/SonarDocs/sound_absorption_sea_ainslie.en"
+    }
+  ],
+  "title": "Passage prediction to synthetic calibrated recording"
+}

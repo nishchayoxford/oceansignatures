@@ -1,0 +1,20 @@
+{
+  "purpose": "Native 2D spanwise-uniform laminar Re100 water cylinder and timestep sensitivity",
+  "native_campaign_wall_cap_s": 2400,
+  "native_output_cap_bytes": 5000000000,
+  "solver": "pimpleFoam",
+  "openfoam_version": "v2206",
+  "parallelism": "serial; OMP/BLAS/MKL thread counts 1",
+  "pilot": {"case": "pilot_re100", "end_time_s": 6, "delta_t_s": 0.01, "volume_interval_s": 2, "wall_bound_s": 115},
+  "cases": [
+    {"case": "re100_baseline", "velocity_m_s": 0.01, "end_time_s": 140, "delta_t_s": 0.01, "wall_bound_s": 650},
+    {"case": "re100_dt005", "velocity_m_s": 0.01, "end_time_s": 140, "delta_t_s": 0.005, "wall_bound_s": 1000}
+  ],
+  "analysis": {
+    "primary_window_s": [80, 140],
+    "startup_and_stationarity": "Check lift amplitude in successive 20 s windows; the proposed primary window is not automatically stationary.",
+    "window_sensitivity_s": [[60, 100], [100, 140]],
+    "frequency_method": "Require strictly uniform probe clock; independently count like-direction lift zero crossings and report period spread, then compare with spectrum. Do not FFT irregular samples.",
+    "claim_limit": "Two timestep values do not prove temporal order or grid/domain independence. No LES, turbulence, finite housing, acoustic radiation or measurement validation claim."
+  }
+}

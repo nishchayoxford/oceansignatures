@@ -1,0 +1,534 @@
+{
+  "baseline": {
+    "completion_sha256": "1190826790986ac808016f7a68d1e9af3871ce28375262c97329152c1ca0f5ea",
+    "force_clock": {
+      "first_s": 0.02,
+      "interval_s": 0.02,
+      "last_s": 140.00000000001765,
+      "max_accumulation_serialization_error_s": 2.8563817977556027e-11,
+      "resampled": false,
+      "samples": 7000,
+      "tolerance_s": 1e-09
+    },
+    "input_identity": "original completion and pre-execution pins verified",
+    "max_force_probe_clock_difference_s": 2.8563817977556027e-11,
+    "mesh_status": "Mesh OK.",
+    "native_cells": 15360,
+    "omitted_original_pins": 0,
+    "original_pins": 206,
+    "original_plane_count": 70,
+    "planes": [
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 100.00000000001425,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 102.00000000001528,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 104.0000000000163,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 106.00000000001732,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 108.00000000001835,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 110.00000000001937,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 112.00000000002039,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 114.00000000002142,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 116.00000000002244,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 118.00000000002346,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 120.00000000002449,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 122.00000000002551,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 124.00000000002653,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 126.00000000002755,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 128.00000000002856,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 130.00000000002674,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 132.00000000002493,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 134.0000000000231,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 136.0000000000213,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 138.00000000001947,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 140.00000000001765,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      }
+    ],
+    "reconstruction": "not_required: serial native probes and direct sampled planes",
+    "retained_pins": 45,
+    "selected_plane_times_s": [
+      100.00000000001425,
+      102.00000000001528,
+      104.0000000000163,
+      106.00000000001732,
+      108.00000000001835,
+      110.00000000001937,
+      112.00000000002039,
+      114.00000000002142,
+      116.00000000002244,
+      118.00000000002346,
+      120.00000000002449,
+      122.00000000002551,
+      124.00000000002653,
+      126.00000000002755,
+      128.00000000002856,
+      130.00000000002674,
+      132.00000000002493,
+      134.0000000000231,
+      136.0000000000213,
+      138.00000000001947,
+      140.00000000001765
+    ],
+    "solver_clock": {
+      "first_s": 0.01,
+      "interval_s": 0.01,
+      "last_s": 140.00000000001765,
+      "max_accumulation_serialization_error_s": 2.8563817977556027e-11,
+      "resampled": false,
+      "samples": 14000,
+      "tolerance_s": 1e-09
+    },
+    "verified_original_pins": 206
+  },
+  "sensitivity": {
+    "completion_sha256": "3eec7f859fa357e54311319847aadf9c6e2d0a7bd2dd77eaa7c6cfae04b58680",
+    "force_clock": {
+      "first_s": 0.02,
+      "interval_s": 0.02,
+      "last_s": 139.99999999994517,
+      "max_accumulation_serialization_error_s": 5.482547749124933e-11,
+      "resampled": false,
+      "samples": 7000,
+      "tolerance_s": 1e-09
+    },
+    "input_identity": "original completion and pre-execution pins verified",
+    "max_force_probe_clock_difference_s": 5.482547749124933e-11,
+    "mesh_status": "Mesh OK.",
+    "native_cells": 15360,
+    "omitted_original_pins": 0,
+    "original_pins": 206,
+    "original_plane_count": 70,
+    "planes": [
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 99.99999999998154,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 101.9999999999797,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 103.9999999999779,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 105.9999999999761,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 107.9999999999743,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 109.99999999997245,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 111.99999999997063,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 113.99999999996881,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 115.99999999996699,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 117.99999999996517,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 119.99999999996335,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 121.99999999996153,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 123.99999999995971,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 125.9999999999579,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 3.815697265625e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 127.99999999995607,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 129.99999999995427,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 131.99999999995245,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 133.99999999995063,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 135.9999999999488,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 137.999999999947,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      },
+      {
+        "display_mask_rule": "twice triangle area <= 1e-18 m2; native arrays unchanged",
+        "display_masked_triangles": 92160,
+        "max_abs_z_m": 5.661775996877859e-20,
+        "points": 107904,
+        "time_s": 139.99999999994517,
+        "triangles": 215040,
+        "vtk_time_tolerance_s": 7.63039453125e-06,
+        "zero_area_triangles": 75574
+      }
+    ],
+    "reconstruction": "not_required: serial native probes and direct sampled planes",
+    "retained_pins": 45,
+    "selected_plane_times_s": [
+      99.99999999998154,
+      101.9999999999797,
+      103.9999999999779,
+      105.9999999999761,
+      107.9999999999743,
+      109.99999999997245,
+      111.99999999997063,
+      113.99999999996881,
+      115.99999999996699,
+      117.99999999996517,
+      119.99999999996335,
+      121.99999999996153,
+      123.99999999995971,
+      125.9999999999579,
+      127.99999999995607,
+      129.99999999995427,
+      131.99999999995245,
+      133.99999999995063,
+      135.9999999999488,
+      137.999999999947,
+      139.99999999994517
+    ],
+    "solver_clock": {
+      "first_s": 0.005,
+      "interval_s": 0.005,
+      "last_s": 139.99999999994517,
+      "max_accumulation_serialization_error_s": 5.482547749124933e-11,
+      "resampled": false,
+      "samples": 28000,
+      "tolerance_s": 1e-09
+    },
+    "verified_original_pins": 206
+  }
+}
