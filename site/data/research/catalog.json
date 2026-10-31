@@ -1,0 +1,366 @@
+{
+  "project_version": "0.1.0",
+  "schema_version": 1,
+  "source_manifests": {
+    "acoustic": "ca5de2d069c29aef419c4a8a1810daa93f41de7ad94ccae42bcf5175351c238a",
+    "cfd": "a697728056aa4f3119a8810a9125767b63e33f1f9e35d0db91fbe8bb4da80768"
+  },
+  "studies": [
+    {
+      "downloads": [
+        {
+          "href": "data/research/acoustic/research.npz",
+          "label": "Prediction, observed, control and residual arrays (NPZ)"
+        },
+        {
+          "href": "data/research/acoustic/windows.csv",
+          "label": "Window/band comparison and QC (CSV)"
+        },
+        {
+          "href": "data/research/acoustic/metadata.json",
+          "label": "Calibration, estimator and SHA256 source provenance"
+        },
+        {
+          "href": "data/research/acoustic/sensitivity.npz",
+          "label": "One-factor sensitivity arrays (NPZ)"
+        },
+        {
+          "href": "data/research/acoustic/sensitivity.json",
+          "label": "Sensitivity cases and estimator contract"
+        },
+        {
+          "href": "data/research/acoustic/manifest.json",
+          "label": "SHA256 manifest of every exported file except itself"
+        },
+        {
+          "href": "data/research/acoustic/wav/baseline/synthetic-00.wav",
+          "label": "Synthetic baseline WAV: synthetic-00.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/baseline/synthetic-01.wav",
+          "label": "Synthetic baseline WAV: synthetic-01.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/baseline/synthetic-02.wav",
+          "label": "Synthetic baseline WAV: synthetic-02.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/baseline/synthetic-04.wav",
+          "label": "Synthetic baseline WAV: synthetic-04.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/baseline/synthetic-05.wav",
+          "label": "Synthetic baseline WAV: synthetic-05.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/baseline/synthetic-06.wav",
+          "label": "Synthetic baseline WAV: synthetic-06.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/baseline/synthetic-07.wav",
+          "label": "Synthetic baseline WAV: synthetic-07.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/baseline/synthetic-08.wav",
+          "label": "Synthetic baseline WAV: synthetic-08.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/observed/synthetic-00.wav",
+          "label": "Synthetic observed WAV: synthetic-00.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/observed/synthetic-01.wav",
+          "label": "Synthetic observed WAV: synthetic-01.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/observed/synthetic-02.wav",
+          "label": "Synthetic observed WAV: synthetic-02.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/observed/synthetic-04.wav",
+          "label": "Synthetic observed WAV: synthetic-04.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/observed/synthetic-05.wav",
+          "label": "Synthetic observed WAV: synthetic-05.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/observed/synthetic-06.wav",
+          "label": "Synthetic observed WAV: synthetic-06.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/observed/synthetic-07.wav",
+          "label": "Synthetic observed WAV: synthetic-07.wav"
+        },
+        {
+          "href": "data/research/acoustic/wav/observed/synthetic-08.wav",
+          "label": "Synthetic observed WAV: synthetic-08.wav"
+        }
+      ],
+      "evidence_kind": "predicted_acoustic_with_synthetic_observation",
+      "figures": [
+        {
+          "alt": "Source strength is not received pressure. Empirical source spectrum and separate received vessel/wind powers on 100\u20134000 Hz. Source includes m\u00b2; ambient is not spread again. No field measurements.",
+          "caption": "Empirical source spectrum and separate received vessel/wind powers on 100\u20134000 Hz. Source includes m\u00b2; ambient is not spread again. No field measurements.",
+          "src": "data/research/acoustic/figures/spectra.png",
+          "title": "Source strength is not received pressure"
+        },
+        {
+          "alt": "A chosen passage with changing wind. 240 s, 2 s frames; CPA is at emission second 120. Wind follows a declared 4\u21928 m/s schedule, not weather data. Spectrogram is the exact ensemble mean for the finite Fourier/Hann surrogate.",
+          "caption": "240 s, 2 s frames; CPA is at emission second 120. Wind follows a declared 4\u21928 m/s schedule, not weather data. Spectrogram is the exact ensemble mean for the finite Fourier/Hann surrogate.",
+          "src": "data/research/acoustic/figures/passage.png",
+          "title": "A chosen passage with changing wind"
+        },
+        {
+          "alt": "Retarded geometry and direct-path loss. Range solves arrival = emission + range/1500. Loss is spherical spreading plus full-path Ainslie\u2013McColm absorption. No waveguide, reflections, refraction or Doppler.",
+          "caption": "Range solves arrival = emission + range/1500. Loss is spherical spreading plus full-path Ainslie\u2013McColm absorption. No waveguide, reflections, refraction or Doppler.",
+          "src": "data/research/acoustic/figures/propagation.png",
+          "title": "Retarded geometry and direct-path loss"
+        },
+        {
+          "alt": "Compare like support, then inspect the discrepancy. Half-open bands and identical clocks/processing. Gray: absent 80\u201382 s chunk; amber: active-contaminated frames 150\u2013154 s. Gaps are retained NaN, not zero. Crosses retain excluded active spectra.",
+          "caption": "Half-open bands and identical clocks/processing. Gray: absent 80\u201382 s chunk; amber: active-contaminated frames 150\u2013154 s. Gaps are retained NaN, not zero. Crosses retain excluded active spectra.",
+          "src": "data/research/acoustic/figures/comparison.png",
+          "title": "Compare like support, then inspect the discrepancy"
+        },
+        {
+          "alt": "Gain recovery is not model validation. Top: stochastic observed-minus-ensemble spectra (color limits only; arrays are not clipped). Middle: independent band sampling errors. Bottom: same-realization gain verification, excluded intervals shaded. No field-validation inference.",
+          "caption": "Top: stochastic observed-minus-ensemble spectra (color limits only; arrays are not clipped). Middle: independent band sampling errors. Bottom: same-realization gain verification, excluded intervals shaded. No field-validation inference.",
+          "src": "data/research/acoustic/figures/residuals.png",
+          "title": "Gain recovery is not model validation"
+        },
+        {
+          "alt": "One factor at a time \u2014 not confidence intervals. Alternatives change only the named property. Source offsets affect vessel only; speed changes source law and track. Receiver depth changes geometry, not absorption depth. These use raw empirical midpoint PSD bin sums and linear-power time averages, not Welch sampling or probability coverage.",
+          "caption": "Alternatives change only the named property. Source offsets affect vessel only; speed changes source law and track. Receiver depth changes geometry, not absorption depth. These use raw empirical midpoint PSD bin sums and linear-power time averages, not Welch sampling or probability coverage.",
+          "src": "data/research/acoustic/figures/sensitivity.png",
+          "title": "One factor at a time \u2014 not confidence intervals"
+        }
+      ],
+      "id": "vessel-passage",
+      "limitations": [
+        "Predictive approximations plus synthetic software verification, never measured or field validated.",
+        "Empirical source and wind fits; generic constant water, not a site forecast. No proprietary hardware or NOAA audio.",
+        "Direct spherical propagation; no reflections, bathymetry, refraction, directionality, tonals, Doppler, flow/self-noise or CFD coupling.",
+        "Independent 2 s circular Gaussian frames, midpoint-frozen PSD; abrupt seams, no crossfade. Welch segments never cross seams. The concatenation is not globally bandlimited.",
+        "100\u20134000 Hz finite-frame synthesis only; no low-frequency extrapolation. Hann leakage is included in expected spectra, including outside synthesis support.",
+        "Exact expected Welch is for this discrete Fourier ensemble, not a claim that empirical continuous spectra equal one finite realization.",
+        "Same-realization gain control cancels sampling error; comparison against ensemble expectation does not. No stochastic RMS normalization.",
+        "Calibration is a declared flat synthetic ADC chain, not a certificate. Digital-only control has no absolute SPL.",
+        "Sensitivity alternatives are one-at-a-time deterministic changes, not probabilistic confidence intervals.",
+        "Synthetic UTC uses an arbitrary 2000 epoch and is not a real acquisition-date claim."
+      ],
+      "metrics": [
+        {
+          "label": "Compared windows",
+          "unit": "windows",
+          "value": 117
+        },
+        {
+          "label": "Excluded windows",
+          "unit": "windows",
+          "value": 3
+        },
+        {
+          "label": "Recovered known gain",
+          "unit": "dB",
+          "value": 6.0
+        },
+        {
+          "label": "Maximum gain-control error",
+          "unit": "dB",
+          "value": 4.085620730620576e-14
+        },
+        {
+          "label": "Broadband sampling RMSE",
+          "unit": "dB",
+          "value": 0.19905314406605468
+        },
+        {
+          "label": "Observed \u2212 expected spectral mean",
+          "unit": "dB",
+          "value": 5.669215710205785
+        }
+      ],
+      "summary": "Empirical vessel and wind prediction, calibrated synthetic WAV chunks, quality flags and matched spectral comparisons. The gain control and finite-realization sampling errors are separate diagnostics, not field validation.",
+      "title": "Passage prediction to synthetic calibrated recording"
+    },
+    {
+      "downloads": [
+        {
+          "href": "data/research/cfd/analysis_summary.json",
+          "label": "Full numerical summary"
+        },
+        {
+          "href": "data/research/cfd/verification.json",
+          "label": "Identity, clocks and plane checks"
+        },
+        {
+          "href": "data/research/cfd/analysis-code.zip",
+          "label": "Portable analysis Python source"
+        },
+        {
+          "href": "data/research/cfd/REPLAY.txt",
+          "label": "Replay instructions"
+        },
+        {
+          "href": "data/research/cfd/data/baseline.npz",
+          "label": "baseline.npz"
+        },
+        {
+          "href": "data/research/cfd/data/baseline_history.csv",
+          "label": "baseline_history.csv"
+        },
+        {
+          "href": "data/research/cfd/data/baseline_pressure_psd.csv",
+          "label": "baseline_pressure_psd.csv"
+        },
+        {
+          "href": "data/research/cfd/data/baseline_windows.csv",
+          "label": "baseline_windows.csv"
+        },
+        {
+          "href": "data/research/cfd/data/sensitivity.npz",
+          "label": "sensitivity.npz"
+        },
+        {
+          "href": "data/research/cfd/data/sensitivity_history.csv",
+          "label": "sensitivity_history.csv"
+        },
+        {
+          "href": "data/research/cfd/data/sensitivity_pressure_psd.csv",
+          "label": "sensitivity_pressure_psd.csv"
+        },
+        {
+          "href": "data/research/cfd/data/sensitivity_windows.csv",
+          "label": "sensitivity_windows.csv"
+        },
+        {
+          "href": "data/research/cfd/native/baseline/package.json",
+          "label": "baseline: archive index and omissions"
+        },
+        {
+          "href": "data/research/cfd/native/baseline/original-data-01.zip",
+          "label": "baseline: exact original native data (original-data-01.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/baseline/original-data-02.zip",
+          "label": "baseline: exact original native data (original-data-02.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/baseline/original-data-03.zip",
+          "label": "baseline: exact original native data (original-data-03.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/baseline/original-data-04.zip",
+          "label": "baseline: exact original native data (original-data-04.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/baseline/original-data-05.zip",
+          "label": "baseline: exact original native data (original-data-05.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/sensitivity/package.json",
+          "label": "sensitivity: archive index and omissions"
+        },
+        {
+          "href": "data/research/cfd/native/sensitivity/original-data-01.zip",
+          "label": "sensitivity: exact original native data (original-data-01.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/sensitivity/original-data-02.zip",
+          "label": "sensitivity: exact original native data (original-data-02.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/sensitivity/original-data-03.zip",
+          "label": "sensitivity: exact original native data (original-data-03.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/sensitivity/original-data-04.zip",
+          "label": "sensitivity: exact original native data (original-data-04.zip)"
+        },
+        {
+          "href": "data/research/cfd/native/sensitivity/original-data-05.zip",
+          "label": "sensitivity: exact original native data (original-data-05.zip)"
+        },
+        {
+          "href": "data/research/cfd/native_wake.mp4",
+          "label": "Native wake movie: 21 authentic snapshots"
+        },
+        {
+          "href": "data/research/cfd/movie.json",
+          "label": "Movie source times and playback contract"
+        }
+      ],
+      "evidence_kind": "native_hydrodynamic",
+      "figures": [
+        {
+          "alt": "Native cylinder wake and probes. Actual t=140 s Float32 sampled plane; native triangle connectivity, equal physical axis scales. Only degenerate/tiny triangles masked for display (twice area \u22641e-18 m\u00b2). Common Uy colour bounds across 100\u2013140 s; linear display shading inside native cells, no regridding.",
+          "caption": "Actual t=140 s Float32 sampled plane; native triangle connectivity, equal physical axis scales. Only degenerate/tiny triangles masked for display (twice area \u22641e-18 m\u00b2). Common Uy colour bounds across 100\u2013140 s; linear display shading inside native cells, no regridding.",
+          "src": "data/research/cfd/figures/native_wake.png",
+          "title": "Native cylinder wake and probes"
+        },
+        {
+          "alt": "Hydrodynamic pressure histories, RMS and PSD. p_native \u00d7 density once gives Pa. Each statistic removes its own window mean. Primary [100,140) s, sensitivity [80,140) s; all native samples retained. PSD in Pa\u00b2/Hz, not an acoustic receiver spectrum. Fundamental frequency is inferred from signed lift, not a pressure harmonic.",
+          "caption": "p_native \u00d7 density once gives Pa. Each statistic removes its own window mean. Primary [100,140) s, sensitivity [80,140) s; all native samples retained. PSD in Pa\u00b2/Hz, not an acoustic receiver spectrum. Fundamental frequency is inferred from signed lift, not a pressure harmonic.",
+          "src": "data/research/cfd/figures/hydrodynamic_pressure.png",
+          "title": "Hydrodynamic pressure histories, RMS and PSD"
+        },
+        {
+          "alt": "Startup and timestep sensitivity. Full native drag/lift startup and 20 s block RMS retain amplitude growth. Late-window comparison uses identical physical sampling and mesh/physics; two timesteps do not establish convergence order or mesh independence.",
+          "caption": "Full native drag/lift startup and 20 s block RMS retain amplitude growth. Late-window comparison uses identical physical sampling and mesh/physics; two timesteps do not establish convergence order or mesh independence.",
+          "src": "data/research/cfd/figures/forces_startup_sensitivity.png",
+          "title": "Startup and timestep sensitivity"
+        }
+      ],
+      "id": "native-cylinder",
+      "limitations": [
+        "2D spanwise-uniform laminar Re100 cylinder; not LES, turbulent broadband noise or a finite housing.",
+        "Incompressible local hydrodynamic pressure is not propagating acoustic pressure. Never add these PSDs to acoustic predictions.",
+        "100\u2013140 s primary follows observed startup; 80\u2013140 s and 20 s blocks retain residual growth. A short late record does not prove stationarity.",
+        "No mesh or domain-size independence demonstrated; two timestep values give sensitivity, not convergence order.",
+        "Native planes are Float32 point-interpolated fields. Degenerate cutting-plane triangles are retained in downloads and masked only in display.",
+        "Full volume fields and earlier VTP frames are intentionally omitted from the public subset; unchanged originals remain local."
+      ],
+      "metrics": [
+        {
+          "label": "Native volume cells",
+          "unit": "cells",
+          "value": 15360
+        },
+        {
+          "label": "Baseline Strouhal",
+          "unit": "dimensionless",
+          "value": 0.16662718697976717
+        },
+        {
+          "label": "Halved-timestep Strouhal",
+          "unit": "dimensionless",
+          "value": 0.16681965035998328
+        },
+        {
+          "label": "Strouhal timestep change",
+          "unit": "%",
+          "value": 0.11550538882918453
+        },
+        {
+          "label": "P2 local pressure RMS",
+          "unit": "Pa",
+          "value": 0.013221239792796326
+        },
+        {
+          "label": "Baseline mean drag coefficient",
+          "unit": "dimensionless",
+          "value": 1.3615488722081175
+        }
+      ],
+      "summary": "Two completed native OpenFOAM runs with matched mesh and physical sampling. Late-window pressure, signed lift and timestep sensitivity quantify local hydrodynamic fluctuations, not radiated acoustic pressure.",
+      "title": "Native laminar cylinder: pressure and vortex shedding",
+      "video": {
+        "caption": "Each native 2 s snapshot shown for 0.5 s (4x nominal time speed); last snapshot held 0.5 s. No in-between fields.",
+        "poster": "data/research/cfd/figures/native_wake.png",
+        "src": "data/research/cfd/native_wake.mp4",
+        "title": "Native cylinder wake \u2014 authentic saved snapshots"
+      }
+    }
+  ]
+}

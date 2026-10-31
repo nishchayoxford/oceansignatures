@@ -1,0 +1,138 @@
+{
+  "band_names": [
+    "100\u2013500 Hz",
+    "500\u20131000 Hz",
+    "1000\u20134000 Hz"
+  ],
+  "bands_hz": {
+    "1000\u20134000 Hz": [
+      1000.0,
+      4000.0
+    ],
+    "100\u2013500 Hz": [
+      100.0,
+      500.0
+    ],
+    "500\u20131000 Hz": [
+      500.0,
+      1000.0
+    ]
+  },
+  "cases": [
+    {
+      "changes": {},
+      "label": "baseline"
+    },
+    {
+      "changes": {
+        "source_offset_db": -6.0
+      },
+      "label": "source_offset_db = -6"
+    },
+    {
+      "changes": {
+        "source_offset_db": 6.0
+      },
+      "label": "source_offset_db = 6"
+    },
+    {
+      "changes": {
+        "wind_offset_m_s": -2.0
+      },
+      "label": "wind_offset_m_s = -2"
+    },
+    {
+      "changes": {
+        "wind_offset_m_s": 2.0
+      },
+      "label": "wind_offset_m_s = 2"
+    },
+    {
+      "changes": {
+        "speed_kn": 10.0
+      },
+      "label": "speed_kn = 10"
+    },
+    {
+      "changes": {
+        "speed_kn": 14.0
+      },
+      "label": "speed_kn = 14"
+    },
+    {
+      "changes": {
+        "closest_approach_m": 125.0
+      },
+      "label": "closest_approach_m = 125"
+    },
+    {
+      "changes": {
+        "closest_approach_m": 500.0
+      },
+      "label": "closest_approach_m = 500"
+    },
+    {
+      "changes": {
+        "receiver_depth_m": 25.0
+      },
+      "label": "receiver_depth_m = 25"
+    },
+    {
+      "changes": {
+        "receiver_depth_m": 100.0
+      },
+      "label": "receiver_depth_m = 100"
+    },
+    {
+      "changes": {
+        "temperature_c": 5.0
+      },
+      "label": "temperature_c = 5"
+    },
+    {
+      "changes": {
+        "temperature_c": 15.0
+      },
+      "label": "temperature_c = 15"
+    },
+    {
+      "changes": {
+        "salinity_ppt": 30.0
+      },
+      "label": "salinity_ppt = 30"
+    },
+    {
+      "changes": {
+        "salinity_ppt": 40.0
+      },
+      "label": "salinity_ppt = 40"
+    },
+    {
+      "changes": {
+        "depth_m": 0.0
+      },
+      "label": "depth_m = 0"
+    },
+    {
+      "changes": {
+        "depth_m": 100.0
+      },
+      "label": "depth_m = 100"
+    },
+    {
+      "changes": {
+        "ph": 7.8
+      },
+      "label": "ph = 7.8"
+    },
+    {
+      "changes": {
+        "ph": 8.2
+      },
+      "label": "ph = 8.2"
+    }
+  ],
+  "estimator": "Raw empirical midpoint PSD; sum bins in [low,high) times 2 Hz. Time mean of linear powers before dB; not smoothed Welch or mean of dB.",
+  "interpretation": "One-at-a-time deterministic alternatives, not probabilistic confidence intervals.",
+  "units": "band_power_pa2: Pa2; time_mean_power_change_db: dB relative to baseline"
+}

@@ -1,0 +1,446 @@
+{
+  "configuration": {
+    "adaptive_timestep": false,
+    "cells": 15360,
+    "circumferential_cells": 192,
+    "delta_t_s": 0.01,
+    "density_kg_m3": 1000.0,
+    "diameter_m": 0.01,
+    "end_time_s": 140,
+    "initial_transverse_velocity_m_s": 1e-05,
+    "interpretation": "Native incompressible hydrodynamic pressure, NOT propagating acoustic pressure.",
+    "outer_radius_m": 0.2,
+    "perturbation": "Uniform interior Uy=0.001*U at t=0 only; inlet Uy=0. Not a time-series forcing.",
+    "plane_interval_s": 2.0,
+    "pressure_dimensions": [
+      0,
+      2,
+      -2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "pressure_units": "m2/s2 (kinematic); multiply once by density for Pa",
+    "probe_interval_s": 0.02,
+    "probe_locations_m": [
+      [
+        0.01,
+        0.005,
+        0.0
+      ],
+      [
+        0.02,
+        0.005,
+        0.0
+      ],
+      [
+        0.04,
+        0.005,
+        0.0
+      ],
+      [
+        0.02,
+        -0.005,
+        0.0
+      ],
+      [
+        -0.02,
+        0.0,
+        0.0
+      ]
+    ],
+    "radial_cells": 80,
+    "radial_expansion_ratio": 50,
+    "reynolds": 100.00000000000001,
+    "schema": "oceansignatures-native-cylinder-v1",
+    "span_m": 0.001,
+    "spanwise_model": "2D spanwise-uniform laminar",
+    "velocity_m_s": 0.01,
+    "viscosity_m2_s": 1e-06,
+    "volume_interval_s": 10.0
+  },
+  "downloads": [
+    {
+      "label": "Full numerical summary",
+      "path": "analysis_summary.json"
+    },
+    {
+      "label": "Identity, clocks and plane checks",
+      "path": "verification.json"
+    },
+    {
+      "label": "Portable analysis Python source",
+      "path": "analysis-code.zip"
+    },
+    {
+      "label": "Replay instructions",
+      "path": "REPLAY.txt"
+    },
+    {
+      "label": "baseline.npz",
+      "path": "data/baseline.npz"
+    },
+    {
+      "label": "baseline_history.csv",
+      "path": "data/baseline_history.csv"
+    },
+    {
+      "label": "baseline_pressure_psd.csv",
+      "path": "data/baseline_pressure_psd.csv"
+    },
+    {
+      "label": "baseline_windows.csv",
+      "path": "data/baseline_windows.csv"
+    },
+    {
+      "label": "sensitivity.npz",
+      "path": "data/sensitivity.npz"
+    },
+    {
+      "label": "sensitivity_history.csv",
+      "path": "data/sensitivity_history.csv"
+    },
+    {
+      "label": "sensitivity_pressure_psd.csv",
+      "path": "data/sensitivity_pressure_psd.csv"
+    },
+    {
+      "label": "sensitivity_windows.csv",
+      "path": "data/sensitivity_windows.csv"
+    },
+    {
+      "label": "baseline: archive index and omissions",
+      "path": "native/baseline/package.json"
+    },
+    {
+      "label": "baseline: exact original native data (original-data-01.zip)",
+      "path": "native/baseline/original-data-01.zip"
+    },
+    {
+      "label": "baseline: exact original native data (original-data-02.zip)",
+      "path": "native/baseline/original-data-02.zip"
+    },
+    {
+      "label": "baseline: exact original native data (original-data-03.zip)",
+      "path": "native/baseline/original-data-03.zip"
+    },
+    {
+      "label": "baseline: exact original native data (original-data-04.zip)",
+      "path": "native/baseline/original-data-04.zip"
+    },
+    {
+      "label": "baseline: exact original native data (original-data-05.zip)",
+      "path": "native/baseline/original-data-05.zip"
+    },
+    {
+      "label": "sensitivity: archive index and omissions",
+      "path": "native/sensitivity/package.json"
+    },
+    {
+      "label": "sensitivity: exact original native data (original-data-01.zip)",
+      "path": "native/sensitivity/original-data-01.zip"
+    },
+    {
+      "label": "sensitivity: exact original native data (original-data-02.zip)",
+      "path": "native/sensitivity/original-data-02.zip"
+    },
+    {
+      "label": "sensitivity: exact original native data (original-data-03.zip)",
+      "path": "native/sensitivity/original-data-03.zip"
+    },
+    {
+      "label": "sensitivity: exact original native data (original-data-04.zip)",
+      "path": "native/sensitivity/original-data-04.zip"
+    },
+    {
+      "label": "sensitivity: exact original native data (original-data-05.zip)",
+      "path": "native/sensitivity/original-data-05.zip"
+    },
+    {
+      "label": "Native wake movie: 21 authentic snapshots",
+      "path": "native_wake.mp4"
+    },
+    {
+      "label": "Movie source times and playback contract",
+      "path": "movie.json"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Actual t=140 s Float32 sampled plane; native triangle connectivity, equal physical axis scales. Only degenerate/tiny triangles masked for display (twice area \u22641e-18 m\u00b2). Common Uy colour bounds across 100\u2013140 s; linear display shading inside native cells, no regridding.",
+      "path": "figures/native_wake.png",
+      "title": "Native cylinder wake and probes"
+    },
+    {
+      "caption": "p_native \u00d7 density once gives Pa. Each statistic removes its own window mean. Primary [100,140) s, sensitivity [80,140) s; all native samples retained. PSD in Pa\u00b2/Hz, not an acoustic receiver spectrum. Fundamental frequency is inferred from signed lift, not a pressure harmonic.",
+      "path": "figures/hydrodynamic_pressure.png",
+      "title": "Hydrodynamic pressure histories, RMS and PSD"
+    },
+    {
+      "caption": "Full native drag/lift startup and 20 s block RMS retain amplitude growth. Late-window comparison uses identical physical sampling and mesh/physics; two timesteps do not establish convergence order or mesh independence.",
+      "path": "figures/forces_startup_sensitivity.png",
+      "title": "Startup and timestep sensitivity"
+    }
+  ],
+  "kind": "native hydrodynamic CFD",
+  "limitations": [
+    "2D spanwise-uniform laminar Re100 cylinder; not LES, turbulent broadband noise or a finite housing.",
+    "Incompressible local hydrodynamic pressure is not propagating acoustic pressure. Never add these PSDs to acoustic predictions.",
+    "100\u2013140 s primary follows observed startup; 80\u2013140 s and 20 s blocks retain residual growth. A short late record does not prove stationarity.",
+    "No mesh or domain-size independence demonstrated; two timestep values give sensitivity, not convergence order.",
+    "Native planes are Float32 point-interpolated fields. Degenerate cutting-plane triangles are retained in downloads and masked only in display.",
+    "Full volume fields and earlier VTP frames are intentionally omitted from the public subset; unchanged originals remain local."
+  ],
+  "metrics": {
+    "baseline": {
+      "complete_lift_periods": 6,
+      "lift_frequency_Hz": 0.16662718697976717,
+      "lift_psd_peak_Hz": 0.17500000000000002,
+      "lift_rms": 0.24503263889096602,
+      "mean_Cd": 1.3615488722081175,
+      "mean_Cl": -0.014493616858610526,
+      "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+      "membership": "[start,end)",
+      "period_mean_s": 6.001421605475616,
+      "period_range_s": [
+        6.000165560056928,
+        6.004530278790739
+      ],
+      "period_std_s": 0.0015475380738917536,
+      "pressure_mean_Pa": [
+        -0.0360731970221829,
+        -0.023581793735578855,
+        -0.011931862924568952,
+        -0.022457197981643372,
+        0.012868017540439895
+      ],
+      "pressure_psd_peak_Hz": [
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002
+      ],
+      "pressure_rms_Pa": [
+        0.010214343124489515,
+        0.013221239792796326,
+        0.005914755700605853,
+        0.01302584293788,
+        3.110481514981678e-05
+      ],
+      "pressure_units": "Pa",
+      "psd_bin_width_Hz": 0.025,
+      "psd_units": "Pa2/Hz",
+      "rising_lift_crossings_s": [
+        103.50798793796456,
+        109.5125182167553,
+        115.51471786537324,
+        121.51562343313346,
+        127.51608837373753,
+        133.51635201076132,
+        139.51651757081825
+      ],
+      "samples": 2000,
+      "strouhal": 0.16662718697976717,
+      "window_s": [
+        100,
+        140
+      ]
+    },
+    "timestep_sensitivity": {
+      "baseline": {
+        "complete_lift_periods": 6,
+        "lift_frequency_Hz": 0.16662718697976717,
+        "lift_psd_peak_Hz": 0.17500000000000002,
+        "lift_rms": 0.24503263889096602,
+        "mean_Cd": 1.3615488722081175,
+        "mean_Cl": -0.014493616858610526,
+        "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+        "membership": "[start,end)",
+        "period_mean_s": 6.001421605475616,
+        "period_range_s": [
+          6.000165560056928,
+          6.004530278790739
+        ],
+        "period_std_s": 0.0015475380738917536,
+        "pressure_mean_Pa": [
+          -0.0360731970221829,
+          -0.023581793735578855,
+          -0.011931862924568952,
+          -0.022457197981643372,
+          0.012868017540439895
+        ],
+        "pressure_psd_peak_Hz": [
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002
+        ],
+        "pressure_rms_Pa": [
+          0.010214343124489515,
+          0.013221239792796326,
+          0.005914755700605853,
+          0.01302584293788,
+          3.110481514981678e-05
+        ],
+        "pressure_units": "Pa",
+        "psd_bin_width_Hz": 0.025,
+        "psd_units": "Pa2/Hz",
+        "rising_lift_crossings_s": [
+          103.50798793796456,
+          109.5125182167553,
+          115.51471786537324,
+          121.51562343313346,
+          127.51608837373753,
+          133.51635201076132,
+          139.51651757081825
+        ],
+        "samples": 2000,
+        "strouhal": 0.16662718697976717,
+        "window_s": [
+          100,
+          140
+        ]
+      },
+      "baseline_delta_t_s": 0.01,
+      "change_definition": "100*(second-baseline)/baseline",
+      "changes_percent": {
+        "lift_frequency_Hz": 0.11550538882918453,
+        "lift_rms": -2.440903319074375,
+        "mean_Cd": -0.23331937846216327,
+        "pressure_rms_Pa": [
+          -1.6081243774652068,
+          0.06949127478113928,
+          0.6160541199258153,
+          0.06999697427064835,
+          -2.288011151406144
+        ],
+        "strouhal": 0.11550538882918453
+      },
+      "control_equivalence": "Only deltaT and commensurate output-step counts differ; physical output intervals identical.",
+      "interpretation": "two-level timestep sensitivity; not convergence order",
+      "matched_mesh_physics_files": [
+        "0/U",
+        "0/p",
+        "constant/polyMesh/boundary",
+        "constant/polyMesh/faces",
+        "constant/polyMesh/neighbour",
+        "constant/polyMesh/owner",
+        "constant/polyMesh/points",
+        "constant/transportProperties",
+        "constant/turbulenceProperties",
+        "cylinder.foam",
+        "generator_executed.py",
+        "system/blockMeshDict",
+        "system/fvSchemes",
+        "system/fvSolution"
+      ],
+      "max_probe_clock_difference_s": 0.0,
+      "second": {
+        "complete_lift_periods": 6,
+        "lift_frequency_Hz": 0.16681965035998328,
+        "lift_psd_peak_Hz": 0.17500000000000002,
+        "lift_rms": 0.2390516290754609,
+        "mean_Cd": 1.358372114842023,
+        "mean_Cl": -0.013707754096521505,
+        "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+        "membership": "[start,end)",
+        "period_mean_s": 5.994497637670868,
+        "period_range_s": [
+          5.992924457437397,
+          5.997678163977554
+        ],
+        "period_std_s": 0.0016231844216761902,
+        "pressure_mean_Pa": [
+          -0.03599832229119744,
+          -0.023743882982168278,
+          -0.011838951650441234,
+          -0.02248891374365909,
+          0.01288602157494029
+        ],
+        "pressure_psd_peak_Hz": [
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002
+        ],
+        "pressure_rms_Pa": [
+          0.010050083782706658,
+          0.013230427400870211,
+          0.005951193796782982,
+          0.013034960633809763,
+          3.0393133510564704e-05
+        ],
+        "pressure_units": "Pa",
+        "psd_bin_width_Hz": 0.025,
+        "psd_units": "Pa2/Hz",
+        "rising_lift_crossings_s": [
+          103.68006627405335,
+          109.6777444380309,
+          115.67313993144538,
+          121.66726223543118,
+          127.66073052643077,
+          133.65365498386817,
+          139.64705210007855
+        ],
+        "samples": 2000,
+        "strouhal": 0.16681965035998328,
+        "window_s": [
+          100,
+          140
+        ]
+      },
+      "second_delta_t_s": 0.005,
+      "window_s": [
+        100,
+        140
+      ]
+    }
+  },
+  "movie": {
+    "common_colour_bounds_m_s": [
+      -0.006696052849292755,
+      0.006696052849292755
+    ],
+    "interpolated_fields": false,
+    "path": "native_wake.mp4",
+    "physical_time_span_s": 40.000000000003396,
+    "playback_duration_s": 10.5,
+    "playback_fps": 2,
+    "playback_note": "Each native 2 s snapshot shown for 0.5 s (4x nominal time speed); last snapshot held 0.5 s. No in-between fields.",
+    "source_snapshot_count": 21,
+    "source_times_s": [
+      100.00000000001425,
+      102.00000000001528,
+      104.0000000000163,
+      106.00000000001732,
+      108.00000000001835,
+      110.00000000001937,
+      112.00000000002039,
+      114.00000000002142,
+      116.00000000002244,
+      118.00000000002346,
+      120.00000000002449,
+      122.00000000002551,
+      124.00000000002653,
+      126.00000000002755,
+      128.00000000002856,
+      130.00000000002674,
+      132.00000000002493,
+      134.0000000000231,
+      136.0000000000213,
+      138.00000000001947,
+      140.00000000001765
+    ],
+    "status": "created"
+  },
+  "moviepath": "native_wake.mp4",
+  "title": "Native laminar cylinder: pressure and vortex shedding",
+  "wake_colour_bounds_m_s": [
+    -0.006696052849292755,
+    0.006696052849292755
+  ]
+}

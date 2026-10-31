@@ -7,14 +7,16 @@
   <meta name="description" content="An open underwater-acoustics field guide: follow a sound from source through water to a receiver, explore computed passive and active experiments, and inspect their assumptions and evidence.">
   <title>OceanSignatures — A field guide to underwater sound</title>
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./research.css">
   <script type="module" src="./app.mjs"></script>
+  <script type="module" src="./research.mjs"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to the field guide</a>
   <header class="masthead">
     <a class="wordmark" href="#top" aria-label="OceanSignatures, top of page"><span class="wordmark-symbol" aria-hidden="true">≈</span> Ocean<span>Signatures</span></a>
     <nav aria-label="Main navigation">
-      <a href="#learn">Learn</a><a href="#passive">Listen</a><a href="#active">Locate</a><a href="#evidence">Evidence</a>
+      <a href="#learn">Learn</a><a href="#passive">Listen</a><a href="#active">Locate</a><a href="#research">Research</a><a href="#evidence">Evidence</a>
     </nav>
     <a class="repository-link" href="https://github.com/nishchayoxford/oceansignatures" target="_blank" rel="noopener noreferrer">Source <span aria-hidden="true">↗</span><span class="sr-only"> (GitHub, new tab)</span></a>
   </header>
@@ -27,7 +29,8 @@
         <p class="hero-deck">A sound is not a signature in isolation. The water changes it. The receiver changes it again.</p>
         <p class="hero-context">Follow the chain from source to observation, then ask what the evidence actually lets you infer.</p>
         <a class="button button-light" href="#learn">Start with the sound <span aria-hidden="true">↓</span></a>
-        <p class="hero-note">Synthetic experiments. Explicit assumptions. Reproducible results.</p>
+        <p class="hero-note">Synthetic acoustic experiments and native flow computations. Explicit assumptions. Reproducible results.</p>
+        <a class="research-hero-link" href="#research">Explore the integrated research workflow →</a>
       </div>
       <figure class="ocean-plate">
         <div class="plate-heading"><span>Geometry / passive listening</span><span aria-hidden="true">01</span></div>
@@ -161,6 +164,26 @@
         </div></div></section>
 
     <section class="section sources-section" id="sources" aria-labelledby="sources-title"><header class="section-heading"><p class="eyebrow">08 / Scientific references</p><h2 id="sources-title">Follow the<br>sources.</h2><p class="section-deck">The catalogue is the source of truth for this release’s references and dataset links.</p></header><div id="source-results" aria-busy="true"><p class="result-message">Waiting for the scientific source register.</p></div></section>
+    <section class="section research-section" id="research" aria-labelledby="research-title">
+      <header class="section-heading"><p class="eyebrow">09 / Integrated research workflow</p><h2 id="research-title">Predict the sound.<br>Separate the flow.</h2><p class="section-deck">A moving vessel, changing wind, a timestamped receiver record and a real OpenFOAM calculation. One research workflow, distinct kinds of evidence.</p></header>
+      <div class="research-architecture" aria-label="Three branches of the modelling architecture">
+        <article><p class="eyebrow">Acoustic prediction</p><h3>What should reach the receiver?</h3><p>Wind and vessel activity → empirical source spectra → retarded source geometry, spreading and absorption → expected received acoustic PSD.</p><p class="quiet">Wind ambient noise is already a receiver-level contribution. It is not spread from the vessel.</p></article>
+        <article><p class="eyebrow">Local flow</p><h3>What can contaminate a sensor?</h3><p>Water current and cylinder geometry → transient laminar OpenFOAM → wake dynamics and local hydrodynamic pressure fluctuations.</p><p class="quiet">A low-Reynolds-number benchmark, not turbulent housing self-noise or radiated acoustics.</p></article>
+        <article><p class="eyebrow">Observation and comparison</p><h3>What did the processing recover?</h3><p>Recording → UTC metadata → calibration → quality flags → FFT and Welch PSD → band metrics → aligned residuals and stored results.</p><p class="quiet">The controlled recording is explicitly synthetic. Unknown calibration retains digital units.</p></article>
+      </div>
+      <div class="research-boundary"><strong>The branches do not add by default.</strong> Propagating acoustic pressure is compared with compatible calibrated observations. CFD pressure stays separate: there is no established sensor-coupling model that would justify adding its PSD to acoustic noise.</div>
+      <details class="theory"><summary>Read the scientific contract before the results</summary>
+        <div class="theory-grid"><div><h3>From a source spectrum to a receiver</h3><p>The vessel model is JOMOPANS-ECHO; the wind component uses a documented empirical surface-noise fit. Vessel source density Q has units Pa² m²/Hz, while received density S has units Pa²/Hz. For the direct homogeneous-water path:</p><div class="equation" tabindex="0" role="region" aria-label="Received acoustic power spectral density"><math display="block"><msub><mi>S</mi><mi>r</mi></msub><mo>=</mo><msub><mi>S</mi><mi>w</mi></msub><mo>+</mo><mfrac><msub><mi>Q</mi><mi>v</mi></msub><msup><mi>r</mi><mn>2</mn></msup></mfrac><msup><mn>10</mn><mrow><mo>−</mo><mfrac><mrow><mi>α</mi><mi>r</mi></mrow><mn>10000</mn></mfrac></mrow></msup></math></div><p class="equation-note">r in metres; absorption α in dB/km. Incoherent acoustic components add in linear power. Motion changes the retarded path; Doppler, refraction, surface and bottom reflections are omitted in this research branch.</p><a class="text-link" href="https://github.com/nishchayoxford/oceansignatures/blob/main/docs/NOISE_PREDICTION.md">Source equations, references and applicability ↗</a></div>
+        <div><h3>Like-for-like comparison</h3><p>Match the UTC origin, half-open time windows, frequency centres, band edges and physical units. Missing and active-transmission-contaminated windows remain visible but are excluded from passive residuals. Residual sign is observed minus predicted.</p><p>Integrate linear PSD before converting to band level. A known gain discrepancy checks the recording and comparison chain; the finite stochastic realization still differs from an empirical expected spectrum.</p><p><strong>Native flow:</strong> incompressible pressure has units m²/s². Multiply once by density to obtain Pa. Remove the stated time-window mean for fluctuation RMS and PSD; identify shedding using lift and report St = fD/U.</p><p><a href="https://github.com/nishchayoxford/oceansignatures/blob/main/docs/OBSERVATIONS.md">Chunk and calibration contract</a> · <a href="https://github.com/nishchayoxford/oceansignatures/blob/main/docs/COMPARISON.md">Residual definitions</a> · <a href="https://github.com/nishchayoxford/oceansignatures/blob/main/docs/CFD.md">Executed CFD method</a></p></div></div>
+      </details>
+      <div class="research-controls" id="research-state" data-state="loading">
+        <div class="control"><label for="research-study">Choose the computed investigation</label><select id="research-study" disabled><option value="">Results not loaded</option></select></div>
+        <button id="research-retry" type="button" disabled>Reload research</button>
+        <p id="research-status" role="status" aria-live="polite">Loading computed research…</p>
+      </div>
+      <div id="research-results" aria-busy="true"><p class="result-message">Research results have not been loaded. No substitute data are shown.</p></div>
+      <noscript><p>Read the <a href="./data/research/catalog.json">research catalogue</a> directly, or use the reproduction instructions in the repository. JavaScript selects existing assets; it never runs CFD.</p></noscript>
+    </section>
   </main>
   <footer class="site-footer"><a class="wordmark" href="#top">Ocean<span>Signatures</span></a><p>An open educational acoustics lab.<br>Generic models; no product endorsement or field-performance claim.</p><a href="#top" class="text-link">Back to the surface <span aria-hidden="true">↑</span></a></footer>
 </body>

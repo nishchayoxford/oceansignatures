@@ -28,11 +28,42 @@ jobs:
           node-version: "24"
       - run: uv sync --frozen
       - run: uv run pytest -q
-      - run: node --test tests/test_site.mjs
+      - run: node --test tests/test_site.mjs tests/test_research_site.mjs
       - run: uv run ruff check src tests scripts
       - run: uv run ruff format --check src tests scripts
       - name: Validate the committed real catalogue
         run: node --input-type=module -e 'import fs from "node:fs"; import {validateCatalog} from "./site/app.mjs"; validateCatalog(JSON.parse(fs.readFileSync("site/data/catalog.json", "utf8")));'
+      - name: Validate research catalogue and authenticated assets
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          import {createHash} from 'node:crypto';
+          import {validateResearch} from './site/research.mjs';
+          validateResearch(JSON.parse(fs.readFileSync('site/data/research/catalog.json', 'utf8')));
+          const root = 'site/data/research';
+          const manifest = JSON.parse(fs.readFileSync('site/data/research/manifest.json', 'utf8'));
+          const names = Object.keys(manifest.files);
+          if (!names.length) throw Error('Empty research manifest');
+          for (const name of names) {
+            if (!/^[A-Za-z0-9_./-]+$/.test(name) || name.split('/').some(p => ['', '.', '..'].includes(p))) throw Error('Unsafe research member');
+            const bytes = fs.readFileSync(path.join(root, name));
+            if (createHash('sha256').update(bytes).digest('hex') !== manifest.files[name]) throw Error(`Identity mismatch: ${name}`);
+          }
+          const found = [];
+          function walk(dir) {
+            for (const item of fs.readdirSync(dir, {withFileTypes: true})) {
+              const target = path.join(dir, item.name);
+              if (item.isSymbolicLink()) throw Error('Linked research member');
+              if (item.isDirectory()) walk(target);
+              else if (item.isFile()) found.push(path.relative(root, target));
+              else throw Error('Nonregular research member');
+            }
+          }
+          walk(root);
+          if (JSON.stringify(found.filter(n => n !== 'manifest.json').sort()) !== JSON.stringify(names.sort())) throw Error('Research membership mismatch');
+          console.log(`Verified ${names.length} research payloads and catalogue schema`);
+          JS
 
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

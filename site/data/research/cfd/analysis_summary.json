@@ -1,0 +1,1248 @@
+{
+  "cases": {
+    "baseline": {
+      "block_lift_rms_change_100_120_to_120_140_percent": 0.7217714593318769,
+      "block_lift_rms_change_80_100_to_100_120_percent": 5.452058927542569,
+      "blocks_20_s": [
+        {
+          "complete_lift_periods": 0,
+          "lift_frequency_Hz": null,
+          "lift_psd_peak_Hz": 0.15015015015015015,
+          "lift_rms": 0.0015710252398561518,
+          "mean_Cd": 1.1941133277677347,
+          "mean_Cl": 0.0005913328722870156,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": null,
+          "period_range_s": null,
+          "period_std_s": null,
+          "pressure_mean_Pa": [
+            -0.02874081640711309,
+            -0.02164825184275728,
+            -0.00252969253703191,
+            -0.021664957347889847,
+            0.013491612721963961
+          ],
+          "pressure_psd_peak_Hz": [
+            0.050050050050050046,
+            0.050050050050050046,
+            0.050050050050050046,
+            0.050050050050050046,
+            0.050050050050050046
+          ],
+          "pressure_rms_Pa": [
+            0.033334479410568614,
+            0.021581338161219862,
+            0.010724686088236363,
+            0.021605636634070998,
+            0.02298432013258827
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.050050050050050046,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            18.245043316846523
+          ],
+          "samples": 999,
+          "strouhal": null,
+          "window_s": [
+            0,
+            20
+          ]
+        },
+        {
+          "complete_lift_periods": 1,
+          "lift_frequency_Hz": 0.12098050806743532,
+          "lift_psd_peak_Hz": 0.1,
+          "lift_rms": 0.0015844516910936577,
+          "mean_Cd": 1.122531067453222,
+          "mean_Cl": 0.000278477768557865,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 8.265794349636831,
+          "period_range_s": [
+            8.265794349636831,
+            8.265794349636831
+          ],
+          "period_std_s": 0.0,
+          "pressure_mean_Pa": [
+            -0.0226675007425658,
+            -0.021593982386959306,
+            -0.014328271794930994,
+            -0.021542286081616395,
+            0.015488660179899983
+          ],
+          "pressure_psd_peak_Hz": [
+            0.05,
+            0.05,
+            0.1,
+            0.05,
+            0.05
+          ],
+          "pressure_rms_Pa": [
+            0.0006257401085419346,
+            0.000732935250337824,
+            0.0007116339121321434,
+            0.0007860230844202909,
+            0.00019249026086152742
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            26.807556791186624,
+            35.073351140823455
+          ],
+          "samples": 1000,
+          "strouhal": 0.12098050806743532,
+          "window_s": [
+            20,
+            40
+          ]
+        },
+        {
+          "complete_lift_periods": 2,
+          "lift_frequency_Hz": 0.12330585849686836,
+          "lift_psd_peak_Hz": 0.1,
+          "lift_rms": 0.019111065251717147,
+          "mean_Cd": 1.118632666868799,
+          "mean_Cl": -0.0036795904690660047,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 8.109914745254358,
+          "period_range_s": [
+            7.924503242643041,
+            8.295326247865674
+          ],
+          "period_std_s": 0.18541150261131634,
+          "pressure_mean_Pa": [
+            -0.02218607544560028,
+            -0.021061785404421135,
+            -0.014267755491729858,
+            -0.02122637431617188,
+            0.01564388254820531
+          ],
+          "pressure_psd_peak_Hz": [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.05
+          ],
+          "pressure_rms_Pa": [
+            0.0009595715517083797,
+            0.002803740256910151,
+            0.0051371208747051965,
+            0.00309748611777403,
+            0.0002580302190766288
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            43.35066125914277,
+            51.64598750700844,
+            59.57049074965148
+          ],
+          "samples": 1000,
+          "strouhal": 0.12330585849686834,
+          "window_s": [
+            40,
+            60
+          ]
+        },
+        {
+          "complete_lift_periods": 2,
+          "lift_frequency_Hz": 0.15756929452085713,
+          "lift_psd_peak_Hz": 0.15000000000000002,
+          "lift_rms": 0.12519936029743547,
+          "mean_Cd": 1.247104445885735,
+          "mean_Cl": -0.006874048509594887,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 6.346414147761713,
+          "period_range_s": [
+            6.217000359317538,
+            6.475827936205889
+          ],
+          "period_std_s": 0.12941378844417528,
+          "pressure_mean_Pa": [
+            -0.030248796972215768,
+            -0.025180421566288066,
+            -0.012819475007362933,
+            -0.025029947834613344,
+            0.013840499151230893
+          ],
+          "pressure_psd_peak_Hz": [
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.05
+          ],
+          "pressure_rms_Pa": [
+            0.0057303783066943404,
+            0.010811616599392209,
+            0.007406015342451671,
+            0.010606150301473605,
+            0.0004997782643771216
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            66.63643315703382,
+            73.11226109323971,
+            79.32926145255725
+          ],
+          "samples": 1000,
+          "strouhal": 0.15756929452085713,
+          "window_s": [
+            60,
+            80
+          ]
+        },
+        {
+          "complete_lift_periods": 2,
+          "lift_frequency_Hz": 0.16572525443714675,
+          "lift_psd_peak_Hz": 0.15000000000000002,
+          "lift_rms": 0.231526056398844,
+          "mean_Cd": 1.346145864885531,
+          "mean_Cl": 0.024502299687879234,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 6.034083359209816,
+          "period_range_s": [
+            6.021151701727661,
+            6.047015016691972
+          ],
+          "period_std_s": 0.012931657482155856,
+          "pressure_mean_Pa": [
+            -0.0370274487549032,
+            -0.022817248382007597,
+            -0.012917567523110709,
+            -0.024556436703335415,
+            0.012958795893171391
+          ],
+          "pressure_psd_peak_Hz": [
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.05
+          ],
+          "pressure_rms_Pa": [
+            0.009814799297531176,
+            0.012948566786815845,
+            0.006435867142879591,
+            0.01315224014856751,
+            7.477829068418346e-05
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            85.4304098843332,
+            91.47742490102517,
+            97.49857660275283
+          ],
+          "samples": 1000,
+          "strouhal": 0.16572525443714675,
+          "window_s": [
+            80,
+            100
+          ]
+        },
+        {
+          "complete_lift_periods": 2,
+          "lift_frequency_Hz": 0.1665732478444815,
+          "lift_psd_peak_Hz": 0.15000000000000002,
+          "lift_rms": 0.2441489934263244,
+          "mean_Cd": 1.360662007764442,
+          "mean_Cl": -0.013806847057587418,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 6.0033649637043425,
+          "period_range_s": [
+            6.002199648617946,
+            6.004530278790739
+          ],
+          "period_std_s": 0.0011653150863963901,
+          "pressure_mean_Pa": [
+            -0.036263145426397116,
+            -0.024573900480518114,
+            -0.01183070004963155,
+            -0.02169353206696127,
+            0.012870753069650808
+          ],
+          "pressure_psd_peak_Hz": [
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002
+          ],
+          "pressure_rms_Pa": [
+            0.010127986132546679,
+            0.013400811258387125,
+            0.0059400279826566415,
+            0.01317164157507519,
+            3.0477899639972317e-05
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            103.50798793796456,
+            109.5125182167553,
+            115.51471786537324
+          ],
+          "samples": 1000,
+          "strouhal": 0.1665732478444815,
+          "window_s": [
+            100,
+            120
+          ]
+        },
+        {
+          "complete_lift_periods": 3,
+          "lift_frequency_Hz": 0.1666583880252655,
+          "lift_psd_peak_Hz": 0.15000000000000002,
+          "lift_rms": 0.24591119117912166,
+          "mean_Cd": 1.362435736651793,
+          "mean_Cl": -0.015180386659633633,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 6.000298045894932,
+          "period_range_s": [
+            6.000165560056928,
+            6.0004649406040755
+          ],
+          "period_std_s": 0.00012461983740541958,
+          "pressure_mean_Pa": [
+            -0.03588324861796864,
+            -0.022589686990639603,
+            -0.012033025799506379,
+            -0.0232208638963255,
+            0.012865282011228989
+          ],
+          "pressure_psd_peak_Hz": [
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002
+          ],
+          "pressure_rms_Pa": [
+            0.010296472553065317,
+            0.012963489859895696,
+            0.005887637022305608,
+            0.012833029862191262,
+            3.148254189891514e-05
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            121.51562343313346,
+            127.51608837373753,
+            133.51635201076132,
+            139.51651757081825
+          ],
+          "samples": 1000,
+          "strouhal": 0.1666583880252655,
+          "window_s": [
+            120,
+            140
+          ]
+        }
+      ],
+      "clock": {
+        "first_s": 0.02,
+        "interval_s": 0.02,
+        "last_s": 140.0,
+        "max_accumulation_serialization_error_s": 2.842170943040401e-14,
+        "resampled": false,
+        "samples": 7000,
+        "tolerance_s": 1e-09
+      },
+      "configuration": {
+        "adaptive_timestep": false,
+        "cells": 15360,
+        "circumferential_cells": 192,
+        "delta_t_s": 0.01,
+        "density_kg_m3": 1000.0,
+        "diameter_m": 0.01,
+        "end_time_s": 140,
+        "initial_transverse_velocity_m_s": 1e-05,
+        "interpretation": "Native incompressible hydrodynamic pressure, NOT propagating acoustic pressure.",
+        "outer_radius_m": 0.2,
+        "perturbation": "Uniform interior Uy=0.001*U at t=0 only; inlet Uy=0. Not a time-series forcing.",
+        "plane_interval_s": 2.0,
+        "pressure_dimensions": [
+          0,
+          2,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pressure_units": "m2/s2 (kinematic); multiply once by density for Pa",
+        "probe_interval_s": 0.02,
+        "probe_locations_m": [
+          [
+            0.01,
+            0.005,
+            0.0
+          ],
+          [
+            0.02,
+            0.005,
+            0.0
+          ],
+          [
+            0.04,
+            0.005,
+            0.0
+          ],
+          [
+            0.02,
+            -0.005,
+            0.0
+          ],
+          [
+            -0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "radial_cells": 80,
+        "radial_expansion_ratio": 50,
+        "reynolds": 100.00000000000001,
+        "schema": "oceansignatures-native-cylinder-v1",
+        "span_m": 0.001,
+        "spanwise_model": "2D spanwise-uniform laminar",
+        "velocity_m_s": 0.01,
+        "viscosity_m2_s": 1e-06,
+        "volume_interval_s": 10.0
+      },
+      "frequency_method": "rising zero crossings of signed native lift; linear event-time interpolation, not sample resampling",
+      "pressure_conversion": "p_Pa = density_kg_m3 * native_p_m2_s2 (once)",
+      "pressure_interpretation": "native local hydrodynamic pressure; NOT acoustic pressure",
+      "primary": {
+        "complete_lift_periods": 6,
+        "lift_frequency_Hz": 0.16662718697976717,
+        "lift_psd_peak_Hz": 0.17500000000000002,
+        "lift_rms": 0.24503263889096602,
+        "mean_Cd": 1.3615488722081175,
+        "mean_Cl": -0.014493616858610526,
+        "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+        "membership": "[start,end)",
+        "period_mean_s": 6.001421605475616,
+        "period_range_s": [
+          6.000165560056928,
+          6.004530278790739
+        ],
+        "period_std_s": 0.0015475380738917536,
+        "pressure_mean_Pa": [
+          -0.0360731970221829,
+          -0.023581793735578855,
+          -0.011931862924568952,
+          -0.022457197981643372,
+          0.012868017540439895
+        ],
+        "pressure_psd_peak_Hz": [
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002
+        ],
+        "pressure_rms_Pa": [
+          0.010214343124489515,
+          0.013221239792796326,
+          0.005914755700605853,
+          0.01302584293788,
+          3.110481514981678e-05
+        ],
+        "pressure_units": "Pa",
+        "psd_bin_width_Hz": 0.025,
+        "psd_units": "Pa2/Hz",
+        "rising_lift_crossings_s": [
+          103.50798793796456,
+          109.5125182167553,
+          115.51471786537324,
+          121.51562343313346,
+          127.51608837373753,
+          133.51635201076132,
+          139.51651757081825
+        ],
+        "samples": 2000,
+        "strouhal": 0.16662718697976717,
+        "window_s": [
+          100,
+          140
+        ]
+      },
+      "psd_method": "one-sided periodogram, periodic Hann window, density scaling, full selected record, no zero padding",
+      "sensitivity_80_140": {
+        "complete_lift_periods": 9,
+        "lift_frequency_Hz": 0.16640132531202473,
+        "lift_psd_peak_Hz": 0.16666666666666666,
+        "lift_rms": 0.24131589995058045,
+        "mean_Cd": 1.356414536433922,
+        "mean_Cl": -0.001494978009780604,
+        "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+        "membership": "[start,end)",
+        "period_mean_s": 6.009567520720561,
+        "period_range_s": [
+          6.000165560056928,
+          6.047015016691972
+        ],
+        "period_std_s": 0.014715968098388692,
+        "pressure_mean_Pa": [
+          -0.03639128093308961,
+          -0.02332694528438843,
+          -0.012260431124082859,
+          -0.02315694422220739,
+          0.012898276991350398
+        ],
+        "pressure_psd_peak_Hz": [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.016666666666666666
+        ],
+        "pressure_rms_Pa": [
+          0.010092950682311193,
+          0.013135923156853963,
+          0.006111104598649004,
+          0.013105526292590316,
+          6.588023989302229e-05
+        ],
+        "pressure_units": "Pa",
+        "psd_bin_width_Hz": 0.016666666666666666,
+        "psd_units": "Pa2/Hz",
+        "rising_lift_crossings_s": [
+          85.4304098843332,
+          91.47742490102517,
+          97.49857660275283,
+          103.50798793796456,
+          109.5125182167553,
+          115.51471786537324,
+          121.51562343313346,
+          127.51608837373753,
+          133.51635201076132,
+          139.51651757081825
+        ],
+        "samples": 3000,
+        "strouhal": 0.16640132531202473,
+        "window_s": [
+          80,
+          140
+        ]
+      },
+      "startup_policy": "Primary 100\u2013140 s follows observed growth; 80\u2013140 s and all 20 s blocks retained. Stationarity is not assumed."
+    },
+    "sensitivity": {
+      "block_lift_rms_change_100_120_to_120_140_percent": 1.7679975393669611,
+      "block_lift_rms_change_80_100_to_100_120_percent": 5.827393056939001,
+      "blocks_20_s": [
+        {
+          "complete_lift_periods": 0,
+          "lift_frequency_Hz": null,
+          "lift_psd_peak_Hz": 0.15015015015015015,
+          "lift_rms": 0.0004077166095636653,
+          "mean_Cd": 1.2749436692700742,
+          "mean_Cl": 0.0005458705927654699,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": null,
+          "period_range_s": null,
+          "period_std_s": null,
+          "pressure_mean_Pa": [
+            -0.02976242577544148,
+            -0.022186065750884085,
+            -0.002793685397809737,
+            -0.02220290319948451,
+            0.014241226455855077
+          ],
+          "pressure_psd_peak_Hz": [
+            0.050050050050050046,
+            0.050050050050050046,
+            0.050050050050050046,
+            0.050050050050050046,
+            0.050050050050050046
+          ],
+          "pressure_rms_Pa": [
+            0.009557304207290342,
+            0.012014449500428246,
+            0.0067795170498667874,
+            0.011997281679723864,
+            0.0009452700074918143
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.050050050050050046,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            18.368180710772364
+          ],
+          "samples": 999,
+          "strouhal": null,
+          "window_s": [
+            0,
+            20
+          ]
+        },
+        {
+          "complete_lift_periods": 1,
+          "lift_frequency_Hz": 0.12142067762811343,
+          "lift_psd_peak_Hz": 0.1,
+          "lift_rms": 0.0014609790763073283,
+          "mean_Cd": 1.1225204366087889,
+          "mean_Cl": 0.00027560212602744505,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 8.235829510545102,
+          "period_range_s": [
+            8.235829510545102,
+            8.235829510545102
+          ],
+          "period_std_s": 0.0,
+          "pressure_mean_Pa": [
+            -0.022666386347122643,
+            -0.02158793966057681,
+            -0.014339877790722998,
+            -0.02154758457322973,
+            0.01548886394301609
+          ],
+          "pressure_psd_peak_Hz": [
+            0.05,
+            0.05,
+            0.1,
+            0.05,
+            0.05
+          ],
+          "pressure_rms_Pa": [
+            0.0006272364009804765,
+            0.000732169074496319,
+            0.0006691117137439052,
+            0.0007757937891190685,
+            0.00019298180912267083
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            26.951338898968906,
+            35.18716840951401
+          ],
+          "samples": 1000,
+          "strouhal": 0.12142067762811341,
+          "window_s": [
+            20,
+            40
+          ]
+        },
+        {
+          "complete_lift_periods": 2,
+          "lift_frequency_Hz": 0.12316510747181961,
+          "lift_psd_peak_Hz": 0.1,
+          "lift_rms": 0.01756786954982006,
+          "mean_Cd": 1.117034665962741,
+          "mean_Cl": -0.0035274522962152103,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 8.119182620197865,
+          "period_range_s": [
+            7.9492062361665745,
+            8.289159004229155
+          ],
+          "period_std_s": 0.16997638403129045,
+          "pressure_mean_Pa": [
+            -0.02208212219151179,
+            -0.021008047936961434,
+            -0.014183459074551966,
+            -0.02107640154448461,
+            0.01567547019448098
+          ],
+          "pressure_psd_peak_Hz": [
+            0.1,
+            0.1,
+            0.1,
+            0.1,
+            0.05
+          ],
+          "pressure_rms_Pa": [
+            0.0008447902785043986,
+            0.0025804013176444194,
+            0.004873129366981776,
+            0.0028023650319825796,
+            0.00023070259536134844
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            43.442192315252875,
+            51.73135131948203,
+            59.680557555648605
+          ],
+          "samples": 1000,
+          "strouhal": 0.12316510747181961,
+          "window_s": [
+            40,
+            60
+          ]
+        },
+        {
+          "complete_lift_periods": 2,
+          "lift_frequency_Hz": 0.15719463153954863,
+          "lift_psd_peak_Hz": 0.15000000000000002,
+          "lift_rms": 0.11785442474352696,
+          "mean_Cd": 1.240277028913792,
+          "mean_Cl": -0.00793299036878263,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 6.361540405076809,
+          "period_range_s": [
+            6.224356637220879,
+            6.498724172932739
+          ],
+          "period_std_s": 0.13718376785593023,
+          "pressure_mean_Pa": [
+            -0.029816608890418164,
+            -0.02526843297037852,
+            -0.012841061822287659,
+            -0.02490560819959718,
+            0.013909726152181017
+          ],
+          "pressure_psd_peak_Hz": [
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.05
+          ],
+          "pressure_rms_Pa": [
+            0.005458988123628806,
+            0.01050867891931565,
+            0.0075506519555551274,
+            0.010251440033672045,
+            0.0005157900077203304
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            66.79213657004105,
+            73.29086074297379,
+            79.51521738019467
+          ],
+          "samples": 1000,
+          "strouhal": 0.15719463153954863,
+          "window_s": [
+            60,
+            80
+          ]
+        },
+        {
+          "complete_lift_periods": 2,
+          "lift_frequency_Hz": 0.16584058581924838,
+          "lift_psd_peak_Hz": 0.15000000000000002,
+          "lift_rms": 0.2238583450648256,
+          "mean_Cd": 1.3414587514188219,
+          "mean_Cl": 0.023294902518791204,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 6.029887045200816,
+          "period_range_s": [
+            6.016108539149499,
+            6.043665551252133
+          ],
+          "period_std_s": 0.013778506051316697,
+          "pressure_mean_Pa": [
+            -0.03675178512738472,
+            -0.022846792831724555,
+            -0.012951358876791396,
+            -0.02494311042023298,
+            0.012985729735351408
+          ],
+          "pressure_psd_peak_Hz": [
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.05
+          ],
+          "pressure_rms_Pa": [
+            0.009532601310381932,
+            0.013033194189377461,
+            0.006531054640593078,
+            0.013265010134977134,
+            8.031918689427974e-05
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            85.61679849577423,
+            91.66046404702637,
+            97.67657258617587
+          ],
+          "samples": 1000,
+          "strouhal": 0.16584058581924838,
+          "window_s": [
+            80,
+            100
+          ]
+        },
+        {
+          "complete_lift_periods": 2,
+          "lift_frequency_Hz": 0.16676292142734261,
+          "lift_psd_peak_Hz": 0.15000000000000002,
+          "lift_rms": 0.23690345072251182,
+          "mean_Cd": 1.357365901927908,
+          "mean_Cl": -0.00908095557809756,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 5.996536828696016,
+          "period_range_s": [
+            5.9953954934144775,
+            5.997678163977554
+          ],
+          "period_std_s": 0.0011413352815381472,
+          "pressure_mean_Pa": [
+            -0.036335241756589434,
+            -0.02457024108879949,
+            -0.011777366787421086,
+            -0.021845401024187198,
+            0.012888617586752598
+          ],
+          "pressure_psd_peak_Hz": [
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002
+          ],
+          "pressure_rms_Pa": [
+            0.009922084058784295,
+            0.013374519377481802,
+            0.005972180621663677,
+            0.013185242939153845,
+            2.982373878289944e-05
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            103.68006627405335,
+            109.6777444380309,
+            115.67313993144538
+          ],
+          "samples": 1000,
+          "strouhal": 0.16676292142734261,
+          "window_s": [
+            100,
+            120
+          ]
+        },
+        {
+          "complete_lift_periods": 3,
+          "lift_frequency_Hz": 0.1668540078935365,
+          "lift_psd_peak_Hz": 0.15000000000000002,
+          "lift_rms": 0.24109189790196126,
+          "mean_Cd": 1.359378327756138,
+          "mean_Cl": -0.018334552614945453,
+          "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+          "membership": "[start,end)",
+          "period_mean_s": 5.993263288215791,
+          "period_range_s": [
+            5.992924457437397,
+            5.993468290999587
+          ],
+          "period_std_s": 0.0002413450986239736,
+          "pressure_mean_Pa": [
+            -0.03566140282580549,
+            -0.022917524875537113,
+            -0.011900536513461372,
+            -0.023132426463130885,
+            0.012883425563128003
+          ],
+          "pressure_psd_peak_Hz": [
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002,
+            0.15000000000000002
+          ],
+          "pressure_rms_Pa": [
+            0.010165312909937666,
+            0.013032456192136922,
+            0.005929493101881058,
+            0.012850741178826631,
+            3.073355136544103e-05
+          ],
+          "pressure_units": "Pa",
+          "psd_bin_width_Hz": 0.05,
+          "psd_units": "Pa2/Hz",
+          "rising_lift_crossings_s": [
+            121.66726223543118,
+            127.66073052643077,
+            133.65365498386817,
+            139.64705210007855
+          ],
+          "samples": 1000,
+          "strouhal": 0.1668540078935365,
+          "window_s": [
+            120,
+            140
+          ]
+        }
+      ],
+      "clock": {
+        "first_s": 0.02,
+        "interval_s": 0.02,
+        "last_s": 140.0,
+        "max_accumulation_serialization_error_s": 2.842170943040401e-14,
+        "resampled": false,
+        "samples": 7000,
+        "tolerance_s": 1e-09
+      },
+      "configuration": {
+        "adaptive_timestep": false,
+        "cells": 15360,
+        "circumferential_cells": 192,
+        "delta_t_s": 0.005,
+        "density_kg_m3": 1000.0,
+        "diameter_m": 0.01,
+        "end_time_s": 140,
+        "initial_transverse_velocity_m_s": 1e-05,
+        "interpretation": "Native incompressible hydrodynamic pressure, NOT propagating acoustic pressure.",
+        "outer_radius_m": 0.2,
+        "perturbation": "Uniform interior Uy=0.001*U at t=0 only; inlet Uy=0. Not a time-series forcing.",
+        "plane_interval_s": 2.0,
+        "pressure_dimensions": [
+          0,
+          2,
+          -2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pressure_units": "m2/s2 (kinematic); multiply once by density for Pa",
+        "probe_interval_s": 0.02,
+        "probe_locations_m": [
+          [
+            0.01,
+            0.005,
+            0.0
+          ],
+          [
+            0.02,
+            0.005,
+            0.0
+          ],
+          [
+            0.04,
+            0.005,
+            0.0
+          ],
+          [
+            0.02,
+            -0.005,
+            0.0
+          ],
+          [
+            -0.02,
+            0.0,
+            0.0
+          ]
+        ],
+        "radial_cells": 80,
+        "radial_expansion_ratio": 50,
+        "reynolds": 100.00000000000001,
+        "schema": "oceansignatures-native-cylinder-v1",
+        "span_m": 0.001,
+        "spanwise_model": "2D spanwise-uniform laminar",
+        "velocity_m_s": 0.01,
+        "viscosity_m2_s": 1e-06,
+        "volume_interval_s": 10.0
+      },
+      "frequency_method": "rising zero crossings of signed native lift; linear event-time interpolation, not sample resampling",
+      "pressure_conversion": "p_Pa = density_kg_m3 * native_p_m2_s2 (once)",
+      "pressure_interpretation": "native local hydrodynamic pressure; NOT acoustic pressure",
+      "primary": {
+        "complete_lift_periods": 6,
+        "lift_frequency_Hz": 0.16681965035998328,
+        "lift_psd_peak_Hz": 0.17500000000000002,
+        "lift_rms": 0.2390516290754609,
+        "mean_Cd": 1.358372114842023,
+        "mean_Cl": -0.013707754096521505,
+        "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+        "membership": "[start,end)",
+        "period_mean_s": 5.994497637670868,
+        "period_range_s": [
+          5.992924457437397,
+          5.997678163977554
+        ],
+        "period_std_s": 0.0016231844216761902,
+        "pressure_mean_Pa": [
+          -0.03599832229119744,
+          -0.023743882982168278,
+          -0.011838951650441234,
+          -0.02248891374365909,
+          0.01288602157494029
+        ],
+        "pressure_psd_peak_Hz": [
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002,
+          0.17500000000000002
+        ],
+        "pressure_rms_Pa": [
+          0.010050083782706658,
+          0.013230427400870211,
+          0.005951193796782982,
+          0.013034960633809763,
+          3.0393133510564704e-05
+        ],
+        "pressure_units": "Pa",
+        "psd_bin_width_Hz": 0.025,
+        "psd_units": "Pa2/Hz",
+        "rising_lift_crossings_s": [
+          103.68006627405335,
+          109.6777444380309,
+          115.67313993144538,
+          121.66726223543118,
+          127.66073052643077,
+          133.65365498386817,
+          139.64705210007855
+        ],
+        "samples": 2000,
+        "strouhal": 0.16681965035998328,
+        "window_s": [
+          100,
+          140
+        ]
+      },
+      "psd_method": "one-sided periodogram, periodic Hann window, density scaling, full selected record, no zero padding",
+      "sensitivity_80_140": {
+        "complete_lift_periods": 9,
+        "lift_frequency_Hz": 0.16657334362915177,
+        "lift_psd_peak_Hz": 0.16666666666666666,
+        "lift_rms": 0.23474576255563984,
+        "mean_Cd": 1.3527343270342893,
+        "mean_Cl": -0.001373535224750602,
+        "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+        "membership": "[start,end)",
+        "period_mean_s": 6.003361511589369,
+        "period_range_s": [
+          5.992924457437397,
+          6.043665551252133
+        ],
+        "period_std_s": 0.015895973376881072,
+        "pressure_mean_Pa": [
+          -0.036249476569926525,
+          -0.02344485293202037,
+          -0.012209754059224625,
+          -0.023306979302516954,
+          0.01291925762841069
+        ],
+        "pressure_psd_peak_Hz": [
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.16666666666666666,
+          0.016666666666666666
+        ],
+        "pressure_rms_Pa": [
+          0.009886983474108536,
+          0.013171801737332251,
+          0.006172872278237695,
+          0.013163032564503296,
+          7.053714958386742e-05
+        ],
+        "pressure_units": "Pa",
+        "psd_bin_width_Hz": 0.016666666666666666,
+        "psd_units": "Pa2/Hz",
+        "rising_lift_crossings_s": [
+          85.61679849577423,
+          91.66046404702637,
+          97.67657258617587,
+          103.68006627405335,
+          109.6777444380309,
+          115.67313993144538,
+          121.66726223543118,
+          127.66073052643077,
+          133.65365498386817,
+          139.64705210007855
+        ],
+        "samples": 3000,
+        "strouhal": 0.16657334362915177,
+        "window_s": [
+          80,
+          140
+        ]
+      },
+      "startup_policy": "Primary 100\u2013140 s follows observed growth; 80\u2013140 s and all 20 s blocks retained. Stationarity is not assumed."
+    }
+  },
+  "schema": "oceansignatures-native-analysis-v1",
+  "timestep_sensitivity": {
+    "baseline": {
+      "complete_lift_periods": 6,
+      "lift_frequency_Hz": 0.16662718697976717,
+      "lift_psd_peak_Hz": 0.17500000000000002,
+      "lift_rms": 0.24503263889096602,
+      "mean_Cd": 1.3615488722081175,
+      "mean_Cl": -0.014493616858610526,
+      "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+      "membership": "[start,end)",
+      "period_mean_s": 6.001421605475616,
+      "period_range_s": [
+        6.000165560056928,
+        6.004530278790739
+      ],
+      "period_std_s": 0.0015475380738917536,
+      "pressure_mean_Pa": [
+        -0.0360731970221829,
+        -0.023581793735578855,
+        -0.011931862924568952,
+        -0.022457197981643372,
+        0.012868017540439895
+      ],
+      "pressure_psd_peak_Hz": [
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002
+      ],
+      "pressure_rms_Pa": [
+        0.010214343124489515,
+        0.013221239792796326,
+        0.005914755700605853,
+        0.01302584293788,
+        3.110481514981678e-05
+      ],
+      "pressure_units": "Pa",
+      "psd_bin_width_Hz": 0.025,
+      "psd_units": "Pa2/Hz",
+      "rising_lift_crossings_s": [
+        103.50798793796456,
+        109.5125182167553,
+        115.51471786537324,
+        121.51562343313346,
+        127.51608837373753,
+        133.51635201076132,
+        139.51651757081825
+      ],
+      "samples": 2000,
+      "strouhal": 0.16662718697976717,
+      "window_s": [
+        100,
+        140
+      ]
+    },
+    "baseline_delta_t_s": 0.01,
+    "change_definition": "100*(second-baseline)/baseline",
+    "changes_percent": {
+      "lift_frequency_Hz": 0.11550538882918453,
+      "lift_rms": -2.440903319074375,
+      "mean_Cd": -0.23331937846216327,
+      "pressure_rms_Pa": [
+        -1.6081243774652068,
+        0.06949127478113928,
+        0.6160541199258153,
+        0.06999697427064835,
+        -2.288011151406144
+      ],
+      "strouhal": 0.11550538882918453
+    },
+    "control_equivalence": "Only deltaT and commensurate output-step counts differ; physical output intervals identical.",
+    "interpretation": "two-level timestep sensitivity; not convergence order",
+    "matched_mesh_physics_files": [
+      "0/U",
+      "0/p",
+      "constant/polyMesh/boundary",
+      "constant/polyMesh/faces",
+      "constant/polyMesh/neighbour",
+      "constant/polyMesh/owner",
+      "constant/polyMesh/points",
+      "constant/transportProperties",
+      "constant/turbulenceProperties",
+      "cylinder.foam",
+      "generator_executed.py",
+      "system/blockMeshDict",
+      "system/fvSchemes",
+      "system/fvSolution"
+    ],
+    "max_probe_clock_difference_s": 0.0,
+    "second": {
+      "complete_lift_periods": 6,
+      "lift_frequency_Hz": 0.16681965035998328,
+      "lift_psd_peak_Hz": 0.17500000000000002,
+      "lift_rms": 0.2390516290754609,
+      "mean_Cd": 1.358372114842023,
+      "mean_Cl": -0.013707754096521505,
+      "mean_removal": "separate arithmetic mean within this window; no linear detrend",
+      "membership": "[start,end)",
+      "period_mean_s": 5.994497637670868,
+      "period_range_s": [
+        5.992924457437397,
+        5.997678163977554
+      ],
+      "period_std_s": 0.0016231844216761902,
+      "pressure_mean_Pa": [
+        -0.03599832229119744,
+        -0.023743882982168278,
+        -0.011838951650441234,
+        -0.02248891374365909,
+        0.01288602157494029
+      ],
+      "pressure_psd_peak_Hz": [
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002,
+        0.17500000000000002
+      ],
+      "pressure_rms_Pa": [
+        0.010050083782706658,
+        0.013230427400870211,
+        0.005951193796782982,
+        0.013034960633809763,
+        3.0393133510564704e-05
+      ],
+      "pressure_units": "Pa",
+      "psd_bin_width_Hz": 0.025,
+      "psd_units": "Pa2/Hz",
+      "rising_lift_crossings_s": [
+        103.68006627405335,
+        109.6777444380309,
+        115.67313993144538,
+        121.66726223543118,
+        127.66073052643077,
+        133.65365498386817,
+        139.64705210007855
+      ],
+      "samples": 2000,
+      "strouhal": 0.16681965035998328,
+      "window_s": [
+        100,
+        140
+      ]
+    },
+    "second_delta_t_s": 0.005,
+    "window_s": [
+      100,
+      140
+    ]
+  }
+}
